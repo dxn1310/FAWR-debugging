@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import { ChakraProvider } from '@chakra-ui/react'
 
-function App() {
+import Textanimation from "./Components/TextAnimation/Textanimation.js"
+import Ourservices from './Components/Ourservices/Ourservices.js'
+import LightDarkMode from './Components/LightDarkMode.js'
+
+
+export default function App() {
+  // const [mode, setMode] = useState("dark")
+
+  // const handleMode = () => {
+  //   if (mode === "dark")
+  //     setMode("light")
+  //   else
+  //     setMode("dark")
+  // }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <ChakraProvider>
+      <div>
+        <Textanimation />
+        <Ourservices />
+        {/* <LightDarkMode mode={mode} handleMode={handleMode} /> */}
+        {/* <Ourservices mode={mode} /> */}
+      </div>
+    </ChakraProvider>
 
-export default App;
+  )
+}
