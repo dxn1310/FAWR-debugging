@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+.firstpage-outer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.firstpage-middle {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.firstpage-left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10%;
+    margin-top: 5%;
+}
+
+.firstpage-right {
+    width: 40%;
+}
+
+.firstpage-title {
+    color: white;
+    font-size: 4rem;
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+.firstpage-text {
+    font-size: 1.5rem;
+    color: #7E7E7E;
+}

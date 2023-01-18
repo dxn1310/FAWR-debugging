@@ -1,0 +1,20 @@
+.other-outer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.other-grid {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.other-grid-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 2%;
+}
