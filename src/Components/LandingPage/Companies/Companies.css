@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+.companies-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.companies-names {
+    margin-top: 2%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.companies-name {
+    font-size: 1.75rem;
+    color: #7E7E7E;
+    cursor: pointer;
+}
+
+.companies-name:hover {
+    color: red;
+    /* border-bottom: 2px solid red; */
+}
+
+.companies-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.companies-title {
+    color: #874900;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-top: 7%;
+}
+
+.companies-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    align-items: center;
+    margin-top: 5%;
+    /* margin-left: 5%; */
+}
+
+.companies-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+}
+
+.companies-text-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #C6C6C6
+}
+
+.companies-text-content {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #C6C6C6
+}

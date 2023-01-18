@@ -8,6 +8,7 @@ import About from '../About/About'
 import Career from '../Career/Career'
 import Partner from '../Partner/Partner'
 import Other from '../Other/Other'
+import Companies from '../Companies/Companies'
 
 export default function Landing() {
     return (
@@ -61,6 +62,19 @@ export default function Landing() {
             <div className='landing-element'>
                 <Partner />
             </div>
+
+            <div className='landing-title'>
+                Our Other Companies
+            </div>
+
+            <div className='landing-element'>
+                <Companies />
+            </div>
+
+            <div className='landing-title'>
+                Testimonials
+            </div>
+
         </div>
     )
 }
