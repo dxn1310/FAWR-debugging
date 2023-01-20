@@ -7,7 +7,7 @@ import Industries_img3 from "./IndustriesImages/Industries_img3.png"
 import Industries_img4 from "./IndustriesImages/Industries_img4.png"
 import Industries_img5 from "./IndustriesImages/Industries_img5.png"
 import Industries_img6 from "./IndustriesImages/Industries_img6.png"
-import Industries_img7 from "./IndustriesImages/Industries_img7.png"
+import Industries_img7 from "./IndustriesImages/Industries_img11.png"
 import Industries_img8 from "./IndustriesImages/Industries_img8.png"
 
 export default function Industries() {

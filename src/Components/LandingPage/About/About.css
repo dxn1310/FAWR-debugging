@@ -9,11 +9,11 @@
 }
 
 .about-left {
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 10%;
+    padding: 8%;
 }
 
 .about-title {
@@ -28,4 +28,62 @@
 .about-text {
     font-size: 1.5rem;
     color: #7E7E7E;
+}
+
+@media only screen and (max-width: 1500px) {
+    .about-title {
+        font-size: 2.5rem;
+    }
+
+    .about-text {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    .about-outer {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+
+    .about-right {
+        width: 80%;
+    }
+
+    .about-left {
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 750px) {
+    .about-title {
+        font-size: 1.5rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
 }

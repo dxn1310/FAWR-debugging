@@ -21,7 +21,34 @@
     font-size: 4.5rem;
     font-weight: 500;
     font-family: 'Yeseva One', cursive;
-    border-bottom: 2px solid white;
+    text-decoration: underline 2px solid white;
+    /* border-bottom: 2px solid white; */
     margin-top: 5%;
-    /* text-decoration: underline 2px solid white; */
+    text-align: center;
+    width: 90%;
+    /* width: 90%; */
+}
+
+@media only screen and (max-width: 1400px) {
+    .landing-title {
+        font-size: 3.25rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .landing-title {
+        font-size: 2.75rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .landing-title {
+        font-size: 2.25rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .landing-title {
+        font-size: 2rem;
+    }
 }

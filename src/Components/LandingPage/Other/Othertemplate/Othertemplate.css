@@ -10,12 +10,11 @@
     font-size: 2rem;
     color: white;
     font-family: 'Yeseva One', cursive;
-    height: 90%;
-    /* width: 90%; */
-    /* justify-content: right; */
     margin-left: 5%;
+    margin-top: 5%;
     display: flex;
     align-items: flex-end;
+    text-align: center;
 }
 
 .o-title1 {
@@ -33,7 +32,7 @@
     font-size: 1.25rem;
     color: white;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 2%;
     width: 90%;
 }
 
@@ -43,8 +42,63 @@
     /* width: 100%; */
     display: flex;
     justify-content: right;
-    margin-top: 5%;
+    /* margin-top: 2%; */
     width: 90%;
     /* margin-right: 5%; */
 }
 
+@media only screen and (max-width: 1500px) {
+
+    .o-title,
+    .o-title1 {
+        font-size: 1.75rem;
+    }
+
+    .o-content {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .o-title,
+    .o-title1 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .o-title,
+    .o-title1 {
+        font-size: 1.75rem;
+    }
+
+    .o-content {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .o-title,
+    .o-title1 {
+        font-size: 1.5rem;
+    }
+
+    .o-content {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .o-title,
+    .o-title1 {
+        font-size: 1.25rem;
+    }
+
+    .o-content {
+        font-size: 0.6rem;
+    }
+}

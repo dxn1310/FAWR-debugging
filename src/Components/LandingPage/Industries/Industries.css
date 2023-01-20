@@ -8,8 +8,6 @@
 }
 
 .industries-grid {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; */
     display: flex;
     justify-content: space-evenly;
     width: 90%;
@@ -20,7 +18,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    /* width: 70%; */
     margin: 4%;
     border: 2px solid #7A7A7A;
     cursor: pointer;
@@ -29,4 +27,14 @@
 .industries-img {
     /* width: 80%; */
     /* height: 50%; */
+}
+
+@media only screen and (max-width: 1000px) {
+    .industries-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 70%;
+        column-gap: 5%;
+        row-gap: 2%;
+    }
 }

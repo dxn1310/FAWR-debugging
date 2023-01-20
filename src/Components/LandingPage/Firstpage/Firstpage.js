@@ -18,7 +18,7 @@ export default function Firstpage() {
                     <div className='firstpage-title'>
                         Adding Values by
                     </div>
-                    {/* <Textanimation /> */}
+                    <Textanimation />
                     <div className='firstpage-text'>
                         Through the use of strong and flexible digital solutions, we transform businesses to meet the demands of the present and open up new prospects for the future.
                     </div>

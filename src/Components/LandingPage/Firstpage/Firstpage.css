@@ -36,7 +36,7 @@
 }
 
 .firstpage-text {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: #7E7E7E;
 }
 
@@ -57,7 +57,7 @@
 
 @media only screen and (max-width: 1000px) {
     .firstpage-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .firstpage-text {
@@ -67,11 +67,11 @@
 
 @media only screen and (max-width: 750px) {
     .firstpage-title {
-        font-size: 2.5rem;
+        font-size: 2.75rem;
     }
 
     .firstpage-text {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .firstpage-middle {
@@ -81,7 +81,7 @@
     }
 
     .firstpage-left {
-        width: 90%;
+        width: 95%;
         align-items: flex-start;
     }
 
@@ -97,21 +97,21 @@
 
 @media only screen and (max-width: 550px) {
     .firstpage-title {
-        font-size: 2rem;
+        font-size: 2.25rem;
     }
 
     .firstpage-text {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 }
 
 @media only screen and (max-width: 400px) {
     .firstpage-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .firstpage-text {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 
     .first-dots {

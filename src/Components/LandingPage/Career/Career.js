@@ -21,7 +21,7 @@ export default function Career() {
                     </div>
                     <Stack direction="row" spacing={5} alignItems="center">
                         <div><img src={Career_img2} /></div>
-                        <div className='career-job-text' style={{ color: "#BC312E" }}>Earn ₹10000 - ₹20000 per month</div>
+                        <div className='career-job-text' style={{ color: "#BC312E", textAlign: "center" }}>Earn ₹10000 - ₹20000 per month</div>
                     </Stack>
                 </div>
 
@@ -34,7 +34,7 @@ export default function Career() {
                     </div>
                     <Stack direction="row" spacing={5} alignItems="center">
                         <div><img src={Career_img2} /></div>
-                        <div className='career-job-text' style={{ color: "#BC312E" }}>Earn ₹10000 - ₹20000 per month</div>
+                        <div className='career-job-text' style={{ color: "#BC312E", textAlign: "center", textAlign: "center" }}>Earn ₹10000 - ₹20000 per month</div>
                     </Stack>
                 </div>
 
@@ -47,11 +47,11 @@ export default function Career() {
                     </div>
                     <Stack direction="row" spacing={5} alignItems="center">
                         <div><img src={Career_img2} /></div>
-                        <div className='career-job-text' style={{ color: "#BC312E" }}>Earn ₹10000 - ₹20000 per month</div>
+                        <div className='career-job-text' style={{ color: "#BC312E", textAlign: "center" }}>Earn ₹10000 - ₹20000 per month</div>
                     </Stack>
                 </div>
                 <div style={{ width: "60%", justifyContent: "right", display: "flex", marginTop: "2%" }} className='career-job-text'>
-                    View All 
+                    View All
                 </div>
 
             </div>
