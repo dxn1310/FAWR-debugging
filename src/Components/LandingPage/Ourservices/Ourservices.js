@@ -20,6 +20,8 @@ import {
     SliderMark,
 } from '@chakra-ui/react'
 
+import { useMediaQuery } from '@chakra-ui/react'
+
 export default function Ourservices() {
     const title = ["Analytics & Insights", "Consultancy", "Design & Creative", "Development", "Digital Marketing"]
     const img = [Ourservices_img1, Ourservices_img2, Ourservices_img3, Ourservices_img4, Ourservices_img5]
@@ -57,13 +59,17 @@ export default function Ourservices() {
     const handleUpClick = () => {
         setOptionvalue(optionValue - 1)
     }
+
+    const [isLargerThan1100] = useMediaQuery('(min-width: 1100px)')
+
+    const [isLargerThan700] = useMediaQuery('(min-width: 400px)')
     return (
         <div className='ourservices-outer'>
-            <div className='ourservices-title' >
+            <div className='ourservices-title' style={{ display: isLargerThan1100 ? "flex" : "none" }}>
                 {title[optionValue]}
             </div>
             <div className='ourservices-inner'>
-                <div className='ourservices-inner-left'>
+                <div className='ourservices-inner-left' style={{ display: isLargerThan1100 ? "flex" : "none" }}>
                     <div className='ourservices-inner-left-top'>
                         <div className='ourservices-inner-left-top-left'>
                             <Slider value={optionValue === 0 ? 95 :
@@ -131,7 +137,81 @@ export default function Ourservices() {
 
                     </div>
                 </div>
-                <div className='ourservices-inner-right'>
+                <div className='ourservices-content-hidden' style={{ display: isLargerThan1100 ? "none" : "flex", flexDirection: isLargerThan1100 ? "column" : "column" }}>
+                    {
+                        subTitle.map((item, index) => {
+                            return <>
+                                <div className='ourservices-title' >
+                                    {title[index]}
+                                </div>
+                                <div className='ourservices-inner-left-top-right'>
+                                    <img className='ourservices-inner-left-top-img' src={img[index]} />
+                                </div>
+                                <div className='ourservices-inner-right-text1'>
+                                    {item}
+                                </div>
+                                <div className='ourservices-inner-right-text2'>
+                                    {data[index]}
+                                </div>
+                                <Stack direction="column" spacing={3} marginTop={isLargerThan700 ? "5%" : "10%"} width="100%">
+
+                                    <div className='ourservices-inner-right-line' />
+                                    <Link to="">
+                                        <div className='ourservices-inner-right-link'>
+                                            <div className='ourservices-inner-right-link-text'>
+                                                {linkData[index][0]}
+                                            </div>
+                                            <ChevronRightIcon color="white" w={8} h={8} />
+                                        </div>
+                                    </Link>
+
+                                    <div className='ourservices-inner-right-line' />
+                                    <Link to="">
+                                        <div className='ourservices-inner-right-link'>
+                                            <div className='ourservices-inner-right-link-text'>
+                                                {linkData[index][1]}
+                                            </div>
+                                            <ChevronRightIcon color="white" w={8} h={8} />
+                                        </div>
+                                    </Link>
+
+                                    <div className='ourservices-inner-right-line' />
+                                    <Link to="">
+                                        <div className='ourservices-inner-right-link'>
+                                            <div className='ourservices-inner-right-link-text'>
+                                                {linkData[index][2]}
+                                            </div>
+                                            <ChevronRightIcon color="white" w={8} h={8} />
+                                        </div>
+                                    </Link>
+
+                                    <div className='ourservices-inner-right-line' />
+                                    <Link to="">
+                                        <div className='ourservices-inner-right-link'>
+                                            <div className='ourservices-inner-right-link-text'>
+                                                {linkData[index][3]}
+                                            </div>
+                                            <ChevronRightIcon color="white" w={8} h={8} />
+                                        </div>
+                                    </Link>
+
+                                    <div className='ourservices-inner-right-line' />
+                                    <Link to="">
+                                        <div className='ourservices-inner-right-link'>
+                                            <div className='ourservices-inner-right-link-text'>
+                                                {linkData[index][4]}
+                                            </div>
+                                            <ChevronRightIcon color="white" w={8} h={8} />
+                                        </div>
+                                    </Link>
+
+                                    <div className='ourservices-inner-right-line' />
+                                </Stack>
+                            </>
+                        })
+                    }
+                </div>
+                <div className='ourservices-inner-right' style={{ display: isLargerThan1100 ? "flex" : "none" }}>
                     <div className='ourservices-inner-right-text1'>
                         {subTitle[optionValue]}
                     </div>

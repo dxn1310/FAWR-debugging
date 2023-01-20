@@ -23,19 +23,21 @@ export default function Footer() {
             <div className='footer-middle'>
                 <div className='footer-box'>
                     <div className='footer-box-text'>Join our newsletter</div>
-                    <InputGroup width="30%">
-                        <Input rightIcon={<img src={f2} />} width="100%" backgroundColor="#2B2B2B" border="none"
-                            placeholder='Email Address'
-                            _placeholder={{ color: "#B0B0B0" }}
-                            borderRadius="1rem" />
-                        <InputRightElement curser="pointer" marginRight="2%">
-                            <img src={f2} style={{ curser: "pointer" }} />
-                        </InputRightElement>
-                    </InputGroup>
+                    <div className='footer-box-input'>
+                        <InputGroup width="100%">
+                            <Input rightIcon={<img src={f2} />} width="100%" backgroundColor="#2B2B2B" border="none"
+                                placeholder='Email Address'
+                                _placeholder={{ color: "#B0B0B0" }}
+                                borderRadius="1rem" />
+                            <InputRightElement curser="pointer" marginRight="2%">
+                                <img src={f2} style={{ curser: "pointer" }} />
+                            </InputRightElement>
+                        </InputGroup>
+                    </div>
                     <div style={{ diplay: "flex", justifyContent: "center" }}>
                         <Stack direction="column" display="flex" justifyContent="center" spacing={5}>
                             <div className='footer-box-icons-text'>Follow us on:</div>
-                            <Stack direction="row" spacing={10}>
+                            <Stack direction="row" spacing={5}>
                                 <div style={{ curser: "pointer" }}><img src={f3} /></div>
                                 <div style={{ curser: "pointer" }}><img src={f4} /></div>
                                 <div style={{ curser: "pointer" }}><img src={f5} /></div>
@@ -46,10 +48,49 @@ export default function Footer() {
                 </div>
 
                 <div className='footer-content'>
+                    {/* <div style={{ display: "flex" }}> */}
                     <div className='footer-content-title'>
                         LOGO
                     </div>
-                    <div>
+                    <div className='footer-content-hidden'>
+                        <div>
+                            <ul className='footer-ul'>
+                                <li className='footer-content-text'>About</li>
+                                <li className='footer-content-text'>Solutions</li>
+                                <li className='footer-content-text'>Case Study</li>
+                                <li className='footer-content-text'>Explore</li>
+                                <li className='footer-content-text'>Career</li>
+                                <li className='footer-content-text'>Influencer Program</li>
+                            </ul>
+                            {/* </div> */}
+                        </div>
+
+
+                        <div className='footer-content-2'>
+                            <div className='footer-content-text'>
+                                Contact us
+                            </div>
+                            <Stack direction='row' spacing={2} alignItems="center" display="flex">
+                                <div style={{ width: "1rem" }}><img style={{ width: "1rem" }} src={f8} /></div>
+                                <div className='footer-content-text'>
+                                    company@company.in
+                                </div>
+                            </Stack>
+
+                            <Stack direction='column' spacing={5} marginTop="5%">
+                                <div className='footer-content-text'>
+                                    Ready to Talk?
+                                </div>
+
+                                <InputGroup>
+                                    <Input placeholder='Talk with expert in..'
+                                        backgroundColor="white" width="100%" />
+                                    <InputRightElement ><img src={f3} /></InputRightElement>
+                                </InputGroup>
+                            </Stack>
+                        </div>
+                    </div>
+                    {/* <div>
                         <ul className='footer-ul'>
                             <li className='footer-content-text'>About</li>
                             <li className='footer-content-text'>Solutions</li>
@@ -59,6 +100,7 @@ export default function Footer() {
                             <li className='footer-content-text'>Influencer Program</li>
                         </ul>
                     </div>
+
 
                     <div className='footer-content-2'>
                         <div className='footer-content-text'>
@@ -82,7 +124,7 @@ export default function Footer() {
                                 <InputRightElement ><img src={f3} /></InputRightElement>
                             </InputGroup>
                         </Stack>
-                    </div>
+                    </div> */}
                 </div>
 
 

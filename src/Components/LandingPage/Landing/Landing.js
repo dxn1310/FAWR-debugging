@@ -20,9 +20,9 @@ export default function Landing() {
             <div className='landing-title'>
                 Our Services
             </div>
-            {/* <div className='landing-element'>
+            <div className='landing-element'>
                 <Ourservices />
-            </div> */}
+            </div>
 
             <div className='landing-title'>
                 Industries we serve
@@ -67,16 +67,16 @@ export default function Landing() {
                 Our Other Companies
             </div>
 
-            {/*
             <div className='landing-element'>
                 <Companies />
             </div>
 
+            {/*
             <div className='landing-title'>
                 Testimonials
-            </div>
+            </div>*/}
 
-            <Footer /> */}
+            <Footer />
 
         </div>
     )
