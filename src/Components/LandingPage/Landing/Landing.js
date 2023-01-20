@@ -9,6 +9,7 @@ import Career from '../Career/Career'
 import Partner from '../Partner/Partner'
 import Other from '../Other/Other'
 import Companies from '../Companies/Companies'
+import Footer from '../Foooter/Footer'
 
 export default function Landing() {
     return (
@@ -16,7 +17,7 @@ export default function Landing() {
             <div className='landing-element'>
                 <Firstpage />
             </div>
-            <div className='landing-title'>
+            {/* <div className='landing-title'>
                 Our Services
             </div>
 
@@ -74,6 +75,8 @@ export default function Landing() {
             <div className='landing-title'>
                 Testimonials
             </div>
+
+            <Footer /> */}
 
         </div>
     )

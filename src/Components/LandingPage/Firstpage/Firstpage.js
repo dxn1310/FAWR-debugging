@@ -11,14 +11,14 @@ export default function Firstpage() {
     return (
         <div className='firstpage-outer'>
             <div className='firstpage-top' style={{ display: "flex", justifyContent: "left", width: "100%" }}>
-                <img src={Firstpage_img3} />
+                <img className="first-dots" src={Firstpage_img3} />
             </div>
             <div className='firstpage-middle'>
                 <div className='firstpage-left'>
                     <div className='firstpage-title'>
                         Adding Values by
                     </div>
-                    <Textanimation />
+                    {/* <Textanimation /> */}
                     <div className='firstpage-text'>
                         Through the use of strong and flexible digital solutions, we transform businesses to meet the demands of the present and open up new prospects for the future.
                     </div>
@@ -35,7 +35,7 @@ export default function Firstpage() {
                 </div>
             </div>
             <div className='firstpage-bottom' style={{ display: "flex", justifyContent: "right", width: "100%" }}>
-                <img src={Firstpage_img3} />
+                <img className="first-dots" src={Firstpage_img3} />
             </div>
         </div>
     )
