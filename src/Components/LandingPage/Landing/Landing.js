@@ -10,10 +10,24 @@ import Partner from '../Partner/Partner'
 import Other from '../Other/Other'
 import Companies from '../Companies/Companies'
 import Footer from '../Foooter/Footer'
+import Award from '../Awards/Award'
+import Project from '../Projects/Project'
+import Blog from '../Blogs/Blog'
+import Navbar from '../Navbar/Navbar'
+import Aboutoption from '../Navbar/NavbarOptions/Aboutoption/Aboutoption'
+import Careeroption from '../Navbar/NavbarOptions/Careeroption/Careeroption'
+import Solutionoption from '../Navbar/NavbarOptions/Solutionoption/Solutionoption'
+import Terms from '../../Policies/Terms/Terms'
+import Privacy from '../../Policies/Privacy/Privacy'
+import Cookie from '../../Policies/Cookie/Cookie'
+
+// import Contact from "../../Contact/Contact"
 
 export default function Landing() {
     return (
         <div style={{ backgroundColor: "#211F22" }} className="landing-outer">
+            {/* <Navbar /> */}
+            {/* <Contact /> */}
             <div className='landing-element'>
                 <Firstpage />
             </div>
@@ -38,6 +52,15 @@ export default function Landing() {
 
             <div className='landing-element'>
                 <About />
+            </div>
+
+            <div className='landing-title'>
+                Awards &
+                Recognitions
+            </div>
+
+            <div className='landing-element'>
+                <Award />
             </div>
 
             <div className='landing-title'>
@@ -71,12 +94,28 @@ export default function Landing() {
                 <Companies />
             </div>
 
-            {/*
+
             <div className='landing-title'>
                 Testimonials
-            </div>*/}
+            </div>
 
-            <Footer />
+            <div className='landing-title'>
+                Our Recent Projects
+            </div>
+
+            <div className='landing-element'>
+                <Project />
+            </div>
+
+            <div className='landing-title'>
+                Our Featured Blogs
+            </div>
+
+            <div className='landing-element'>
+                <Blog />
+            </div>
+
+            {/* <Footer /> */}
 
         </div>
     )

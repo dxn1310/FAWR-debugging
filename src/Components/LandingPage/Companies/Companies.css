@@ -29,7 +29,7 @@
 .companies-content {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 90%;
     margin-top: 5%;
 }
 
@@ -66,4 +66,136 @@
     font-size: 1.5rem;
     font-weight: 400;
     color: #C6C6C6
+}
+
+@media only screen and (max-width: 1600px) {
+    .companies-name {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .companies-name {
+        font-size: 1.25rem;
+    }
+
+    .companies-title {
+        color: #874900;
+        font-size: 3rem;
+    }
+
+    .companies-names {
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .companies-name {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .companies-title {
+        color: #874900;
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .companies-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* position: relative;
+        top: -10rem;
+    } */
+    }
+
+    .companies-text {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .companies-title {
+        color: #874900;
+        font-size: 2rem;
+    }
+
+    .companies-names {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 5%;
+    }
+
+    .companies-name {
+        font-size: 1.25rem;
+        /* width: fit-content; */
+    }
+
+    .companies-text-title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #C6C6C6
+    }
+    
+    .companies-text-content {
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: #C6C6C6
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+
+    .companies-names {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 5%;
+    }
+
+    .companies-name {
+        font-size: 1.25rem;
+        /* width: fit-content; */
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+
+    .companies-names {
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 5%;
+    }
+
+    .companies-name {
+        font-size: 1rem;
+        /* width: fit-content; */
+    }
+
+    .companies-title {
+        color: #874900;
+        font-size: 1.5rem;
+    }
+
+    .companies-text-title {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: #C6C6C6
+    }
+    
+    .companies-text-content {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #C6C6C6
+    }
+
+    .companies-outer {
+        margin-bottom: 10%;
+    }
 }

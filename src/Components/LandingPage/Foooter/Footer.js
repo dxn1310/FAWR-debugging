@@ -11,7 +11,7 @@ import f6 from "./FooterImages/6.png"
 import f7 from "./FooterImages/7.png"
 import f8 from "./FooterImages/8.png"
 
-
+import { NavLink as Link } from 'react-router-dom'
 
 
 export default function Footer() {
@@ -27,7 +27,7 @@ export default function Footer() {
                         <InputGroup width="100%">
                             <Input rightIcon={<img src={f2} />} width="100%" backgroundColor="#2B2B2B" border="none"
                                 placeholder='Email Address'
-                                _placeholder={{ color: "#B0B0B0" }}
+                                _placeholder={{ color: "white" }}
                                 borderRadius="1rem" />
                             <InputRightElement curser="pointer" marginRight="2%">
                                 <img src={f2} style={{ curser: "pointer" }} />
@@ -50,7 +50,7 @@ export default function Footer() {
                 <div className='footer-content'>
                     {/* <div style={{ display: "flex" }}> */}
                     <div className='footer-content-title'>
-                        LOGO
+                        BDM
                     </div>
                     <div className='footer-content-hidden'>
                         <div>
@@ -138,27 +138,41 @@ export default function Footer() {
                     </div>
 
                     <div className='footer-bottom-right'>
-                        <div className='footer-content-text'>
-                            Sustainability
-                        </div>
-                        <div className='footer-content-text'>
-                            Accessibility
-                        </div>
-                        <div className='footer-content-text'>
-                            Terms of use
-                        </div>
-                        <div className='footer-content-text'>
-                            Privacy Policy
-                        </div>
-                        <div className='footer-content-text'>
-                            Cookie Policy
-                        </div>
-                        <div className='footer-content-text'>
-                            Sitemap
-                        </div>
-                        <div className='footer-content-text'>
-                            Login
-                        </div>
+                        <Link to="">
+                            <div className='footer-content-text'>
+                                Sustainability
+                            </div>
+                        </Link>
+                        <Link to="/Accessibility">
+                            <div className='footer-content-text'>
+                                Accessibility
+                            </div>
+                        </Link>
+                        <Link to="/Terms and Conditions">
+                            <div className='footer-content-text'>
+                                Terms of use
+                            </div>
+                        </Link>
+                        <Link to="/Privacy">
+                            <div className='footer-content-text'>
+                                Privacy Policy
+                            </div>
+                        </Link>
+                        <Link to="/Cookie Policy">
+                            <div className='footer-content-text'>
+                                Cookie Policy
+                            </div>
+                        </Link>
+                        <Link to="/Sitemap">
+                            <div className='footer-content-text'>
+                                Sitemap
+                            </div>
+                        </Link>
+                        <Link to="">
+                            <div className='footer-content-text'>
+                                Login
+                            </div>
+                        </Link>
 
                     </div>
 
