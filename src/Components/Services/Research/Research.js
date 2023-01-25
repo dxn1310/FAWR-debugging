@@ -18,11 +18,16 @@ import Project from "../../LandingPage/Projects/Project"
 import Blogs from "../../LandingPage/Blogs/Blog"
 
 export default function Research() {
- 
-    const detailsData = {
-        title : "In-depth analysis of markets & industries",
-        
-    }
+
+    const detailData = [
+        {
+            title: "In-depth analysis of markets & industries",
+            content1: "BDM has experience gathering, processing, and evaluating market intelligence since it is a top provider of research intelligence services. We develop a competitive strategy based on a thorough understanding of the target market and consumers using research intelligence tools that pinpoint profitable markets and chances for expansion.",
+            content2: "We collaborate with customers from a variety of industries as part of our tailored research intelligence consulting services, supporting them with competitive research intelligence analysis.",
+            content3: " BDM Research Intelligence products are made to support you in achieving your main research goals. Together, we discover and comprehend your needs and then explain the solutions we believe will lead to the greatest outcomes. Then, we put your selected solution into practise and work with you to get the most out of it as quickly as feasible.",
+            points: ["Benchmarking", "Market Research", "Company Research", "Audience Analysis", "Consumer Journey", "App Intelligence"]
+        }
+    ]
 
     const gridData = [
         {
@@ -75,7 +80,7 @@ export default function Research() {
                 Research Intelligence Services
             </div>
             <div className='research-component'>
-                <Details />
+                <Details detailData={detailData} />
             </div>
 
             <div className='research-component'>

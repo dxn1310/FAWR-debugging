@@ -64,12 +64,16 @@ export default function Solutionoption() {
                             <div className='so-right-box-text'>
                                 Web development
                             </div>
-                            <div className='so-right-box-text'>
-                                Blockchain development
-                            </div>
-                            <div className='so-right-box-text'>
-                                DevOps services
-                            </div>
+                            <Link to="/Blockchain Development Services">
+                                <div className='so-right-box-text'>
+                                    Blockchain development
+                                </div>
+                            </Link>
+                            <Link to="/DevOps">
+                                <div className='so-right-box-text'>
+                                    DevOps services
+                                </div>
+                            </Link>
                             <div className='so-right-box-text'>
                                 App development
                             </div>
@@ -93,9 +97,11 @@ export default function Solutionoption() {
                             <div className='so-right-box-text'>
                                 Graphic Design
                             </div>
-                            <div className='so-right-box-text'>
-                                Video editing
-                            </div>
+                            <Link to='/Video Services'>
+                                <div className='so-right-box-text'>
+                                    Video editing
+                                </div>
+                            </Link>
                             <div className='so-right-box-text'>
                                 Animations
                             </div>

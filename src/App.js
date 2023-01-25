@@ -27,6 +27,9 @@ import Sitemap from './Components/Sitemap/Sitemap.js'
 
 
 import Research from './Components/Services/Research/Research.js'
+import Devops from "./Components/Services/Devops/Devops"
+import Blockchain from "./Components/Services/Blockchain/Blockchain"
+import Video from "./Components/Services/Video/Video"
 
 
 
@@ -61,6 +64,9 @@ export default function App() {
 
 
           <Route path="/Research Intelligence Services" element={<Research />} />
+          <Route path="/DevOps" element={<Devops />} />
+          <Route path="/Blockchain Development Services" element={<Blockchain />} />
+          <Route path="/Video Services" element={<Video />} />
 
         </Routes>
         <Footer />
