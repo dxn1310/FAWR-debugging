@@ -25,6 +25,11 @@ import Exploreoption from './Components/LandingPage/Navbar/NavbarOptions/Explore
 
 import Sitemap from './Components/Sitemap/Sitemap.js'
 
+
+import Research from './Components/Services/Research/Research.js'
+
+
+
 export default function App() {
   // const [mode, setMode] = useState("dark")
 
@@ -52,6 +57,10 @@ export default function App() {
           <Route path="/Explore Options" element={<Exploreoption />} />
 
           <Route path="/Sitemap" element={<Sitemap />} />
+
+
+
+          <Route path="/Research Intelligence Services" element={<Research />} />
 
         </Routes>
         <Footer />

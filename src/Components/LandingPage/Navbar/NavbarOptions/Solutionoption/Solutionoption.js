@@ -25,6 +25,8 @@ import so17 from "./SolutionoptionImages/17.png"
 import { useMediaQuery } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
+import { NavLink as Link } from 'react-router-dom'
+
 export default function Solutionoption() {
     const [option, setOption] = useState(0)
 
@@ -168,9 +170,11 @@ export default function Solutionoption() {
                                     Analytics and Insights
                                 </div>
 
-                                <div className='so-right-box-text'>
-                                    Research Intelligence
-                                </div>
+                                <Link to="/Research Intelligence Services">
+                                    <div className='so-right-box-text'>
+                                        Research Intelligence
+                                    </div>
+                                </Link>
                                 <div className='so-right-box-text'>
                                     Predictive Analytics
                                 </div>
