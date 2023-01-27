@@ -30,6 +30,16 @@ import Research from './Components/Services/Research/Research.js'
 import Devops from "./Components/Services/Devops/Devops"
 import Blockchain from "./Components/Services/Blockchain/Blockchain"
 import Video from "./Components/Services/Video/Video"
+import Web from './Components/Services/Web/Web.js'
+import Market from './Components/Services/Market/Market.js'
+import Appdev from './Components/Services/Appdev/Appdev.js'
+import Cloud from './Components/Services/Cloud/Cloud.js'
+import Uxui from './Components/Services/Uxui/Uxui.js'
+import Graphic from './Components/Services/Graphic/Graphic.js'
+import Animation from './Components/Services/Animations/Animation.js'
+import Email from './Components/Services/Email/Email.js'
+import Mobile from './Components/Services/Mobile/Mobile.js'
+import Search from './Components/Services/Search/Search.js'
 
 
 
@@ -67,6 +77,17 @@ export default function App() {
           <Route path="/DevOps" element={<Devops />} />
           <Route path="/Blockchain Development Services" element={<Blockchain />} />
           <Route path="/Video Services" element={<Video />} />
+          <Route path="/Web Development Services" element={<Web />} />
+          <Route path="/Marketing Automation Services" element={<Market />} />
+          <Route path="/App Development Services" element={<Appdev />} />
+          <Route path="/Cloud Storage & Management Services" element={<Cloud />} />
+          <Route path="/UX / UI Design Services" element={<Uxui />} />
+          <Route path="/Graphic Design Services" element={<Graphic />} />
+          <Route path="/Animations Services" element={<Animation />} />
+          <Route path="/Email Marketing Services" element={<Email />} />
+          <Route path="/Mobile Marketing Services" element={<Mobile />} />
+          <Route path="/Search Engine Marketing Services" element={<Search />} />
+
 
         </Routes>
         <Footer />

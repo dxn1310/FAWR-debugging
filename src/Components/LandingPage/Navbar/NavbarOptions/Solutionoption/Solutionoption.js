@@ -60,10 +60,11 @@ export default function Solutionoption() {
                             <div className='so-right-box-title'>
                                 Development Services
                             </div>
-
-                            <div className='so-right-box-text'>
-                                Web development
-                            </div>
+                            <Link to="/Web Development Services">
+                                <div className='so-right-box-text'>
+                                    Web development
+                                </div>
+                            </Link>
                             <Link to="/Blockchain Development Services">
                                 <div className='so-right-box-text'>
                                     Blockchain development
@@ -74,12 +75,16 @@ export default function Solutionoption() {
                                     DevOps services
                                 </div>
                             </Link>
-                            <div className='so-right-box-text'>
-                                App development
-                            </div>
-                            <div className='so-right-box-text'>
-                                Cloud storage & management
-                            </div>
+                            <Link to="/App Development Services">
+                                <div className='so-right-box-text'>
+                                    App development
+                                </div>
+                            </Link>
+                            <Link to='/Cloud Storage & Management Services'>
+                                <div className='so-right-box-text'>
+                                    Cloud storage & management
+                                </div>
+                            </Link>
                         </div>
 
 
@@ -90,21 +95,26 @@ export default function Solutionoption() {
                             <div className='so-right-box-title'>
                                 Design Services
                             </div>
-
-                            <div className='so-right-box-text'>
-                                UX/UI Design
-                            </div>
-                            <div className='so-right-box-text'>
-                                Graphic Design
-                            </div>
+                            <Link to="/UX / UI Design Services">
+                                <div className='so-right-box-text'>
+                                    UX/UI Design
+                                </div>
+                            </Link>
+                            <Link to="/Graphic Design Services">
+                                <div className='so-right-box-text'>
+                                    Graphic Design
+                                </div>
+                            </Link>
                             <Link to='/Video Services'>
                                 <div className='so-right-box-text'>
                                     Video editing
                                 </div>
                             </Link>
-                            <div className='so-right-box-text'>
-                                Animations
-                            </div>
+                            <Link to="/Animations Services">
+                                <div className='so-right-box-text'>
+                                    Animations
+                                </div>
+                            </Link>
                             <div className='so-right-box-text'>
                                 Social media design
                             </div>
@@ -149,22 +159,29 @@ export default function Solutionoption() {
                                 <div className='so-right-box-title'>
                                     Digital Marketing
                                 </div>
-
-                                <div className='so-right-box-text'>
-                                    Marketing automation
-                                </div>
-                                <div className='so-right-box-text'>
-                                    Email marketing
-                                </div>
-                                <div className='so-right-box-text'>
-                                    Search engine marketing
-                                </div>
+                                <Link to="/Marketing Automation Services">
+                                    <div className='so-right-box-text'>
+                                        Marketing automation
+                                    </div>
+                                </Link>
+                                <Link to="/Email Marketing Services">
+                                    <div className='so-right-box-text'>
+                                        Email marketing
+                                    </div>
+                                </Link>
+                                <Link to="/Search Engine Marketing Services">
+                                    <div className='so-right-box-text'>
+                                        Search engine marketing
+                                    </div>
+                                </Link>
                                 <div className='so-right-box-text'>
                                     Social media marketing
                                 </div>
-                                <div className='so-right-box-text'>
-                                    Mobile marketing
-                                </div>
+                                <Link to="/Mobile Marketing Services">
+                                    <div className='so-right-box-text'>
+                                        Mobile marketing
+                                    </div>
+                                </Link>
                             </div>
 
 

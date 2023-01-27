@@ -1,0 +1,121 @@
+import React from 'react'
+import "../Research/Research.css"
+
+import Market_img1 from "./MarketImages/Market_img1.png"
+import R1 from "./MarketImages/1.png"
+import R2 from "./MarketImages/2.png"
+import R3 from "./MarketImages/3.png"
+import R4 from "./MarketImages/4.png"
+import R5 from "./MarketImages/5.png"
+import R6 from "./MarketImages/6.png"
+import Market_img2 from "./MarketImages/Market_img2.png"
+
+import Top from '../../Templates/Topimage/Top'
+import Details from '../../Templates/Details/Details'
+import Grid from '../../Templates/Grid/Grid'
+
+import Award from "../../LandingPage/Awards/Award"
+import Project from "../../LandingPage/Projects/Project"
+import Blogs from "../../LandingPage/Blogs/Blog"
+import Value from '../../Templates/Value/Value'
+
+export default function Market() {
+
+    const detailData = [
+        {
+            title: "Marketing Automation to Amplify Marketing Effectiveness",
+            content1: "In order to produce quality leads, over 51% of firms use marketing automation tools, and 58% of B2B businesses aim to invest in platforms to automate their marketing processes. A trustworthy partner is necessary to help with a solid technological basis and strategic marketing automation advice since the configuration of automation CRM is complicated and requires knowledge to manage campaigns.",
+            content2: "Platform-based and bespoke marketing automation software solutions are configured and integrated as part of BDM marketing automation services, which help firms stay one step ahead of the competition. Our services with platforms enable companies nurture leads, personalise the customer journey, integrate the sales and marketing teams, and maximise ROI with the correct strategy and optimization.",
+            points: ["Platform Evaluation", "Platform Set Up & Support", "Platform Integration", "Content Marketing Strategy", "Demand Generation Strategy", "Automation Management"]
+        }
+    ]
+
+    const gridData = [
+        {
+            name: "Platform Evaluation",
+            firstLetter: "P",
+            img: R1,
+            content: "Our specialists will effectively assess your business process, needs, and pertinent platforms, supported by our tried-and-true Automation Centre of Excellence, to help you select the best marketing automation platform and create the most effective adoption approach."
+        },
+
+        {
+            name: "Platform Set Up & Support",
+            firstLetter: "P",
+            img: R2,
+            content: "Our professionals configure the CRM marketing automation or SMS marketing automation solution, whether it is platform-based or custom, and help your team get it up and running after the evaluation and selection of the automation platform to be used for business."
+        },
+
+        {
+            name: "Platform Integration",
+            firstLetter: "P",
+            img: R3,
+            content: "Our reputable consulting services for marketing automation have the necessary exposure and knowledge to combine the best marketing platform with the CRM for a smooth exchange of data between the marketing and CRM systems."
+        },
+
+        {
+            name: "Content Marketing Strategy",
+            firstLetter: "C",
+            img: R4,
+            content: "By consistently coordinating business objectives with automation efforts, we work with you to deliver all of your content needs, from developing an editorial calendar to distributing it across the appropriate channels. This will help you close the gap between content marketing and your marketing automation software."
+        },
+
+        {
+            name: "Demand Generation Strategy",
+            firstLetter: "D",
+            img: R5,
+            content: "As an industry leader in marketing automation consulting services, we help customers create effective demand generation and market-winning strategies by providing a full range of demand generating services that span the whole lead lifecycle."
+        },
+        {
+            name: "Automation Management",
+            firstLetter: "A",
+            img: R6,
+            content: "We are able to manage the entire scope of the marketing automation system, from managing the leads and guiding them through the sales funnel to qualifying them for the sales team, thanks to our strategic partnerships with the top automation platforms and expertise in the configuration and integration of these platforms."
+        },
+
+    ]
+    return (
+        <div className='research-outer'>
+            <Top bgimg={Market_img1} />
+            <div className='reserach-title'>
+                Marketing Automation Services
+            </div>
+            <div className='research-component'>
+                <Details detailData={detailData} />
+            </div>
+
+            <div className='research-component'>
+                <Grid gridData={gridData} />
+            </div>
+
+            <div className='reserach-title'>
+                Benefits of Marketing Automation
+            </div>
+            <div style={{ width: "90%", display: "flex", justifyContent: "center", marginTop: "5%", marginBottom: "5%" }}>
+                <img src={Market_img2} />
+            </div>
+
+
+            <div className='reserach-title'>
+                Awards & Recognition
+            </div>
+            <div className='research-component'>
+                <Award />
+            </div>
+
+            <div className='reserach-title'>
+                Our Recent Projects
+            </div>
+            <div className='research-component'>
+                <Project />
+            </div>
+
+            <div className='reserach-title'>
+                Featured Blog posts
+            </div>
+            <div className='research-component'>
+                <Blogs />
+            </div>
+
+        </div>
+    )
+}
