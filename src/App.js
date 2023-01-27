@@ -40,6 +40,13 @@ import Animation from './Components/Services/Animations/Animation.js'
 import Email from './Components/Services/Email/Email.js'
 import Mobile from './Components/Services/Mobile/Mobile.js'
 import Search from './Components/Services/Search/Search.js'
+import Social from './Components/Services/Social/Social.js'
+import Management from './Components/Services/Management/Management.js'
+import Operations from './Components/Services/Operations/Operations.js'
+import Legal from './Components/Services/Legal/Legal.js'
+import Strategy from './Components/Services/Strategy/Strategy.js'
+import Financial from './Components/Services/Financial/Financial.js'
+import Predictive from './Components/Services/Predictive/Predictive.js'
 
 
 
@@ -87,6 +94,13 @@ export default function App() {
           <Route path="/Email Marketing Services" element={<Email />} />
           <Route path="/Mobile Marketing Services" element={<Mobile />} />
           <Route path="/Search Engine Marketing Services" element={<Search />} />
+          <Route path="/Social Media Marketing Services" element={<Social />} />
+          <Route path="/Management Consultant Services" element={<Management />} />
+          <Route path="/Operations Consultant Services" element={<Operations />} />
+          <Route path="/Legal Consultant Services" element={<Legal />} />
+          <Route path="/Strategy Consultant Services" element={<Strategy />} />
+          <Route path="/Financial Advisory Services" element={<Financial />} />
+          <Route path="/Predictive Analysis Services" element={<Predictive />} />
 
 
         </Routes>

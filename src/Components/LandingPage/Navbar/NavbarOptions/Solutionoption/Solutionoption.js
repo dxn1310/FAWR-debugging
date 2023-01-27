@@ -127,22 +127,31 @@ export default function Solutionoption() {
                             <div className='so-right-box-title'>
                                 Consultancy  Services
                             </div>
-
-                            <div className='so-right-box-text'>
-                                Management consultant
-                            </div>
-                            <div className='so-right-box-text'>
-                                Operations consultant
-                            </div>
-                            <div className='so-right-box-text'>
-                                Financial advisory
-                            </div>
-                            <div className='so-right-box-text'>
-                                Legal Consultant
-                            </div>
-                            <div className='so-right-box-text'>
-                                Strategy Consultant
-                            </div>
+                            <Link to="/Management Consultant Services">
+                                <div className='so-right-box-text'>
+                                    Management consultant
+                                </div>
+                            </Link>
+                            <Link to="/Operations Consultant Services">
+                                <div className='so-right-box-text'>
+                                    Operations consultant
+                                </div>
+                            </Link>
+                            <Link to="/Financial Advisory Services">
+                                <div className='so-right-box-text'>
+                                    Financial advisory
+                                </div>
+                            </Link>
+                            <Link to="/Legal Consultant Services">
+                                <div className='so-right-box-text'>
+                                    Legal Consultant
+                                </div>
+                            </Link>
+                            <Link to="/Strategy Consultant Services">
+                                <div className='so-right-box-text'>
+                                    Strategy Consultant
+                                </div>
+                            </Link>
                             <div className='so-right-box-text'>
                                 Distribution Strategy
                             </div>
@@ -174,9 +183,11 @@ export default function Solutionoption() {
                                         Search engine marketing
                                     </div>
                                 </Link>
-                                <div className='so-right-box-text'>
-                                    Social media marketing
-                                </div>
+                                <Link to="/Social Media Marketing Services">
+                                    <div className='so-right-box-text'>
+                                        Social media marketing
+                                    </div>
+                                </Link>
                                 <Link to="/Mobile Marketing Services">
                                     <div className='so-right-box-text'>
                                         Mobile marketing
@@ -198,9 +209,11 @@ export default function Solutionoption() {
                                         Research Intelligence
                                     </div>
                                 </Link>
-                                <div className='so-right-box-text'>
-                                    Predictive Analytics
-                                </div>
+                                <Link to="/Predictive Analysis Services">
+                                    <div className='so-right-box-text'>
+                                        Predictive Analytics
+                                    </div>
+                                </Link>
                                 <div className='so-right-box-text'>
                                     Business Intelligence
                                 </div>
