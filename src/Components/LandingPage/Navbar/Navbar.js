@@ -58,7 +58,7 @@ export default function Navbar() {
 
     return (
         <div className='navbar-outer'>
-            <Slide direction='top' in={isOpen} style={{ zIndex: 10 }}>
+            <Slide direction='top' in={isOpen} style={{ zIndex: 10 }} transition="5s">
                 <Box
                     // p='20px'
                     color='white'
@@ -72,9 +72,9 @@ export default function Navbar() {
                 >
                     <CloseButton onClick={onToggle} fontSize="20" />
                     {
-                        selectedOption === 0 ? <Aboutoption /> :
-                            selectedOption === 1 ? <Solutionoption /> : selectedOption === 2 ?
-                                <Exploreoption /> : <Careeroption />
+                        selectedOption === 0 ? <Aboutoption onClick={onToggle}/> :
+                            selectedOption === 1 ? <Solutionoption onToggle={onToggle}/> : selectedOption === 2 ?
+                                <Exploreoption onClick={onToggle}/> : <Careeroption onClick={onToggle}/>
                     }
                 </Box>
             </Slide>

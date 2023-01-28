@@ -1,0 +1,29 @@
+.c-outer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: white
+}
+
+
+.c-left-middle {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+.c-left {
+    width: 30%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.c-right {
+    width: 30%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}

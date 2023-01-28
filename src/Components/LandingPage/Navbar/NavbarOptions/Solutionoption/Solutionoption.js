@@ -27,7 +27,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 
 import { NavLink as Link } from 'react-router-dom'
 
-export default function Solutionoption() {
+export default function Solutionoption({ onToggle }) {
     const [option, setOption] = useState(0)
 
     const [isLargerThan850] = useMediaQuery('(min-width: 850px)')
@@ -61,27 +61,27 @@ export default function Solutionoption() {
                                 Development Services
                             </div>
                             <Link to="/Web Development Services">
-                                <div className='so-right-box-text'>
+                                <div className='so-right-box-text' onClick={onToggle}>
                                     Web development
                                 </div>
                             </Link>
                             <Link to="/Blockchain Development Services">
-                                <div className='so-right-box-text'>
+                                <div className='so-right-box-text' onClick={onToggle}>
                                     Blockchain development
                                 </div>
                             </Link>
                             <Link to="/DevOps">
-                                <div className='so-right-box-text'>
+                                <div className='so-right-box-text' onClick={onToggle}>
                                     DevOps services
                                 </div>
                             </Link>
                             <Link to="/App Development Services">
-                                <div className='so-right-box-text'>
+                                <div className='so-right-box-text' onClick={onToggle}>
                                     App development
                                 </div>
                             </Link>
                             <Link to='/Cloud Storage & Management Services'>
-                                <div className='so-right-box-text'>
+                                <div className='so-right-box-text' onClick={onToggle}>
                                     Cloud storage & management
                                 </div>
                             </Link>
@@ -96,26 +96,26 @@ export default function Solutionoption() {
                                 Design Services
                             </div>
                             <Link to="/UX / UI Design Services">
-                                <div className='so-right-box-text'>
+                                <div className='so-right-box-text' onClick={onToggle}>
                                     UX/UI Design
                                 </div>
                             </Link>
                             <Link to="/Graphic Design Services">
-                                <div className='so-right-box-text'>
+                                <div className='so-right-box-text' onClick={onToggle}>
                                     Graphic Design
                                 </div>
                             </Link>
                             <Link to='/Video Services'>
-                                <div className='so-right-box-text'>
+                                <div className='so-right-box-text' onClick={onToggle}>
                                     Video editing
                                 </div>
                             </Link>
                             <Link to="/Animations Services">
-                                <div className='so-right-box-text'>
+                                <div className='so-right-box-text' onClick={onToggle}>
                                     Animations
                                 </div>
                             </Link>
-                            <div className='so-right-box-text'>
+                            <div className='so-right-box-text' onClick={onToggle}>
                                 Social media design
                             </div>
                         </div>
@@ -128,36 +128,40 @@ export default function Solutionoption() {
                                 Consultancy  Services
                             </div>
                             <Link to="/Management Consultant Services">
-                                <div className='so-right-box-text'>
+                                <div className='so-right-box-text' onClick={onToggle}>
                                     Management consultant
                                 </div>
                             </Link>
                             <Link to="/Operations Consultant Services">
-                                <div className='so-right-box-text'>
+                                <div className='so-right-box-text' onClick={onToggle}>
                                     Operations consultant
                                 </div>
                             </Link>
                             <Link to="/Financial Advisory Services">
-                                <div className='so-right-box-text'>
+                                <div className='so-right-box-text' onClick={onToggle}>
                                     Financial advisory
                                 </div>
                             </Link>
                             <Link to="/Legal Consultant Services">
-                                <div className='so-right-box-text'>
+                                <div className='so-right-box-text' onClick={onToggle}>
                                     Legal Consultant
                                 </div>
                             </Link>
                             <Link to="/Strategy Consultant Services">
-                                <div className='so-right-box-text'>
+                                <div className='so-right-box-text' onClick={onToggle}>
                                     Strategy Consultant
                                 </div>
                             </Link>
-                            <div className='so-right-box-text'>
-                                Distribution Strategy
-                            </div>
-                            <div className='so-right-box-text'>
-                                Reputation Consultant
-                            </div>
+                            <Link to="/Distribution Strategy Services">
+                                <div className='so-right-box-text' onClick={onToggle}>
+                                    Distribution Strategy
+                                </div>
+                            </Link>
+                            <Link to="/Reputation Consultation Services">
+                                <div className='so-right-box-text' onClick={onToggle}>
+                                    Reputation Consultant
+                                </div>
+                            </Link>
                         </div>
                     </div> :
                         option === 1 ? <div className='so-right2'>
@@ -169,27 +173,27 @@ export default function Solutionoption() {
                                     Digital Marketing
                                 </div>
                                 <Link to="/Marketing Automation Services">
-                                    <div className='so-right-box-text'>
+                                    <div className='so-right-box-text' onClick={onToggle}>
                                         Marketing automation
                                     </div>
                                 </Link>
                                 <Link to="/Email Marketing Services">
-                                    <div className='so-right-box-text'>
+                                    <div className='so-right-box-text' onClick={onToggle}>
                                         Email marketing
                                     </div>
                                 </Link>
                                 <Link to="/Search Engine Marketing Services">
-                                    <div className='so-right-box-text'>
+                                    <div className='so-right-box-text' onClick={onToggle}>
                                         Search engine marketing
                                     </div>
                                 </Link>
                                 <Link to="/Social Media Marketing Services">
-                                    <div className='so-right-box-text'>
+                                    <div className='so-right-box-text' onClick={onToggle}>
                                         Social media marketing
                                     </div>
                                 </Link>
                                 <Link to="/Mobile Marketing Services">
-                                    <div className='so-right-box-text'>
+                                    <div className='so-right-box-text' onClick={onToggle}>
                                         Mobile marketing
                                     </div>
                                 </Link>
@@ -205,34 +209,42 @@ export default function Solutionoption() {
                                 </div>
 
                                 <Link to="/Research Intelligence Services">
-                                    <div className='so-right-box-text'>
+                                    <div className='so-right-box-text' onClick={onToggle}>
                                         Research Intelligence
                                     </div>
                                 </Link>
                                 <Link to="/Predictive Analysis Services">
-                                    <div className='so-right-box-text'>
+                                    <div className='so-right-box-text' onClick={onToggle}>
                                         Predictive Analytics
                                     </div>
                                 </Link>
-                                <div className='so-right-box-text'>
-                                    Business Intelligence
-                                </div>
-                                <div className='so-right-box-text'>
-                                    Speech & text Analytics
-                                </div>
-                                <div className='so-right-box-text'>
-                                    Customer Segmentation
-                                </div>
+                                <Link to="/Business Intelligence Services">
+                                    <div className='so-right-box-text' onClick={onToggle}>
+                                        Business Intelligence
+                                    </div>
+                                </Link>
+                                <Link to="/Speech & Text Analytics Services">
+                                    <div className='so-right-box-text' onClick={onToggle}>
+                                        Speech & text Analytics
+                                    </div>
+                                </Link>
+                                <Link to="/Customer Segmentation Services">
+                                    <div className='so-right-box-text' onClick={onToggle}>
+                                        Customer Segmentation
+                                    </div>
+                                </Link>
                             </div>
                         </div> : <div className='so-right3'>
-                            <div className="so-right-box1">
-                                <div>
-                                    <img src={so6} />
+                            <Link to="/Technology">
+                                <div className="so-right-box1">
+                                    <div>
+                                        <img src={so6} />
+                                    </div>
+                                    <div className='so-right1-box-title'>
+                                        Technology
+                                    </div>
                                 </div>
-                                <div className='so-right1-box-title'>
-                                    Technology
-                                </div>
-                            </div>
+                            </Link>
 
                             <div className="so-right-box1">
                                 <div>

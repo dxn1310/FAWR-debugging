@@ -47,6 +47,12 @@ import Legal from './Components/Services/Legal/Legal.js'
 import Strategy from './Components/Services/Strategy/Strategy.js'
 import Financial from './Components/Services/Financial/Financial.js'
 import Predictive from './Components/Services/Predictive/Predictive.js'
+import Business from './Components/Services/Business/Business.js'
+import Speech from './Components/Services/Speech/Speech.js'
+import Customer from './Components/Services/Customer/Customer.js'
+import Distribution from './Components/Services/Distribution/Distribution.js'
+import Reputation from './Components/Services/Reputation/Reputation.js'
+import Technology from './Components/Services/Industries/Technology/Technology.js'
 
 
 
@@ -101,8 +107,16 @@ export default function App() {
           <Route path="/Strategy Consultant Services" element={<Strategy />} />
           <Route path="/Financial Advisory Services" element={<Financial />} />
           <Route path="/Predictive Analysis Services" element={<Predictive />} />
+          <Route path="/Business Intelligence Services" element={<Business/>} />
+          <Route path="/Speech & Text Analytics Services" element={<Speech/>} />
+          <Route path="/Customer Segmentation Services" element={<Customer/>} />
+          <Route path="/Distribution Strategy Services" element={<Distribution/>} />
+          <Route path="/Reputation Consultation Services" element={<Reputation/>} />
 
 
+          <Route path="/Technology" element={<Technology/>} />
+
+          
         </Routes>
         <Footer />
         {/* <Textanimation />
