@@ -11,6 +11,17 @@ import Blogs from "../../../LandingPage/Blogs/Blog"
 import Industrytop from '../../../Templates/IndustriesTemplates/IndustryTop/Industrytop'
 import Challenges from '../../../Templates/IndustriesTemplates/Challenges/Challenges'
 
+import I1 from "./TechnologyImages/1.png"
+import I2 from "./TechnologyImages/2.png"
+import I3 from "./TechnologyImages/3.png"
+import I4 from "./TechnologyImages/4.png"
+import I5 from "./TechnologyImages/5.png"
+
+import Igrid from '../../../Templates/IndustriesTemplates/IndustryGrid/Igrid'
+import Iservices from '../../../Templates/IndustriesTemplates/IndustryServices/Iservices.js'
+import Meeting from '../../../Templates/IndustriesTemplates/Meeting/Meeting'
+
+
 export default function Technology() {
 
     const challengeData = [
@@ -22,60 +33,60 @@ export default function Technology() {
         "Artificial intelligence & Machine learning"
     ]
 
-    // const detailData = [
-    //     {
-    //         title: "In-depth analysis of markets & industries",
-    //         content1: "BDM has experience gathering, processing, and evaluating market intelligence since it is a top provider of industries intelligence services. We develop a competitive strategy based on a thorough understanding of the target market and consumers using industries intelligence tools that pinpoint profitable markets and chances for expansion.",
-    //         content2: "We collaborate with customers from a variety of industries as part of our tailored industries intelligence consulting services, supporting them with competitive industries intelligence analysis.",
-    //         content3: " BDM Research Intelligence products are made to support you in achieving your main industries goals. Together, we discover and comprehend your needs and then explain the solutions we believe will lead to the greatest outcomes. Then, we put your selected solution into practise and work with you to get the most out of it as quickly as feasible.",
-    //         points: ["Benchmarking", "Market Research", "Company Research", "Audience Analysis", "Consumer Journey", "App Intelligence"]
-    //     }
-    // ]
+    const gridData = [
+        {
+            name: "Artificial Intelligence",
+            img: I1,
+            content: "Artificial intelligence is a developing technology that has the potential to have a big influence on how we live our daily lives. It is one of the hottest technological developments to have recently entered the commercial world. By giving organisations the benefit of AI-powered apps to automate their company operations and procedures, this technology offers up new opportunities for development and efficiency.",
+            points: ["Natural language processing",
+                "Digital Virtual Agents ",
+                "Process Automation",
+                "Image Processing and Visualization"],
+            p: "1"
+        },
 
-    // const gridData = [
-    //     {
-    //         name: "Benchmarking",
-    //         firstLetter: "B",
-    //         img: R1,
-    //         content: "You need more than just your own data if you want to drive success in the digital sphere. Competitive benchmarking tool provide you context so you can spot high-value opportunities, monitor your progress, and dominate your market."
-    //     },
+        {
+            name: "Augmented reality/ Virtual reality",
+            img: I2,
+            content: "The distinction between the actual world and the virtual world is becoming more hazy than ever thanks to current advancements in augmented and virtual reality. Additionally, technology is continuously redefining what is real, and it is up to today's entrepreneurs to make the most audacious ideas a reality. As a result, it is anticipated that augmented reality (AR) and virtual reality (VR) will set the bar for omnichannel branding in the present and the future.",
+            points: ["Custom AR/ VR development",
+                "AR/ VR Experience design",
+                "Hardware-level development"],
+            p: "1"
+        },
 
-    //     {
-    //         name: "Market Research",
-    //         firstLetter: "M",
-    //         img: R2,
-    //         content: "Market industries services perform in-depth industries and reporting into a variety of markets.  Additionally, we examine market activities to offer firms specialised market information and fresh viewpoints on their own advertising initiatives. Reports, infographics, and ad-hoc deliverables are used to highlight insights."
-    //     },
+        {
+            name: "Blockchain",
+            img: I3,
+            content: "Various sectors, including real estate, financial, and supply chain management, are being transformed by blockchain. Businesses may support their application development teams by utilising BDM' blockchain development services for projects like developing mobile applications, cryptocurrency exchanges, and wallets. We provide businesses with a wide range of blockchain development solutions that let them take advantage of the decentralised network, create solutions on the blockchain, and boost the efficiency and transparency of operational procedures.",
+            points: ["Smart development",
+                "Mobile app integration",
+                "Crypto solutions development"],
+            p: "1"
+        },
 
-    //     {
-    //         name: "Company Research",
-    //         firstLetter: "C",
-    //         img: R3,
-    //         content: "With the help of company industries tools, firms now have access to a level of information that was unthinkable even ten years ago. By incorporating these technologies into your workflow, you can boost sales and create a level of customer and supplier relationships that is unmatched in transparency."
-    //     },
+        {
+            name: "Internet of Things (IoT)",
+            img: I4,
+            content: "We create adaptable software and hardware services and offer end-to-end IoT services that can function in any ecosystem. Our IoT services for industries are affordable, dependable, and incredibly easy to integrate. No matter their size, businesses use our corporate IoT to increase efficiency, get real-time data insights from connected assets, cut expenses, and spur innovation through new business models.",
+            points: ["Integration & Implementation",
+                "IoT Consulting",
+                "Analytics & Insights"],
+            p: "1"
+        },
 
-    //     {
-    //         name: "Audience Analysis",
-    //         firstLetter: "A",
-    //         img: R4,
-    //         content: "To enhance marketing strategy, customer experience, and brand impression, companies sometimes use audience analysis to develop a deeper knowledge of their existing and future consumers. A detailed audience study guarantees that communications and actions reflect the audience's beliefs, aspirations, and resistance to change genuinely and address these issues."
-    //     },
-
-    //     {
-    //         name: "Consumer Journey",
-    //         firstLetter: "C",
-    //         img: R5,
-    //         content: "Amplitude's customer analytics products ask 'why' rather than 'what' the consumer is doing. Our customer analytics provide a comprehensive view of the customer journey to assist identify trends and comprehend behaviour."
-    //     },
-    //     {
-    //         name: "App Intelligence",
-    //         firstLetter: "A",
-    //         img: R6,
-    //         content: "Despite an increased emphasis on sponsored acquisition, paid search still accounts for 60% of app downloads. App Intelligence correctly assesses the performance of both your and your rivals' organic user acquisition strategies. Discover the keywords that are generating downloads and look into new phrases to improve your search marketing."
-    //     },
-
-
-    // ]
+        {
+            name: "Developer Engagement Platform",
+            img: I5,
+            content: "BDM' creative Developer Engagement Platform enables API providers a way to educate, engage, and collaborate creatively with the developer community while socialising APIs. With the aid of this solution, they are able to create a vibrant developer community that encourages growth, progress, and cooperation.",
+            points: ["Intuitive API testing console for REST APIs",
+                "API Key management",
+                "Track API usage",
+                "Easy integration with API management platform",
+                "Showcase applications"],
+            p: "1"
+        },
+    ]
     return (
         <div className='industries-outer'>
             <Industrytop bgimg={Technology_img1}
@@ -86,9 +97,25 @@ export default function Technology() {
             <div className='industries-component'>
                 <Challenges challengeData={challengeData} />
             </div>
-            {/* <div className='industries-component'>
-                <Grid gridData={gridData} />
-            </div> */}
+
+            <div className='industries-title'>
+                Our Offerings
+            </div>
+            <div className='industries-component'>
+                <Igrid gridData={gridData} />
+            </div>
+
+            <div className='industries-title'>
+                Our Services
+            </div>
+
+            <div className='industries-component'>
+                <Iservices />
+            </div>
+
+            <div className='industries-component'>
+                <Meeting />
+            </div>
 
             <div className='industries-title'>
                 Awards & Recognition

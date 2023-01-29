@@ -53,6 +53,10 @@ import Customer from './Components/Services/Customer/Customer.js'
 import Distribution from './Components/Services/Distribution/Distribution.js'
 import Reputation from './Components/Services/Reputation/Reputation.js'
 import Technology from './Components/Services/Industries/Technology/Technology.js'
+import Automotive from './Components/Services/Industries/Automotive/Automotive.js'
+import Education from './Components/Services/Industries/Education/Education.js'
+import Insurance from './Components/Services/Industries/Insurance/Insurance.js'
+import Banking from './Components/Services/Industries/Banking/Banking.js'
 
 
 
@@ -115,6 +119,10 @@ export default function App() {
 
 
           <Route path="/Technology" element={<Technology/>} />
+          <Route path="/Automotive" element={<Automotive/>} />
+          <Route path="/Education" element={<Education/>} />
+          <Route path="/Insurance" element={<Insurance/>} />
+          <Route path="/Banking & Finance" element={<Banking/>} />
 
           
         </Routes>
