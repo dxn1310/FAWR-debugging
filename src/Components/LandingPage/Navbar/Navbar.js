@@ -190,7 +190,7 @@ export default function Navbar() {
                 </div>
 
                 <Link to="/Login">
-                    <div className='navbar-option'>
+                    <div className='navbar-option' style={{ width: "100%" }}>
                         <Button backgroundColor="#BC312E" color="white" borderRadius="1rem">Sign In</Button>
                     </div>
                 </Link>
@@ -286,7 +286,9 @@ export default function Navbar() {
 
                             <MenuItem backgroundColor="#211F22" width="100%">
                                 {/* <div className='navbar-option'> */}
-                                <Button backgroundColor="#BC312E" color="white" borderRadius="1rem">Sign In</Button>
+                                <Link to="/Login">
+                                    <Button backgroundColor="#BC312E" color="white" borderRadius="1rem">Sign In</Button>
+                                </Link>
                                 {/* </div> */}
                             </MenuItem>
                         </MenuList>

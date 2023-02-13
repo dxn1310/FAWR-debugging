@@ -66,6 +66,7 @@ import Student from './Components/Career/Student/Student.js'
 import Diversity from './Components/Career/Diversity/Diversity.js'
 import Learning from './Components/Career/Learning/Learning.js'
 import Login from './Components/Profile/Login/Login.js'
+import Register from './Components/Profile/Register/Register.js'
 
 
 
@@ -145,6 +146,7 @@ export default function App() {
 
 
           <Route path="/Login" element={<Login />} />
+          <Route path="/Register" element={<Register/>} />
 
         </Routes>
         <Footer />

@@ -59,41 +59,11 @@ export default function Grid({ gridData }) {
                                 {element.content}
                             </div>
                             <div className='grid-right-img' style={{ width: "100%", display: "flex", justifyContent: "center" }} >
-                                <img src={Grid_img1} />
+                                <img src={element.tool} />
                             </div>
                         </div>
                     })
                 }
-
-
-
-                {/* <div className='grid-element'>
-                    <div className='grid-element-top1'>
-                        <div className='grid-title1'>
-                            <div className='grid-title-capital1'>
-                                B
-                            </div>
-                            <div className='grid-title-text1'>
-                                Benchmarking
-                            </div>
-                        </div>
-                    </div>
-                    <div className='grid-element-down'>
-                        <div className='grid-left'>
-                            <img className="grid-img" src={img} />
-                        </div>
-                        <div className='grid-right'>
-                            <div className='grid-right-content'>
-                                You need more than just your own data if you want to drive success in the digital sphere. Competitive benchmarking tool provide you context so you can spot high-value opportunities, monitor your progress, and dominate your market.
-                            </div>
-                            <div className='grid-right-img'>
-                                <img src={Grid_img1} />
-                            </div>
-                        </div>
-                    </div>
-
-                </div> */}
-
 
 
 
