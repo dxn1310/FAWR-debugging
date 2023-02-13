@@ -8,6 +8,15 @@ import R3 from "./AppImages/3.png"
 import R4 from "./AppImages/4.png"
 import R5 from "./AppImages/5.png"
 import R6 from "./AppImages/6.png"
+
+import T1 from "./AppImages/T1.png"
+import T2 from "./AppImages/T2.png"
+import T3 from "./AppImages/T3.png"
+import T4 from "./AppImages/T4.png"
+import T5 from "./AppImages/T5.png"
+
+import A1 from "./AppImages/A1.png"
+
 import Appdev_img2 from "./AppImages/Appdev_img2.png"
 
 import Top from '../../Templates/Topimage/Top'
@@ -35,6 +44,7 @@ export default function Appdev() {
             name: "Android App Development",
             firstLetter: "A",
             img: R1,
+            tool: T1,
             content: "BDM provides a wide array of cutting-edge, out-of-the-box Android app development services that aid businesses in bolstering their marketing plans and capturing a sizeable share of the market. Our offshore app development team specialises in creating apps that are interactive, very feature-rich, and highly functional."
         },
 
@@ -42,6 +52,7 @@ export default function Appdev() {
             name: "IOS App Development",
             firstLetter: "I",
             img: R2,
+            tool: T2,
             content: "A renowned IOS app development business, BDM is well-known for providing top-notch services. As a reputable Ios mobile app development firm, we assist our clients in enhancing their target market offers through mobile applications by helping them become more visible, more agile, more innovative."
         },
 
@@ -56,6 +67,7 @@ export default function Appdev() {
             name: "Mobile App Design",
             firstLetter: "M",
             img: R4,
+            tool: T3,
             content: "The goal of our comprehensive approach is to provide the best-in-industry outcomes in terms of brand memory, customer engagement, and leads. It includes intensive user research, UX strategy, and visual UI. Everything we create for always has the consumer and end user in mind."
         },
 
@@ -63,12 +75,14 @@ export default function Appdev() {
             name: "Mobile Backend Engineering",
             firstLetter: "M",
             img: R5,
+            tool: T4,
             content: "Our API architects put a lot of effort into creating a tailored solution to fit your demands right from the beginning of product design and strategy. Our experts have developed original, from-scratch solutions as well as middleware-based approaches that integrate with your current systems."
         },
         {
             name: "QA and Testing",
             firstLetter: "Q",
             img: R6,
+            tool: T5,
             content: "Our job doesn't end with creation; we make sure to see it through to completion while continuously evaluating the app's quality and the development process. Only applications that successfully complete all of the automatic and human tests we subject them to receive our seal of approval, since we view quality assurance and testing as being of utmost importance to any project we do."
         },
 
@@ -99,7 +113,7 @@ export default function Appdev() {
                 Awards & Recognition
             </div>
             <div className='research-component'>
-                <Award />
+                <Award img={A1} i={"1"}/>
             </div>
 
             <div className='reserach-title'>

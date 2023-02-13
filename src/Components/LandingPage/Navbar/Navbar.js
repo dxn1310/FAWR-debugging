@@ -72,9 +72,9 @@ export default function Navbar() {
                 >
                     <CloseButton onClick={onToggle} fontSize="20" />
                     {
-                        selectedOption === 0 ? <Aboutoption onClick={onToggle}/> :
-                            selectedOption === 1 ? <Solutionoption onToggle={onToggle}/> : selectedOption === 2 ?
-                                <Exploreoption onClick={onToggle}/> : <Careeroption onClick={onToggle}/>
+                        selectedOption === 0 ? <Aboutoption onClick={onToggle} /> :
+                            selectedOption === 1 ? <Solutionoption onToggle={onToggle} /> : selectedOption === 2 ?
+                                <Exploreoption onClick={onToggle} /> : <Careeroption onClick={onToggle} />
                     }
                 </Box>
             </Slide>
@@ -189,9 +189,11 @@ export default function Navbar() {
                     </Popover>
                 </div>
 
-                <div className='navbar-option'>
-                    <Button backgroundColor="#BC312E" color="white" borderRadius="1rem">Sign In</Button>
-                </div>
+                <Link to="/Login">
+                    <div className='navbar-option'>
+                        <Button backgroundColor="#BC312E" color="white" borderRadius="1rem">Sign In</Button>
+                    </div>
+                </Link>
             </div>
 
 

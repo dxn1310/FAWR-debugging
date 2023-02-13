@@ -102,7 +102,7 @@ export default function Customer() {
                 Awards & Recognition
             </div>
             <div className='research-component'>
-                <Award />
+                <Award i={"0"}/>
             </div>
 
             <div className='reserach-title'>

@@ -92,7 +92,7 @@ export default function Financial() {
                 Awards & Recognition
             </div>
             <div className='research-component'>
-                <Award />
+                <Award i={"0"}/>
             </div>
 
             <div className='reserach-title'>

@@ -10,6 +10,7 @@ import f5 from "./FooterImages/5.png"
 import f6 from "./FooterImages/6.png"
 import f7 from "./FooterImages/7.png"
 import f8 from "./FooterImages/8.png"
+import f9 from "./FooterImages/9.png"
 
 import { NavLink as Link } from 'react-router-dom'
 
@@ -85,7 +86,7 @@ export default function Footer() {
                                 <InputGroup>
                                     <Input placeholder='Talk with expert in..'
                                         backgroundColor="white" width="100%" />
-                                    <InputRightElement ><img src={f3} /></InputRightElement>
+                                    <InputRightElement ><img src={f9} style={{ marginRight: "1rem" }} /></InputRightElement>
                                 </InputGroup>
                             </Stack>
                         </div>
@@ -133,7 +134,7 @@ export default function Footer() {
                 <div className='footer-bottom'>
                     <div className='footer-bottom-left'>
                         <div className='footer-content-text'>
-                            Copyright © 2022. All rights reserved
+                            Copyright © 2022-23. All rights reserved
                         </div>
                     </div>
 

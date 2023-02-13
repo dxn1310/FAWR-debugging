@@ -1,0 +1,8 @@
+.login-outer {
+    height: 100vh;
+}
+
+.login-bgimg {
+    height: 100%;
+    background-image: url("./LoginImages/Login_img1.png");
+}

@@ -9,6 +9,12 @@ import R4 from "./SocialImages/4.png"
 import R5 from "./SocialImages/5.png"
 import R6 from "./SocialImages/6.png"
 
+import T1 from "./SocialImages/T1.png"
+import T2 from "./SocialImages/T2.png"
+import T3 from "./SocialImages/T3.png"
+import T4 from "./SocialImages/T4.png"
+import T5 from "./SocialImages/T5.png"
+
 
 import Top from '../../Templates/Topimage/Top'
 import Details from '../../Templates/Details/Details'
@@ -35,6 +41,7 @@ export default function Social() {
             name: "Social Networking",
             firstLetter: "S",
             img: R1,
+            tool:T1,
             content: "Companies may identify & store interesting information to include in their schedule by using social bookmarking. This is a great method to make content selection simpler & hasten social media growth. The majority of social bookmarking websites enable businesses to identify which subjects are trending, most current, or connected to a certain issue."
         },
         {
@@ -47,6 +54,7 @@ export default function Social() {
             name: "Social News",
             firstLetter: "S",
             img: R3,
+            tool:T2,
             content: "The key advantage of Social News is that it maintains your company in the public eye. By ensuring that they keep up to date and in contact with their target audience, various social platforms assist journalists and public relations professionals in enhancing the public's knowledge of their brand and overall corporate image."
         },
 
@@ -54,6 +62,7 @@ export default function Social() {
             name: "Media Sharing",
             firstLetter: "M",
             img: R4,
+            tool:T3,
             content: "Platforms for sharing media provide companies the opportunity to produce photos and movies that reflect their brand's image and values as well as to increase their visibility and get the support of a specific user base. The utilization of graphics to convey a message that customers can identify to or aspire to is what gives these platforms their enormous appeal."
         },
 
@@ -61,6 +70,7 @@ export default function Social() {
             name: "Microblogging",
             firstLetter: "M",
             img: R5,
+            tool:T4,
             content: "Microblogging is the practise of creating brief blog posts with a direct, time-sensitive audience. These short blogs can comprise several material types, such as audio, text, photographs, or video, and are shared utilising social networking sites like Twitter or Instagram."
         },
 
@@ -68,6 +78,7 @@ export default function Social() {
             name: "Online Forum",
             firstLetter: "O",
             img: R6,
+            tool:T5,
             content: "The Social Media Forums may be helpful to businesses, startups, and marketers alike. You may obtain advice on social media for your enterprises or ask questions. This social media forum will cover a wide range of topics, including forums for Facebook, Twitter, LinkedIn, Instagram, etc."
         },
 
@@ -91,7 +102,7 @@ export default function Social() {
                 Awards & Recognition
             </div>
             <div className='research-component'>
-                <Award />
+                <Award i={"0"}/>
             </div>
 
             <div className='reserach-title'>

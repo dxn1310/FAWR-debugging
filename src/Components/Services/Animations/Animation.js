@@ -9,6 +9,13 @@ import R4 from "./AnimationImages/4.png"
 import R5 from "./AnimationImages/5.png"
 import R6 from "./AnimationImages/6.png"
 
+import T1 from "./AnimationImages/T1.png"
+import T2 from "./AnimationImages/T2.png"
+import T3 from "./AnimationImages/T3.png"
+import T4 from "./AnimationImages/T4.png"
+import T5 from "./AnimationImages/T5.png"
+import T6 from "./AnimationImages/T6.png"
+
 import Top from '../../Templates/Topimage/Top'
 import Details from '../../Templates/Details/Details'
 import Grid from '../../Templates/Grid/Grid'
@@ -35,6 +42,7 @@ export default function Animation() {
             name: "2D / 3D Animation",
             firstLetter: "2",
             img: R1,
+            tool:T1,
             content: "Our skilled animators are always prepared to offer top-notch results that may astonish the target audience, whether it be through the creation of animated logos, the development of distinctive 2D and 3D characters for films, or the production of business advertisements that focus on results."
         },
 
@@ -42,6 +50,7 @@ export default function Animation() {
             name: "Logo Animation",
             firstLetter: "L",
             img: R2,
+            tool:T2,
             content: "For your company's branding or marketing requirements, our skilled animators can provide personalised and unique 3D, 2D, Flash, and animated logos. The animated logos we create are ideal for social media awareness campaigns, web advertising, video presentations, and inbound marketing."
         },
 
@@ -49,6 +58,7 @@ export default function Animation() {
             name: "Whiteboard Animation",
             firstLetter: "W",
             img: R3,
+            tool:T3,
             content: "Scribe animations, often referred as as whiteboard animations, are perfect for explainer films, online video marketing, and training and development courses. Our whiteboard panel artists have collaborated with customers from all around the world to produce effective, excellent, hand-drawn films."
         },
 
@@ -56,6 +66,7 @@ export default function Animation() {
             name: "Character Animation",
             firstLetter: "C",
             img: R4,
+            tool:T4,
             content: "Character animation requires specialised knowledge that can only be provided by those that not only comprehend your needs but also have the ability to put their creativity front and centre. They ensure that your brand is seen fast and effectively thanks to their extensive understanding of design techniques and aesthetics."
         },
 
@@ -63,12 +74,14 @@ export default function Animation() {
             name: "Stop Motion Animation",
             firstLetter: "S",
             img: R5,
+            tool:T5,
             content: "We produce breathtaking stop motion cartoons for a range of uses, including commercials, movies, music videos, and advertising, among others. Design and development, character design and storyboarding, animation, voice recording, visual effects, and compositing are all part of our stop motion services."
         },
         {
             name: "Motion Graphics",
             firstLetter: "M",
             img: R6,
+            tool:T6,
             content: "BDM is a well-known supplier of motion graphics design services. From idea creation to complex 3D animation, we offer a comprehensive range of motion graphics design services for movies and commercials. You won't find a better or more affordable service provider than BDM for your motion graphics needs."
         },
 
@@ -92,7 +105,7 @@ export default function Animation() {
                 Awards & Recognition
             </div>
             <div className='research-component'>
-                <Award />
+                <Award i={"0"}/>
             </div>
 
             <div className='reserach-title'>

@@ -8,6 +8,9 @@ import R3 from "./PredictiveImages/3.png"
 import R4 from "./PredictiveImages/4.png"
 import R5 from "./PredictiveImages/5.png"
 
+import T1 from "./PredictiveImages/T1.png"
+import T2 from "./PredictiveImages/T2.png"
+
 
 
 import Top from '../../Templates/Topimage/Top'
@@ -41,6 +44,7 @@ export default function Predictive() {
             name: "Data Wrangling",
             firstLetter: "D",
             img: R2,
+            tool: T1,
             content: "To make complicated data sets more accessible and understandable, data wrangling is the act of cleaning up mistakes and merging different complex data sets. Large amounts of data need to be stored and organised for analysis since the quantity of data and data sources accessible today are expanding quickly."
         },
 
@@ -62,6 +66,7 @@ export default function Predictive() {
             name: "Deployment",
             firstLetter: "D",
             img: R5,
+            tool: T2,
             content: "The term 'deployment' refers to the use of a model to make predictions using fresh data. The deployment step can range in complexity from developing a repeatable data science process to something as simple as producing a report, depending on the objectives."
         },
 
@@ -86,7 +91,7 @@ export default function Predictive() {
                 Awards & Recognition
             </div>
             <div className='research-component'>
-                <Award />
+                <Award i={"0"}/>
             </div>
 
             <div className='reserach-title'>

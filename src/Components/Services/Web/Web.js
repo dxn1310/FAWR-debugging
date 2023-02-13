@@ -8,6 +8,13 @@ import R3 from "./WebImages/3.png"
 import R4 from "./WebImages/4.png"
 import R5 from "./WebImages/5.png"
 import R6 from "./WebImages/6.png"
+
+import T1 from "./WebImages/T1.png"
+import T2 from "./WebImages/T2.png"
+import T3 from "./WebImages/T3.png"
+
+import A1 from "./WebImages/A1.png"
+
 import Web_img2 from "./WebImages/Web_img2.png"
 
 import Top from '../../Templates/Topimage/Top'
@@ -35,6 +42,7 @@ export default function Web() {
             name: "Static Website",
             firstLetter: "S",
             img: R1,
+            tool: T1,
             content: "Websites can store requests and communicate quickly thanks to a static website design. Today, it has emerged as the best choice for proprietors of small businesses. You won't ever need to worry about content changing frequently if your website is static. We provide the best services for designing and developing static websites."
         },
 
@@ -42,6 +50,7 @@ export default function Web() {
             name: "Dynamic Website",
             firstLetter: "D",
             img: R2,
+            tool: T2,
             content: "It is crucial for website owners to maintain their sites updated in light of shifting technology, fashion, and consumer preferences. A dynamic website makes all of this simple to do. You can choose a website for your company at BDM from a variety of templates. A dynamic website gives you the flexibility to alter it whenever you need to."
         },
 
@@ -69,6 +78,7 @@ export default function Web() {
             name: "Website Designing",
             firstLetter: "W",
             img: R6,
+            tool: T3,
             content: "Your website is the first point of contact customers have with your company in the modern digital environment. With an award-winning design team, BDM is a top web design company that builds cutting-edge, profitable websites that capture your brand, boost conversion rates, and help you reach your objectives."
         },
 
@@ -99,7 +109,7 @@ export default function Web() {
                 Awards & Recognition
             </div>
             <div className='research-component'>
-                <Award />
+                <Award img={A1} i={"1"}/>
             </div>
 
             <div className='reserach-title'>

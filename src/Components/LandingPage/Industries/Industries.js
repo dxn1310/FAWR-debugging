@@ -10,43 +10,61 @@ import Industries_img6 from "./IndustriesImages/Industries_img6.png"
 import Industries_img7 from "./IndustriesImages/Industries_img11.png"
 import Industries_img8 from "./IndustriesImages/Industries_img8.png"
 
+import { NavLink as Link } from 'react-router-dom'
+
 export default function Industries() {
     return (
         <div className='industries-outer'>
             <div className='industries-grid'>
                 <div className='industries-grid-element'>
-                    <img className="industries-img" src={Industries_img1} />
-                </div> 
+                    <Link to="/Banking & Finance">
+                        <img className="industries-img" src={Industries_img1} />
+                    </Link>
+                </div>
                 <div className='industries-grid-element'>
-                    <img className="industries-img" src={Industries_img2} />
+                    <Link to="/Education">
+                        <img className="industries-img" src={Industries_img2} />
+                    </Link>
                 </div>
 
                 <div className='industries-grid-element'>
-                    <img className="industries-img" src={Industries_img3} />
+                    <Link to="/E-Commerce">
+                        <img className="industries-img" src={Industries_img3} />
+                    </Link>
                 </div>
 
                 <div className='industries-grid-element'>
-                    <img className="industries-img" src={Industries_img4} />
+                    <Link to="/Insurance">
+                        <img className="industries-img" src={Industries_img4} />
+                    </Link>
                 </div>
             </div>
 
             <div className='industries-grid'>
 
                 <div className='industries-grid-element'>
-                    <img className="industries-img" src={Industries_img5} />
+                    <Link to="/Technology">
+                        <img className="industries-img" src={Industries_img5} />
+                    </Link>
                 </div>
 
 
                 <div className='industries-grid-element'>
-                    <img className="industries-img" src={Industries_img6} />
+                    <Link to="">
+                        <img className="industries-img" src={Industries_img6} />
+                    </Link>
                 </div>
 
                 <div className='industries-grid-element'>
-                    <img className="industries-img" src={Industries_img7} />
+                    <Link to="/Energy & Utilities">
+                        <img className="industries-img" src={Industries_img7} />
+                    </Link>
                 </div>
 
                 <div className='industries-grid-element'>
-                    <img className="industries-img" src={Industries_img8} />
+                    <Link to="/Travel,Transport & Logistics">
+                        <img className="industries-img" src={Industries_img8} />
+                    </Link>
                 </div>
             </div>
         </div >

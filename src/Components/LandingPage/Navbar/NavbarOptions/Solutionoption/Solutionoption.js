@@ -115,9 +115,11 @@ export default function Solutionoption({ onToggle }) {
                                     Animations
                                 </div>
                             </Link>
-                            <div className='so-right-box-text' onClick={onToggle}>
-                                Social media design
-                            </div>
+                            <Link to="/Social Media Marketing Services">
+                                <div className='so-right-box-text' onClick={onToggle}>
+                                    Social media design
+                                </div>
+                            </Link>
                         </div>
 
                         <div className="so-right-box">
@@ -286,44 +288,48 @@ export default function Solutionoption({ onToggle }) {
                                     </div>
                                 </div>
                             </Link>
-
-                            <div className="so-right-box1" onClick={onToggle}>
-                                <div>
-                                    <img src={so11} />
+                            <Link to="/E-Commerce">
+                                <div className="so-right-box1" onClick={onToggle}>
+                                    <div>
+                                        <img src={so11} />
+                                    </div>
+                                    <div className='so-right1-box-title'>
+                                        E-commerce
+                                    </div>
                                 </div>
-                                <div className='so-right1-box-title'>
-                                    E-commerce
+                            </Link>
+                            <Link to="/Travel,Transport & Logistics">
+                                <div className="so-right-box1" onClick={onToggle}>
+                                    <div>
+                                        <img src={so12} />
+                                    </div>
+                                    <div className='so-right1-box-title'>
+                                        Travel, Transport
+                                        & Logistics
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div className="so-right-box1" onClick={onToggle}>
-                                <div>
-                                    <img src={so12} />
+                            </Link>
+                            <Link to="/Telecom">
+                                <div className="so-right-box1" onClick={onToggle}>
+                                    <div>
+                                        <img src={so13} />
+                                    </div>
+                                    <div className='so-right1-box-title'>
+                                        Telecom
+                                    </div>
                                 </div>
-                                <div className='so-right1-box-title'>
-                                    Travel, Transport
-                                    & Logistics
+                            </Link>
+                            <Link to="/Energy & Utilities">
+                                <div className="so-right-box1" onClick={onToggle}>
+                                    <div>
+                                        <img src={so14} />
+                                    </div>
+                                    <div className='so-right1-box-title'>
+                                        Energy and
+                                        Utilities
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div className="so-right-box1" onClick={onToggle}>
-                                <div>
-                                    <img src={so13} />
-                                </div>
-                                <div className='so-right1-box-title'>
-                                    Telecom
-                                </div>
-                            </div>
-
-                            <div className="so-right-box1" onClick={onToggle}>
-                                <div>
-                                    <img src={so14} />
-                                </div>
-                                <div className='so-right1-box-title'>
-                                    Energy and
-                                    Utilities
-                                </div>
-                            </div>
+                            </Link>
 
                             <div className="so-right-box1" onClick={onToggle}>
                                 <div>

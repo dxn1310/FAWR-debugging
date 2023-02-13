@@ -9,6 +9,11 @@ import R4 from "./BusinessImages/4.png"
 import R5 from "./BusinessImages/5.png"
 
 
+import T1 from "./BusinessImages/T1.png"
+import T2 from "./BusinessImages/T2.png"
+import T3 from "./BusinessImages/T3.png"
+
+import A1 from "./BusinessImages/A1.png"
 
 import Top from '../../Templates/Topimage/Top'
 import Details from '../../Templates/Details/Details'
@@ -35,6 +40,7 @@ export default function Business() {
             name: "ETL\\E LT processes",
             firstLetter: "E",
             img: R1,
+            tool: T1,
             content: "It is a method of data integration that transfers unprocessed data from a source server to a destination server's data system before processing the data for later applications. Obtaining data from various data sources, converting it, and then loading it into a storage location."
         },
 
@@ -56,6 +62,7 @@ export default function Business() {
             name: "Data warehouse",
             firstLetter: "D",
             img: R4,
+            tool: T2,
             content: "The capabilities of your data and your business are maximised by a system made with the help of data warehouse architecture and design services. By deploying an Enterprise Data Warehouse 'as a service' that quickly adapts to the most recent technological advancements, we assist organisations in generating a greater ROI through improved business intelligence and data quality."
         },
 
@@ -63,6 +70,7 @@ export default function Business() {
             name: "OLAP cubes",
             firstLetter: "O",
             img: R5,
+            tool: T3,
             content: "Cubes are used in OLAP to show data from many categories. An OLAP cube includes three dimensions to display an additional category, unlike a typical graph which only has two axes. For forecasting, budgeting, and financial planning, businesses employ this data representation."
         },
 
@@ -87,7 +95,7 @@ export default function Business() {
                 Awards & Recognition
             </div>
             <div className='research-component'>
-                <Award />
+                <Award img={A1} i={"1"} />
             </div>
 
             <div className='reserach-title'>

@@ -10,6 +10,7 @@ export default function Grid({ gridData }) {
     return (
         <div className='grid-outer'>
             <div className='grid-structure'>
+
                 {
                     gridData.map((element, index) => {
                         return <div className='grid-element' style={{ flexDirection: index % 2 === 0 ? "row" : "row-reverse", display: isLargerThan1000 ? "flex" : "none" }} >
@@ -29,7 +30,7 @@ export default function Grid({ gridData }) {
                                     {element.content}
                                 </div>
                                 <div className='grid-right-img'>
-                                    <img src={Grid_img1} />
+                                    <img src={element.tool} />
                                 </div>
                             </div>
                         </div>

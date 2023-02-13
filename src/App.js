@@ -57,6 +57,15 @@ import Automotive from './Components/Services/Industries/Automotive/Automotive.j
 import Education from './Components/Services/Industries/Education/Education.js'
 import Insurance from './Components/Services/Industries/Insurance/Insurance.js'
 import Banking from './Components/Services/Industries/Banking/Banking.js'
+import Ecommerce from './Components/Services/Industries/Ecommerce/Ecommerce.js'
+import Travel from './Components/Services/Industries/Travel/Travel.js'
+import Telecom from './Components/Services/Industries/Telecom/Telecom.js'
+import Energy from './Components/Services/Industries/Energy/Energy.js'
+import Life from './Components/Career/Life/Life.js'
+import Student from './Components/Career/Student/Student.js'
+import Diversity from './Components/Career/Diversity/Diversity.js'
+import Learning from './Components/Career/Learning/Learning.js'
+import Login from './Components/Profile/Login/Login.js'
 
 
 
@@ -111,20 +120,32 @@ export default function App() {
           <Route path="/Strategy Consultant Services" element={<Strategy />} />
           <Route path="/Financial Advisory Services" element={<Financial />} />
           <Route path="/Predictive Analysis Services" element={<Predictive />} />
-          <Route path="/Business Intelligence Services" element={<Business/>} />
-          <Route path="/Speech & Text Analytics Services" element={<Speech/>} />
-          <Route path="/Customer Segmentation Services" element={<Customer/>} />
-          <Route path="/Distribution Strategy Services" element={<Distribution/>} />
-          <Route path="/Reputation Consultation Services" element={<Reputation/>} />
+          <Route path="/Business Intelligence Services" element={<Business />} />
+          <Route path="/Speech & Text Analytics Services" element={<Speech />} />
+          <Route path="/Customer Segmentation Services" element={<Customer />} />
+          <Route path="/Distribution Strategy Services" element={<Distribution />} />
+          <Route path="/Reputation Consultation Services" element={<Reputation />} />
 
 
-          <Route path="/Technology" element={<Technology/>} />
-          <Route path="/Automotive" element={<Automotive/>} />
-          <Route path="/Education" element={<Education/>} />
-          <Route path="/Insurance" element={<Insurance/>} />
-          <Route path="/Banking & Finance" element={<Banking/>} />
+          <Route path="/Technology" element={<Technology />} />
+          <Route path="/Automotive" element={<Automotive />} />
+          <Route path="/Education" element={<Education />} />
+          <Route path="/Insurance" element={<Insurance />} />
+          <Route path="/Banking & Finance" element={<Banking />} />
+          <Route path="/E-Commerce" element={<Ecommerce />} />
+          <Route path="/Travel,Transport & Logistics" element={<Travel />} />
+          <Route path="/Telecom" element={<Telecom />} />
+          <Route path="/Energy & Utilities" element={<Energy />} />
 
-          
+
+          <Route path="/Life@BDM" element={<Life />} />
+          <Route path="/Student / Intern Program" element={<Student />} />
+          <Route path="/Diversity & Inclusion" element={<Diversity />} />
+          <Route path="/Learning & Development" element={<Learning />} />
+
+
+          <Route path="/Login" element={<Login />} />
+
         </Routes>
         <Footer />
         {/* <Textanimation />

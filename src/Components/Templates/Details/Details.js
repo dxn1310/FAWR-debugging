@@ -16,13 +16,14 @@ export default function Details({ detailData }) {
                             <div className='details-title'>
                                 {element.title}
                             </div>
+
                             <div className="details-left-text" style={{ display: "flex", flexDirection: "column" }}>
                                 <div style={{ marginTop: "2%", marginBottom: "2%" }}>{element.content1}</div>
                                 <div style={{ marginTop: "2%", marginBottom: "2%" }}>{element.content2}</div>
                                 <div style={{ marginTop: "2%", marginBottom: "2%" }}>{element.content3}</div>
                             </div>
 
-                        </div>
+                      </div>
                         <div className='details-right'>
                             <div className='details-right-ul'>
                                 {

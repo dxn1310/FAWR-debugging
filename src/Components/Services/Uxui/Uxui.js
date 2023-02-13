@@ -8,6 +8,11 @@ import R3 from "./UxuiImages/3.png"
 import R4 from "./UxuiImages/4.png"
 import R5 from "./UxuiImages/5.png"
 import R6 from "./UxuiImages/6.png"
+
+import T1 from "./UxuiImages/T1.png"
+
+import A1 from "./UxuiImages/A1.png"
+
 import Uxui_img2 from "./UxuiImages/Uxui_img2.png"
 
 import Top from '../../Templates/Topimage/Top'
@@ -35,6 +40,7 @@ export default function Uxui() {
             name: "App/Web Design",
             firstLetter: "A",
             img: R1,
+            tool:T1,
             content: "We build appealing user flows and aesthetically pleasing interfaces because we are aware of how users engage with websites and mobile applications. The fastest route to a customer's loyalty is through a modern, yet plain, clean, and straightforward UI and UX design."
         },
 
@@ -99,7 +105,7 @@ export default function Uxui() {
                 Awards & Recognition
             </div>
             <div className='research-component'>
-                <Award />
+                <Award img={A1} i={"0"}/>
             </div>
 
             <div className='reserach-title'>

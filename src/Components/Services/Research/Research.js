@@ -9,6 +9,13 @@ import R4 from "./ResearchImages/4.png"
 import R5 from "./ResearchImages/5.png"
 import R6 from "./ResearchImages/6.png"
 
+import T1 from "./ResearchImages/T1.png"
+import T2 from "./ResearchImages/T2.png"
+import T3 from "./ResearchImages/T3.png"
+import T4 from "./ResearchImages/T4.png"
+
+import A1 from "./ResearchImages/A1.png"
+
 import Top from '../../Templates/Topimage/Top'
 import Details from '../../Templates/Details/Details'
 import Grid from '../../Templates/Grid/Grid'
@@ -34,6 +41,7 @@ export default function Research() {
             name: "Benchmarking",
             firstLetter: "B",
             img: R1,
+            tool: T1,
             content: "You need more than just your own data if you want to drive success in the digital sphere. Competitive benchmarking tool provide you context so you can spot high-value opportunities, monitor your progress, and dominate your market."
         },
 
@@ -41,6 +49,7 @@ export default function Research() {
             name: "Market Research",
             firstLetter: "M",
             img: R2,
+            tool: T2,
             content: "Market research services perform in-depth research and reporting into a variety of markets.  Additionally, we examine market activities to offer firms specialised market information and fresh viewpoints on their own advertising initiatives. Reports, infographics, and ad-hoc deliverables are used to highlight insights."
         },
 
@@ -48,6 +57,7 @@ export default function Research() {
             name: "Company Research",
             firstLetter: "C",
             img: R3,
+            tool: T3,
             content: "With the help of company research tools, firms now have access to a level of information that was unthinkable even ten years ago. By incorporating these technologies into your workflow, you can boost sales and create a level of customer and supplier relationships that is unmatched in transparency."
         },
 
@@ -68,6 +78,7 @@ export default function Research() {
             name: "App Intelligence",
             firstLetter: "A",
             img: R6,
+            tool: T4,
             content: "Despite an increased emphasis on sponsored acquisition, paid search still accounts for 60% of app downloads. App Intelligence correctly assesses the performance of both your and your rivals' organic user acquisition strategies. Discover the keywords that are generating downloads and look into new phrases to improve your search marketing."
         },
 
@@ -91,7 +102,7 @@ export default function Research() {
                 Awards & Recognition
             </div>
             <div className='research-component'>
-                <Award />
+                <Award img={A1} i={"0"}/>
             </div>
 
             <div className='reserach-title'>

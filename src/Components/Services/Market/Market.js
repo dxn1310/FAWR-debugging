@@ -8,6 +8,13 @@ import R3 from "./MarketImages/3.png"
 import R4 from "./MarketImages/4.png"
 import R5 from "./MarketImages/5.png"
 import R6 from "./MarketImages/6.png"
+
+import T1 from "./MarketImages/T1.png"
+import T2 from "./MarketImages/T2.png"
+import T3 from "./MarketImages/T3.png"
+
+import A1 from "./MarketImages/A1.png"
+
 import Market_img2 from "./MarketImages/Market_img2.png"
 
 import Top from '../../Templates/Topimage/Top'
@@ -35,6 +42,7 @@ export default function Market() {
             name: "Platform Evaluation",
             firstLetter: "P",
             img: R1,
+            tool: T1,
             content: "Our specialists will effectively assess your business process, needs, and pertinent platforms, supported by our tried-and-true Automation Centre of Excellence, to help you select the best marketing automation platform and create the most effective adoption approach."
         },
 
@@ -49,6 +57,7 @@ export default function Market() {
             name: "Platform Integration",
             firstLetter: "P",
             img: R3,
+            tool: T2,
             content: "Our reputable consulting services for marketing automation have the necessary exposure and knowledge to combine the best marketing platform with the CRM for a smooth exchange of data between the marketing and CRM systems."
         },
 
@@ -56,6 +65,7 @@ export default function Market() {
             name: "Content Marketing Strategy",
             firstLetter: "C",
             img: R4,
+            tool: T3,
             content: "By consistently coordinating business objectives with automation efforts, we work with you to deliver all of your content needs, from developing an editorial calendar to distributing it across the appropriate channels. This will help you close the gap between content marketing and your marketing automation software."
         },
 
@@ -99,7 +109,7 @@ export default function Market() {
                 Awards & Recognition
             </div>
             <div className='research-component'>
-                <Award />
+                <Award img={A1} i={"1"}/>
             </div>
 
             <div className='reserach-title'>

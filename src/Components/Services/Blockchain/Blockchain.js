@@ -8,6 +8,17 @@ import R3 from "./BlockchainImages/3.png"
 import R4 from "./BlockchainImages/4.png"
 import R5 from "./BlockchainImages/5.png"
 import R6 from "./BlockchainImages/6.png"
+
+
+import T1 from "./BlockchainImages/T1.png"
+import T2 from "./BlockchainImages/T2.png"
+import T3 from "./BlockchainImages/T3.png"
+import T4 from "./BlockchainImages/T4.png"
+import T5 from "./BlockchainImages/T5.png"
+import T6 from "./BlockchainImages/T6.png"
+
+import A1 from "./BlockchainImages/A1.png"
+
 import Blockchain_img2 from "./BlockchainImages/Blockchain_img2.png"
 
 import Top from '../../Templates/Topimage/Top'
@@ -27,7 +38,7 @@ export default function Research() {
             content1: "A new era of tech-driven transactions where every asset is decentralised has emerged, and blockchain technology has emerged as the new gateway for a variety of businesses. We provide effective Blockchain services that support business growth and help them stand out from the competition by building on the potential while attending to every need and requirement of our clients. Our experience spans a wide range of topics, including Blockchain app development, cryptocurrency creation, and smart contract development. We have handled everything, from verifying the procedures before they go live on the unmodified system to assisting startups and businesses in raising an ICO.",
             content2: "We, at BDM, have proven to be one of the best blockchain software development companies that serve you with a whole package - a team of Blockchain developers, designers, and managers, who know this tech inside out and employ prerequisite tools and languages to develop a decentralized ecosystem for your brand.Our highly skilled blockchain app developers have excelled their skills at working with multiple platforms, including Ethereum and Solidity, and thus give you a wealth of options and solutions while planning to step into this world.",
             points: ["Private Blockchain network", "Decentralized apps (dApps)", "Smart Contracts", "Crypto wallets", "Asset tokenization platforms", "Blockchain-based market platforms"]
-        }
+        },
     ]
 
     const gridData = [
@@ -35,6 +46,7 @@ export default function Research() {
             name: "Private Blockchain Network",
             firstLetter: "P",
             img: R1,
+            tool: T1,
             content: "A private blockchain is a particular kind of blockchain network where network control is exercised solely by one entity or group. In practise, private blockchain networks prioritise privacy above complete disclosures. So, private blockchains are undoubtedly for you if you're interested in a system where privacy is the main priority."
         },
 
@@ -42,6 +54,7 @@ export default function Research() {
             name: "Decentralized Apps (dApps)",
             firstLetter: "D",
             img: R2,
+            tool: T2,
             content: "A private blockchain is a particular kind of blockchain network where network control is exercised solely by one entity or group. In practise, private blockchain networks prioritise privacy above complete disclosures. So, private blockchains are undoubtedly for you if you're interested in a system where privacy is the main priority."
         },
 
@@ -49,6 +62,7 @@ export default function Research() {
             name: "Smart Contract",
             firstLetter: "S",
             img: R3,
+            tool: T3,
             content: "Smart contracts are computer programmes that make it easier to satisfy the terms of a transaction. They are promoting efficiency to many firms by accelerating autonomous capabilities while avoiding any third-party intervention, expensive costs, and time lags. forming the foundation for numerous blockchain-based DApps."
         },
 
@@ -56,6 +70,7 @@ export default function Research() {
             name: "Crypto Wallet",
             firstLetter: "C",
             img: R4,
+            tool: T4,
             content: "We develop an effective and dependable wallet for you to store your private transaction keys and securely process your transactions using our cutting-edge and revolutionary cryptocurrency wallet development methodologies."
         },
 
@@ -63,12 +78,14 @@ export default function Research() {
             name: "Asset Tokenization Platforms",
             firstLetter: "A",
             img: R5,
+            tool: T5,
             content: "Asset tokenization platform make it possible for people and businesses to produce a digital evidence of ownership for tangible liquid assets like money or real estate. These asset-backed tokens are distinct from security tokens in that they have liquid value and real-world capital. A versatile method for managing different digital assets and enabling transactions is provided by digital assets."
         },
         {
             name: "Blokchain based Market Platform",
             firstLetter: "B",
             img: R6,
+            tool: T6,
             content: "A marketplace built on blockchain technology enables cryptocurrency payments and the direct exchange of items between customers and sellers. Buyers' ability to see the provenance and history of items kept on the blockchain increases seller credibility and increases the transparency of transactions."
         },
 
@@ -107,7 +124,7 @@ export default function Research() {
                 Awards & Recognition
             </div>
             <div className='research-component'>
-                <Award />
+                <Award img={A1} i={"1"}/>
             </div>
 
             <div className='reserach-title'>

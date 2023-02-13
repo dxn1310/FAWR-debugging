@@ -9,6 +9,16 @@ import R4 from "./GraphicImages/4.png"
 import R5 from "./GraphicImages/5.png"
 import R6 from "./GraphicImages/6.png"
 
+import T1 from "./GraphicImages/T1.png"
+import T2 from "./GraphicImages/T2.png"
+import T3 from "./GraphicImages/T3.png"
+import T4 from "./GraphicImages/T4.png"
+import T5 from "./GraphicImages/T5.png"
+
+import A1 from "./GraphicImages/A1.png"
+
+
+
 import Top from '../../Templates/Topimage/Top'
 import Details from '../../Templates/Details/Details'
 import Grid from '../../Templates/Grid/Grid'
@@ -42,6 +52,7 @@ export default function Graphic() {
             name: "Logo Design",
             firstLetter: "L",
             img: R2,
+            tool:T1,
             content: "By providing top-notch logo design services, we help companies establish strong brand identities. Get logos made at prices and quality that are appealing. With years of expertise, our logo design professionals can utilise their imagination in a flexible approach to create a logo that accurately conveys your business concept."
         },
 
@@ -49,6 +60,7 @@ export default function Graphic() {
             name: "Brochures Design",
             firstLetter: "B",
             img: R3,
+            tool:T2,
             content: "A sales brochure with a professional design exudes dependability and credibility. As the best flyer and brochure design firm in India, we offer eye-catching sales flyers and business brochure designs to make an impression on your target market. Our distinctive and cutting-edge bespoke brochure designs may offer you an advantage over your rivals and help you keep up with the times."
         },
 
@@ -56,6 +68,7 @@ export default function Graphic() {
             name: "Character Design",
             firstLetter: "C",
             img: R4,
+            tool:T3,
             content: "Character design is a crucial component of digital art, but creating a flawless visual character calls for a certain set of abilities and expertise. We must rely more on visual aspects now that online activity has skyrocketed since there is no other method to convey ideas, feelings, or anything else we wish to accomplish online."
         },
 
@@ -63,12 +76,14 @@ export default function Graphic() {
             name: "Illustration",
             firstLetter: "I",
             img: R5,
+            tool:T4,
             content: "Words cannot create the world that illustrations do. We provide such distinctive illustration designs and artworks for your company that speak to your audience's hearts and brains in a global language and make a lasting impact. We have a reputation for bringing your ideas to life by producing pictures you never imagined being possible."
         },
         {
             name: "Web Banners",
             firstLetter: "W",
             img: R6,
+            tool:T5,
             content: "Since web banners are designed to drive traffic and raise brand recognition, you cannot disregard them in today's cutthroat marketplace. Web banners are frequently used to advertise any good or service, and our staff is aware of how to utilise them to demonstrate your online presence and create web banners that have an effect."
         },
 
@@ -92,7 +107,7 @@ export default function Graphic() {
                 Awards & Recognition
             </div>
             <div className='research-component'>
-                <Award />
+                <Award img={A1} i={"0"}/>
             </div>
 
             <div className='reserach-title'>

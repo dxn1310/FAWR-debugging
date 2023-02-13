@@ -6,24 +6,34 @@ import co2 from "./CareeroptionImages/2.png"
 import co3 from "./CareeroptionImages/3.png"
 import co4 from "./CareeroptionImages/4.png"
 
-export default function Careeroption() {
+import { NavLink as Link } from 'react-router-dom'
+
+export default function Careeroption({ onClick }) {
     return (
         <div className='co-outer'>
             <div className='co-left'>
-                <div className='co-left-box'>
-                    <img className="co-left-img" src={co1} />
+                <div className='co-left-box' onClick={onClick}>
+                    <Link to="/Life@BDM">
+                        <img className="co-left-img" src={co1} />
+                    </Link>
                 </div>
 
-                <div className='co-left-box'>
-                    <img className="co-left-img" src={co2} />
+                <div className='co-left-box' onClick={onClick}>
+                    <Link to="/Student / Intern Program">
+                        <img className="co-left-img" src={co2} />
+                    </Link>
                 </div>
 
-                <div className='co-left-box'>
-                    <img className="co-left-img" src={co3} />
+                <div className='co-left-box' onClick={onClick}>
+                    <Link to="/Learning & Development">
+                        <img className="co-left-img" src={co3} />
+                    </Link>
                 </div>
 
-                <div className='co-left-box'>
-                    <img className="co-left-img" src={co4} />
+                <div className='co-left-box' onClick={onClick}>
+                    <Link to="/Diversity & Inclusion">
+                        <img className="co-left-img" src={co4} />
+                    </Link>
                 </div>
             </div>
 
@@ -39,6 +49,6 @@ export default function Careeroption() {
                     </ul>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }

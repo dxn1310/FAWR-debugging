@@ -8,6 +8,10 @@ import R3 from "./VideoImages/3.png"
 import R4 from "./VideoImages/4.png"
 import R5 from "./VideoImages/5.png"
 import R6 from "./VideoImages/6.png"
+
+import A1 from "./VideoImages/A1.png"
+
+
 import Video_img2 from "./VideoImages/Video_img2.png"
 import Video_img3 from "./VideoImages/Video_img3.png"
 
@@ -108,7 +112,7 @@ export default function Research() {
                 Awards & Recognition
             </div>
             <div className='research-component'>
-                <Award />
+                <Award img={A1} i={"1"}/>
             </div>
 
             <div className='reserach-title'>

@@ -44,11 +44,11 @@ export default function Ourservices() {
     ]
 
     const linkURLS = [
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""],
-        ["", "", "", "", ""]
+        ["/Business Intelligence Services", "/Customer Segmentation Services", "/Predictive Analysis Services", "/Research Intelligence Services", "/Speech & Text Analytics Services"],
+        ["/Financial Advisory Services", "/Legal Consultant Services", "/Management Consultant Service", "/Operations Consultant Services", "/Strategy Consultant Services"],
+        ["/Animations Services", "/Graphic Design Services", "/Social Media Marketing Services", "/UX / UI Design Services", "/Video Services"],
+        ["/App Development Services", "/Blockchain Development Services", "/Cloud Storage & Management Services", "/DevOps", "/Web Development Services"],
+        ["/Email Marketing Services", "/Marketing Automation Services", "/Mobile Marketing Services", "/Search Engine Marketing Services", "/Social Media Marketing Services"]
     ]
     const [optionValue, setOptionvalue] = useState(0)
 
@@ -156,7 +156,7 @@ export default function Ourservices() {
                                 <Stack direction="column" spacing={3} marginTop={isLargerThan700 ? "5%" : "10%"} width="100%">
 
                                     <div className='ourservices-inner-right-line' />
-                                    <Link to="">
+                                    <Link to={linkURLS[index][0]}>
                                         <div className='ourservices-inner-right-link'>
                                             <div className='ourservices-inner-right-link-text'>
                                                 {linkData[index][0]}
@@ -166,7 +166,7 @@ export default function Ourservices() {
                                     </Link>
 
                                     <div className='ourservices-inner-right-line' />
-                                    <Link to="">
+                                    <Link to={linkURLS[index][1]}>
                                         <div className='ourservices-inner-right-link'>
                                             <div className='ourservices-inner-right-link-text'>
                                                 {linkData[index][1]}
@@ -176,7 +176,7 @@ export default function Ourservices() {
                                     </Link>
 
                                     <div className='ourservices-inner-right-line' />
-                                    <Link to="">
+                                    <Link to={linkURLS[index][2]}>
                                         <div className='ourservices-inner-right-link'>
                                             <div className='ourservices-inner-right-link-text'>
                                                 {linkData[index][2]}
@@ -186,7 +186,7 @@ export default function Ourservices() {
                                     </Link>
 
                                     <div className='ourservices-inner-right-line' />
-                                    <Link to="">
+                                    <Link to={linkURLS[index][3]}>
                                         <div className='ourservices-inner-right-link'>
                                             <div className='ourservices-inner-right-link-text'>
                                                 {linkData[index][3]}
@@ -196,7 +196,7 @@ export default function Ourservices() {
                                     </Link>
 
                                     <div className='ourservices-inner-right-line' />
-                                    <Link to="">
+                                    <Link to={linkURLS[index][4]}>
                                         <div className='ourservices-inner-right-link'>
                                             <div className='ourservices-inner-right-link-text'>
                                                 {linkData[index][4]}
@@ -221,7 +221,7 @@ export default function Ourservices() {
                     <Stack direction="column" spacing={3} marginTop="5%" width="100%">
 
                         <div className='ourservices-inner-right-line' />
-                        <Link to="">
+                        <Link to={linkURLS[optionValue][0]}>
                             <div className='ourservices-inner-right-link'>
                                 <div className='ourservices-inner-right-link-text'>
                                     {linkData[optionValue][0]}
@@ -231,7 +231,7 @@ export default function Ourservices() {
                         </Link>
 
                         <div className='ourservices-inner-right-line' />
-                        <Link to="">
+                        <Link to={linkURLS[optionValue][1]}>
                             <div className='ourservices-inner-right-link'>
                                 <div className='ourservices-inner-right-link-text'>
                                     {linkData[optionValue][1]}
@@ -241,7 +241,7 @@ export default function Ourservices() {
                         </Link>
 
                         <div className='ourservices-inner-right-line' />
-                        <Link to="">
+                        <Link to={linkURLS[optionValue][2]}>
                             <div className='ourservices-inner-right-link'>
                                 <div className='ourservices-inner-right-link-text'>
                                     {linkData[optionValue][2]}
@@ -251,7 +251,7 @@ export default function Ourservices() {
                         </Link>
 
                         <div className='ourservices-inner-right-line' />
-                        <Link to="">
+                        <Link to={linkURLS[optionValue][3]}>
                             <div className='ourservices-inner-right-link'>
                                 <div className='ourservices-inner-right-link-text'>
                                     {linkData[optionValue][3]}
@@ -261,7 +261,7 @@ export default function Ourservices() {
                         </Link>
 
                         <div className='ourservices-inner-right-line' />
-                        <Link to="">
+                        <Link to={linkURLS[optionValue][4]}>
                             <div className='ourservices-inner-right-link'>
                                 <div className='ourservices-inner-right-link-text'>
                                     {linkData[optionValue][4]}

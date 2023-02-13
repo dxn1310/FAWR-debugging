@@ -8,6 +8,12 @@ import R3 from "./CloudImages/3.png"
 import R4 from "./CloudImages/4.png"
 
 
+import T1 from "./CloudImages/T1.png"
+import T2 from "./CloudImages/T2.png"
+import T3 from "./CloudImages/T3.png"
+
+import A1 from "./CloudImages/A1.png"
+
 import Top from '../../Templates/Topimage/Top'
 import Details from '../../Templates/Details/Details'
 import Grid from '../../Templates/Grid/Grid'
@@ -33,6 +39,7 @@ export default function Cloud() {
             name: "Cloud Infrastructure",
             firstLetter: "C",
             img: R1,
+            tool: T1,
             content: "With the help of components like databases, servers, cloud storage, and software integrations, among others, our skilled engineers will help you with the designs of cloud solutions and the infrastructure needs for various projects."
         },
 
@@ -40,6 +47,7 @@ export default function Cloud() {
             name: "Cloud Infrastructure Management",
             firstLetter: "C",
             img: R2,
+            tool: T2,
             content: "We will support you by providing comprehensive monitoring of the wide range of infrastructure components. Utilize the consulting services of specialists to monitor and assess the performance of your wide array of servers, operating systems, hypervisors, apps, and more."
         },
 
@@ -54,6 +62,7 @@ export default function Cloud() {
             name: "Cloud Migration",
             firstLetter: "C",
             img: R4,
+            tool: T3,
             content: "Providing end-to-end migration assistance and knowledgeable consulting to ensure your smoothest transition from a conventional or any Cloud Service Provider to another one in order to successfully realise the intended Cloud vision."
         },
 
@@ -78,7 +87,7 @@ export default function Cloud() {
                 Awards & Recognition
             </div>
             <div className='research-component'>
-                <Award />
+                <Award img={A1} i={"0"}/>
             </div>
 
             <div className='reserach-title'>
