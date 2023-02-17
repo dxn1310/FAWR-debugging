@@ -139,7 +139,7 @@ export default function Footer() {
                     </div>
 
                     <div className='footer-bottom-right'>
-                        <Link to="">
+                        <Link to="/Sustainability @ BDM">
                             <div className='footer-content-text'>
                                 Sustainability
                             </div>
@@ -169,7 +169,7 @@ export default function Footer() {
                                 Sitemap
                             </div>
                         </Link>
-                        <Link to="">
+                        <Link to="/Login">
                             <div className='footer-content-text'>
                                 Login
                             </div>

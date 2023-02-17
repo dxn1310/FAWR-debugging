@@ -146,7 +146,7 @@ export default function Navbar() {
 
                 <div className='navbar-option'>
                     <Stack direction="row" alignItems="center" display="flex" >
-                        <Link to="">
+                        <Link to="/Contact Us">
                             <div className='navbar-option-text'>
                                 Contact us
                             </div>
@@ -275,7 +275,7 @@ export default function Navbar() {
                             </MenuItem>
                             <MenuItem backgroundColor="#211F22" >
                                 <Stack direction="row" alignItems="center" display="flex" >
-                                    <Link to="">
+                                    <Link to="/Contact Us">
                                         <div className='navbar-option-text'>
                                             Contact us
                                         </div>

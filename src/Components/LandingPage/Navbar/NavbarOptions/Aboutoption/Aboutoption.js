@@ -4,55 +4,70 @@ import "./Aboutoption.css"
 
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
-export default function Aboutoption() {
+import { NavLink as Link } from 'react-router-dom'
+
+export default function Aboutoption({ onClick }) {
     return (
         <div className='ao-outer'>
             <div className='ao-left'>
                 <div className='ao-option' style={{ borderTop: "1px solid white" }}>
                     <Stack direction="row" display="flex" justifyContent="space-between" alignItems='center'>
-                        <div classname="ao-option-text">
-                            Overview
-                        </div>
+                        <Link to="/Overview">
+                            <div classname="ao-option-text" onClick={onClick}>
+                                Overview
+                            </div>
+                        </Link>
                         <ChevronRightIcon fontSize="20" />
                     </Stack>
                 </div>
                 <div className='ao-option'>
                     <Stack direction="row" display="flex" justifyContent="space-between" alignItems='center'>
-                        <div classname="ao-option-text">
-                            Leadership
-                        </div>
+                        <Link to="/Leadership">
+                            <div classname="ao-option-text" onClick={onClick}>
+                                Leadership
+                            </div>
+                        </Link>
                         <ChevronRightIcon fontSize="20" />
                     </Stack>
                 </div>
                 <div className='ao-option'>
                     <Stack direction="row" display="flex" justifyContent="space-between" alignItems='center'>
-                        <div classname="ao-option-text">
-                            Vision, Mission & Values
-                        </div>
+                        <Link to="/Vision, Mission & Values">
+                            <div classname="ao-option-text" onClick={onClick}>
+                                Vision, Mission & Values
+                            </div>
+                        </Link>
                         {/* <ChevronRightIcon fontSize="2rem" /> */}
                     </Stack>
                 </div>
                 <div className='ao-option'>
                     <Stack direction="row" display="flex" justifyContent="space-between" alignItems='center'>
-                        <div classname="ao-option-text">
-                            Policies & Charters
-                        </div>
+                        <Link to="/Policy & Charters">
+                            <div classname="ao-option-text" onClick={onClick}>
+                                Policies & Charters
+                            </div>
+                        </Link>
                         <ChevronRightIcon fontSize="20" />
                     </Stack>
                 </div>
                 <div className='ao-option'>
                     <Stack direction="row" display="flex" justifyContent="space-between" alignItems='center'>
-                        <div classname="ao-option-text">
-                            Global Affiliation
-                        </div>
+                        <Link to="/Global Affiliation">
+                            <div classname="ao-option-text" onClick={onClick}>
+                                Global Affiliation
+                            </div>
+                        </Link>
                         <ChevronRightIcon fontSize="20" />
                     </Stack>
                 </div>
                 <div className='ao-option'>
                     <Stack direction="row" display="flex" justifyContent="space-between" alignItems='center'>
-                        <div classname="ao-option-text">
-                            Code of Conduct
-                        </div>
+                        <Link to="/About Us">
+                            <div classname="ao-option-text" onClick={onClick}>
+                                {/* Code of Conduct */}
+                                About Us
+                            </div>
+                        </Link>
                         {/* <ChevronRightIcon fontSize="2rem" /> */}
                     </Stack>
                 </div>

@@ -330,34 +330,37 @@ export default function Solutionoption({ onToggle }) {
                                     </div>
                                 </div>
                             </Link>
-
-                            <div className="so-right-box1" onClick={onToggle}>
-                                <div>
-                                    <img src={so15} />
+                            <Link to="/Healthcare">
+                                <div className="so-right-box1" onClick={onToggle}>
+                                    <div>
+                                        <img src={so15} />
+                                    </div>
+                                    <div className='so-right1-box-title'>
+                                        Healthcare
+                                    </div>
                                 </div>
-                                <div className='so-right1-box-title'>
-                                    Healthcare
+                            </Link>
+                            <Link to="/Media & Entertainment">
+                                <div className="so-right-box1" onClick={onToggle}>
+                                    <div>
+                                        <img src={so16} />
+                                    </div>
+                                    <div className='so-right1-box-title'>
+                                        Media and
+                                        Entertainment
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div className="so-right-box1" onClick={onToggle}>
-                                <div>
-                                    <img src={so16} />
+                            </Link>
+                            <Link to="/Airline">
+                                <div className="so-right-box1" onClick={onToggle}>
+                                    <div>
+                                        <img src={so17} />
+                                    </div>
+                                    <div className='so-right1-box-title'>
+                                        Airline
+                                    </div>
                                 </div>
-                                <div className='so-right1-box-title'>
-                                    Media and
-                                    Entertainment
-                                </div>
-                            </div>
-
-                            <div className="so-right-box1" onClick={onToggle}>
-                                <div>
-                                    <img src={so17} />
-                                </div>
-                                <div className='so-right1-box-title'>
-                                    Airline
-                                </div>
-                            </div>
+                            </Link>
                         </div>
                 }
 

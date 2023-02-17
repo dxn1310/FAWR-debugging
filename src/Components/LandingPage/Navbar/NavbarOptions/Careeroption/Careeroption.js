@@ -43,8 +43,8 @@ export default function Careeroption({ onClick }) {
                 </div>
                 <div style={{ display: "flex", justifyContent: "center", width: "80%", marginTop: "5%", marginLeft: "10%" }}>
                     <ul className='co-right-ul'>
-                        <li className='co-right-li'>Fresher</li>
-                        <li className='co-right-li'>Experienced Professionals</li>
+                        <Link to="/Opportunities for Freshers"><li className='co-right-li' onClick={onClick}>Fresher</li></Link>
+                        <Link to="/Experienced Professional"><li className='co-right-li' onClick={onClick}>Experienced Professionals</li></Link>
                         <li className='co-right-li'>Important Notice</li>
                     </ul>
                 </div>

@@ -67,6 +67,27 @@ import Diversity from './Components/Career/Diversity/Diversity.js'
 import Learning from './Components/Career/Learning/Learning.js'
 import Login from './Components/Profile/Login/Login.js'
 import Register from './Components/Profile/Register/Register.js'
+import Sustainability from './Components/Sustainability/Sustainability.js'
+import Environmental from './Components/Policies/Environmental/Environmental.js'
+import Contact from './Components/Contact/Contact.js'
+import Office from './Components/Contact/Office/Office.js'
+import Global from './Components/AboutPages/Global/Global.js'
+import Overview from './Components/AboutPages/Overview/Overview.js'
+import Leadership from './Components/AboutPages/Leadership/Leadership.js'
+import Vission from './Components/AboutPages/Vission/Vission.js'
+import Charter from './Components/AboutPages/Chater/Charter.js'
+import Reach from './Components/AboutPages/Reach/Reach.js'
+import Alliance from './Components/AboutPages/Alliance/Alliance.js'
+import SocialI from './Components/AboutPages/Social/SocialI.js'
+import Believe from './Components/AboutPages/Believe/Believe.js'
+import Whatwedo from './Components/AboutPages/Whatwedo/Whatwedo.js'
+import Fresher from './Components/LandingPage/Navbar/NavbarOptions/Aboutoption/AboutextraPages/Fresher/Fresher.js'
+import Professional from './Components/LandingPage/Navbar/NavbarOptions/Aboutoption/AboutextraPages/Professional/Professional.js'
+import Heathcare from './Components/Services/Industries/Healthcare/Heathcare.js'
+import Media from './Components/Services/Industries/Media/Media.js'
+import Airline from './Components/Services/Industries/Airline/Airline.js'
+import Aboutus from './Components/AboutPages/Aboutus/Aboutus.js'
+import Success from './Components/AboutPages/Success/Success.js'
 
 
 
@@ -90,6 +111,7 @@ export default function App() {
           <Route path="/Privacy" element={<Privacy />} />
           <Route path="/Cookie Policy" element={<Cookie />} />
           <Route path="/Accessibility" element={<Accessibility />} />
+          <Route path="/Environmental Policy" element={<Environmental />} />
 
           <Route path="/About Options" element={<Aboutoption />} />
           <Route path="/Solution Options" element={<Solutionoption />} />
@@ -97,6 +119,25 @@ export default function App() {
           <Route path="/Explore Options" element={<Exploreoption />} />
 
           <Route path="/Sitemap" element={<Sitemap />} />
+
+          <Route path="/Contact Us" element={<Contact />} />
+          <Route path="/Our Offices" element={<Office />} />
+
+          <Route path="/Global Affiliation" element={<Global />} />
+          <Route path="/Overview" element={<Overview />} />
+          <Route path="/Leadership" element={<Leadership />} />
+          <Route path="/Vision, Mission & Values" element={<Vission />} />
+          <Route path="/Policy & Charters" element={<Charter />} />
+          <Route path="/Reach Us" element={<Reach />} />
+          <Route path="/Alliance" element={<Alliance />} />
+          <Route path="/Social Impact" element={<SocialI />} />
+          <Route path="/What we believe" element={<Believe />} />
+          <Route path="/What we do" element={<Whatwedo/>} />
+          <Route path="/About Us" element={<Aboutus/>} />
+          <Route path="/Success Stories" element={<Success/>} />
+
+          <Route path="/Opportunities for Freshers" element={<Fresher/>} />
+          <Route path="/Experienced Professional" element={<Professional/>} />
 
 
 
@@ -137,6 +178,9 @@ export default function App() {
           <Route path="/Travel,Transport & Logistics" element={<Travel />} />
           <Route path="/Telecom" element={<Telecom />} />
           <Route path="/Energy & Utilities" element={<Energy />} />
+          <Route path="/Healthcare" element={<Heathcare />} />
+          <Route path="/Media & Entertainment" element={<Media />} />
+          <Route path="/Airline" element={<Airline />} />
 
 
           <Route path="/Life@BDM" element={<Life />} />
@@ -146,7 +190,10 @@ export default function App() {
 
 
           <Route path="/Login" element={<Login />} />
-          <Route path="/Register" element={<Register/>} />
+          <Route path="/Register" element={<Register />} />
+
+
+          <Route path="/Sustainability @ BDM" element={<Sustainability />} />
 
         </Routes>
         <Footer />

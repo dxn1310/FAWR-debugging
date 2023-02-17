@@ -20,6 +20,7 @@
 .office-text {
     font-size: 1.5rem;
     font-weight: 400;
+    color: white;
 }
 
 .office-grid {
@@ -35,6 +36,7 @@
     justify-content: center;
     font-size: 1.25rem;
     font-weight: 400;
+    color: #C6C6C6;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -42,6 +44,7 @@
         font-size: 1.25rem;
         font-weight: 400;
     }
+
     .office-grid-text {
         display: flex;
         justify-content: center;
@@ -55,6 +58,7 @@
         font-size: 1rem;
         font-weight: 400;
     }
+
     .office-grid-text {
         display: flex;
         justify-content: center;
@@ -62,27 +66,29 @@
         font-weight: 400;
     }
 }
+
 @media only screen and (max-width: 1000px) {
     .office-text {
         font-size: 0.75rem;
         font-weight: 400;
     }
+
     .office-grid-text {
         display: flex;
         justify-content: center;
         font-size: 0.5rem;
         font-weight: 400;
     }
-    
+
 }
 
 
 @media screen and (max-width:500px) {
     .office-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr;
         margin-top: 5%;
         width: 100%;
         row-gap: 5%;
-    }   
+    }
 }

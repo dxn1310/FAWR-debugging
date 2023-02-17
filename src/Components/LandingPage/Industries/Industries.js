@@ -50,7 +50,7 @@ export default function Industries() {
 
 
                 <div className='industries-grid-element'>
-                    <Link to="">
+                    <Link to="/Healthcare">
                         <img className="industries-img" src={Industries_img6} />
                     </Link>
                 </div>

@@ -4,7 +4,9 @@ import "./Exploreoption.css"
 
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
-export default function Exploreoption() {
+import { NavLink as Link } from 'react-router-dom'
+
+export default function Exploreoption({ onClick }) {
 
     const [selectedOption, setSelectedOption] = useState(0)
 
@@ -13,7 +15,7 @@ export default function Exploreoption() {
             <div className='eo-left'>
                 <div className='eo-option' style={{ borderTop: "1px solid white" }} onClick={(e) => setSelectedOption(0)}>
                     <Stack direction="row" display="flex" justifyContent="space-between" alignItems='center'>
-                        <div classname="eo-option-text">
+                        <div classname="eo-option-text" >
                             Blogs
                         </div>
                         <ChevronRightIcon fontSize="20" />
@@ -21,7 +23,7 @@ export default function Exploreoption() {
                 </div>
                 <div className='eo-option'>
                     <Stack direction="row" display="flex" justifyContent="space-between" alignItems='center'>
-                        <div classname="eo-option-text">
+                        <div classname="eo-option-text" onClick={onClick}>
                             Achievements
                         </div>
                         {/* <ChevronRightIcon fontSize="20" /> */}
@@ -29,15 +31,17 @@ export default function Exploreoption() {
                 </div>
                 <div className='eo-option'>
                     <Stack direction="row" display="flex" justifyContent="space-between" alignItems='center'>
-                        <div classname="eo-option-text">
-                            Success Stories
-                        </div>
+                        <Link to="/Success Stories">
+                            <div classname="eo-option-text" onClick={onClick}>
+                                Success Stories
+                            </div>
+                        </Link>
                         {/* <ChevronRightIcon fontSize="20" /> */}
                     </Stack>
                 </div>
                 <div className='eo-option' onClick={(e) => setSelectedOption(1)}>
                     <Stack direction="row" display="flex" justifyContent="space-between" alignItems='center'>
-                        <div classname="eo-option-text">
+                        <div classname="eo-option-text" >
                             Events
                         </div>
                         <ChevronRightIcon fontSize="20" />
@@ -45,7 +49,7 @@ export default function Exploreoption() {
                 </div>
                 <div className='eo-option'>
                     <Stack direction="row" display="flex" justifyContent="space-between" alignItems='center'>
-                        <div classname="eo-option-text">
+                        <div classname="eo-option-text" onClick={onClick}>
                             Reports
                         </div>
                         {/* <ChevronRightIcon fontSize="20" /> */}
@@ -69,45 +73,65 @@ export default function Exploreoption() {
                         </div>
 
                         <div className="eo-right-grid">
-                            <div className='eo-right-text2'>
+                            <Link to="/Research Intelligence Services">
+                                <div className='eo-right-text2'>
+                                    Digital Research
+                                </div>
+                            </Link>
+
+                            <Link to="/Research Intelligence Services">
+                                {/* <div className='eo-right-text2'>
                                 Digital Research
-                            </div>
+                            </div> */}
+                            </Link>
 
-                            <div className='eo-right-text2'>
-                                Digital Research
-                            </div>
+                            <Link to="/DevOps">
+                                <div className='eo-right-text2'>
+                                    DevOps
+                                </div>
+                            </Link>
 
-                            <div className='eo-right-text2'>
+                            <Link to="/DevOps">
+                                {/* <div className='eo-right-text2'>
                                 DevOps
-                            </div>
+                            </div> */}
+                            </Link>
 
-                            <div className='eo-right-text2'>
-                                DevOps
-                            </div>
+                            <Link to="">
+                                <div className='eo-right-text2'>
+                                    Sales Intelligence
+                                </div>
+                            </Link>
 
-                            <div className='eo-right-text2'>
+                            <Link to="">
+                                {/* <div className='eo-right-text2'>
                                 Sales Intelligence
-                            </div>
+                            </div> */}
+                            </Link>
 
-                            <div className='eo-right-text2'>
-                                Sales Intelligence
-                            </div>
+                            <Link to="/Legal Consultant Services">
+                                <div className='eo-right-text2'>
+                                    Legal Consultant
+                                </div>
+                            </Link>
 
-                            <div className='eo-right-text2'>
+                            <Link to="/Legal Consultant Services">
+                                {/* <div className='eo-right-text2'>
                                 Legal Consultant
-                            </div>
+                            </div> */}
+                            </Link>
 
-                            <div className='eo-right-text2'>
-                                Legal Consultant
-                            </div>
+                            <Link to="/Marketing Automation Services">
+                                <div className='eo-right-text2'>
+                                    Marketing Automation
+                                </div>
+                            </Link>
 
-                            <div className='eo-right-text2'>
+                            <Link to="/Marketing Automation Services">
+                                {/* <div className='eo-right-text2'>
                                 Marketing Automation
-                            </div>
-
-                            <div className='eo-right-text2'>
-                                Marketing Automation
-                            </div>
+                            </div> */}
+                            </Link>
                         </div>
 
 
@@ -131,7 +155,7 @@ export default function Exploreoption() {
 
 
                                 <div className='eo-right-box-text3'>
-                                    Register >
+                                    Register {">"}
                                 </div>
                             </div>
 
@@ -149,7 +173,7 @@ export default function Exploreoption() {
 
 
                                 <div className='eo-right-box-text3'>
-                                    Register >
+                                    Register {">"}
                                 </div>
                             </div>
 
@@ -173,7 +197,7 @@ export default function Exploreoption() {
 
 
                                 <div className='eo-right-box-text3'>
-                                    Register >
+                                    Register {">"}
                                 </div>
                             </div>
 
@@ -189,7 +213,7 @@ export default function Exploreoption() {
 
 
                                 <div className='eo-right-box-text3'>
-                                    Register >
+                                    Register {">"}
                                 </div>
                             </div>
 

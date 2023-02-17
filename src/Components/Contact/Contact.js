@@ -118,10 +118,32 @@ export default function Contact() {
                                 recruiting@bdm.com
                             </div>
 
-                            <Link to="/Careers Main">
+                            <Link to="/Career Options">
                                 <div className='contact-link'>
                                     <Stack direction="row" spacing={1} width="100%" display="flex" alignItems="center">
                                         <div style={{ color: "#BC312E", width: "fit-content" }}> Visit our career site</div>
+                                        <BsArrowRight />
+                                    </Stack>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </div>
+
+                    <div className='contact-grid-element'>
+                        <div className='contact-grid-element-inner'>
+                            <div className='contatct-grid-title'>
+                                Alumni Relations
+                            </div>
+                            <div className='contact-grid-content'>
+                                Reach us or check out the resources we provide.<br />
+                                recruiting@bdm.com
+                            </div>
+
+                            <Link to="/Careers Main">
+                                <div className='contact-link'>
+                                    <Stack direction="row" spacing={1} width="100%" display="flex" alignItems="center">
+                                        <div style={{ color: "#BC312E", width: "fit-content" }}> Visit our alumni site</div>
                                         <BsArrowRight />
                                     </Stack>
                                 </div>
