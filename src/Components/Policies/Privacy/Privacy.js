@@ -16,7 +16,7 @@ import {
 
 import { useMediaQuery } from '@chakra-ui/react'
 
-export default function Terms() {
+export default function Terms({ mode }) {
     window.scroll({
         top: 0,
         left: 0,
@@ -24,10 +24,10 @@ export default function Terms() {
     });
     const [isLargerThan1000] = useMediaQuery('(min-width: 1000px)')
     return (
-        <div className='terms-outer' style={{ backgroundColor: "#211F22" }}>
+        <div className='terms-outer' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
             <img className="terms-bgimg" src={Privacy_img3} />
             <div className='terms-inner'>
-                <div className='terms-content-1'>
+                <div className='terms-content-1' style={{ color: mode === "dark" ? "white" : "black" }}>
                     This Privacy Policy is applicable to the website(s) and mobile applications (collectively, the "Sites") offered by BigDigitalMedia and/or other BigDigitalMedia group companies ("BigDigitalMedia," "we," or "us"). BigDigitalMedia serves as the data controller for the personal information you share with BigDigitalMedia under this Policy.
                     <br /><br />
                     The Sites consist of www.BigDigitalMedia.com as well as other websites and mobile applications created and managed by BigDigitalMedia.

@@ -21,6 +21,10 @@ import Terms from '../../Policies/Terms/Terms'
 import Privacy from '../../Policies/Privacy/Privacy'
 import Cookie from '../../Policies/Cookie/Cookie'
 
+import T1 from "../Testimonials/TestimonialsImages/1.png"
+import Testimonial from '../Testimonials/Testimonial'
+import Pricing from '../Pricing/Pricing'
+
 // import Contact from "../../Contact/Contact"
 
 export default function Landing({ mode }) {
@@ -39,7 +43,7 @@ export default function Landing({ mode }) {
             </div>
 
             <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
-            <u>Industries we serve</u>
+                <u>Industries we serve</u>
             </div>
 
             <div className='landing-element'>
@@ -47,7 +51,7 @@ export default function Landing({ mode }) {
             </div>
 
             <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
-            <u>About Us</u>
+                <u>About Us</u>
             </div>
 
             <div className='landing-element'>
@@ -55,8 +59,8 @@ export default function Landing({ mode }) {
             </div>
 
             <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
-            <u> Awards &
-                Recognitions</u>
+                <u> Awards &
+                    Recognitions</u>
             </div>
 
             <div className='landing-element'>
@@ -64,14 +68,14 @@ export default function Landing({ mode }) {
             </div>
 
             <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
-            <u>Career</u>
+                <u>Career</u>
             </div>
 
             <div className='landing-element'>
                 <Career mode={mode} />
             </div>
             <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
-            <u> Our Other Products</u>
+                <u> Our Other Products</u>
             </div>
 
             <div className='landing-element'>
@@ -79,7 +83,7 @@ export default function Landing({ mode }) {
             </div>
 
             <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
-            <u> Our Partners</u>
+                <u> Our Partners</u>
             </div>
 
             <div className='landing-element'>
@@ -87,7 +91,7 @@ export default function Landing({ mode }) {
             </div>
 
             <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
-            <u>Our Other Companies</u>
+                <u>Our Other Companies</u>
             </div>
 
             <div className='landing-element'>
@@ -96,11 +100,25 @@ export default function Landing({ mode }) {
 
 
             <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
-            <u>Testimonials</u>
+                <u>Testimonials</u>
+            </div>
+
+            <div className='landing-element' style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+                <Testimonial mode={mode} />
             </div>
 
             <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
-            <u>Our Recent Projects</u>
+                <u>Pricing</u>
+            </div>
+
+            <div className='landing-element' style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+                <Pricing mode={mode} />
+            </div>
+
+
+
+            <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Recent Projects</u>
             </div>
 
             <div className='landing-element'>
@@ -108,7 +126,7 @@ export default function Landing({ mode }) {
             </div>
 
             <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
-            <u> Our Featured Blogs</u>
+                <u> Our Featured Blogs</u>
             </div>
 
             <div className='landing-element'>

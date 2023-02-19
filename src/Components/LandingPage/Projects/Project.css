@@ -15,7 +15,7 @@
 .project-grid-element {
     color: white;
     border: 1px solid #7E7E7E;
-    padding: 2%;
+    /* padding: 2%; */
     width: 30%;
     border-radius: 0.5rem;
     cursor: pointer;
@@ -36,6 +36,7 @@
     color: #BC312E;
     margin-top: 2%;
     font-family: 'Yeseva One', cursive;
+    padding: 2%;
 }
 
 .project-grid-text {
@@ -43,6 +44,7 @@
     font-weight: 400;
     color: #7E7E7E;
     margin-top: 2%;
+    padding: 2%;
 
 }
 
@@ -50,6 +52,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    padding: 2%;
 }
 
 .project-grid-bottom-text {

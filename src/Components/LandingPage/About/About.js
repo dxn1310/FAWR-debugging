@@ -42,7 +42,7 @@ export default function About({ mode }) {
                 </Button>
             </div>
             <div className='about-right'>
-                <img src={About_img3} />
+                <img src={mode === "dark" ? About_img3 : About_img1} />
             </div>
         </div>
     )

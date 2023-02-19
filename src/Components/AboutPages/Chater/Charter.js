@@ -6,7 +6,13 @@ import C2 from "./CharterImages/C2.png"
 
 import { NavLink as Link } from 'react-router-dom'
 
-export default function Charter() {
+export default function Charter({ mode }) {
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
 
     const charterData = [
         {
@@ -76,25 +82,25 @@ export default function Charter() {
     ]
 
     return (
-        <div className='charter-outer'>
+        <div className='charter-outer' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
             <div style={{ width: "100%" }}>
                 <img src={C1} style={{ width: "100%" }} />
             </div>
 
-            <div className='charter-title'>
+            <div className='charter-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Corporate Policies</u>
             </div>
 
             <div style={{ marginTop: "5%", width: "100%", display: "flex", flexDirection: "column", alignItems: "center" }}>
                 {
                     charterData.map((item, index) => {
-                        return <div className='charter-element'>
-                            <div className='charter-element-text'>
+                        return <div className='charter-element' style={{ backgroundColor: mode === "dark" ? "#444444" : "#E0E0E0" }} >
+                            <div className='charter-element-text' style={{ color: mode === "dark" ? "white" : "black" }}>
                                 {item.name}
                             </div>
                             <Link to={item.link}>
-                                <div style={{ width: "100%"}}>
-                                    <img src={C2} style={{ width: "70%"}}/>
+                                <div style={{ width: "100%" }}>
+                                    <img src={C2} style={{ width: "70%" }} />
                                 </div>
                             </Link>
                         </div>

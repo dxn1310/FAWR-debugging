@@ -15,7 +15,7 @@ import {
 
 import { useMediaQuery } from '@chakra-ui/react'
 
-export default function Terms() {
+export default function Terms({ mode }) {
     window.scroll({
         top: 0,
         left: 0,
@@ -23,14 +23,14 @@ export default function Terms() {
     });
     const [isLargerThan1000] = useMediaQuery('(min-width: 1000px)')
     return (
-        <div className='terms-outer' style={{ backgroundColor: "#211F22" }}>
+        <div className='terms-outer' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
             <img className="terms-bgimg" src={Terms_img3} />
             <div className='terms-inner'>
-                <div className='terms-content-1'>
+                <div className='terms-content-1' style={{ color: mode === "dark" ? "white" : "black" }}>
                     PLEASE CAREFULLY READ THESE TERMS AND CONDITIONS. YOU ACKNOWLEDGE AND AGREE THAT YOU HAVE READ, UNDERSTAND, AND AGREE TO BE BOUND BY THESE TERMS AND CONDITIONS WITHOUT LIMITATION OR QUALIFICATION BY ACCESSING, BROWSING, REVIEWING, AND/OR USING THE SITE. YOU ALSO AGREE THAT YOU SHALL COMPLY WITH ALL APPLICABLE LAWS, RULES, AND REGULATIONS. DO NOT USE THE SITE IF YOU DO NOT AGREE TO BE BOUND BY THESE TERMS AND CONDITIONS.
                 </div>
 
-                <div className='terms-content-2'>
+                <div className='terms-content-2' style={{ color: mode === "dark" ? "#C6C6C6" : "#7E7E7E" }}>
                     The terms and conditions of any other proprietary notices and copyright information that may be present on the Site must be complied with. The information on the website might include typographical or technical mistakes. Parts of these Terms and Conditions may be revised, amended, modified, or deleted at any time without prior notice from BigDigitalMedia, who has the exclusive right to make such decisions. You are always obligated to read the most recent edition of these Terms and Conditions. Any changes to these Terms and Conditions that are made will be considered accepted by you if you continue to use the Site.
                 </div>
                 {/* <div> */}

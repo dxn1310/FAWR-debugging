@@ -3,6 +3,9 @@ import "./Project.css"
 
 import Project_img1 from "./ProjectImages/Project_img1.png"
 
+import P1 from "./ProjectImages/P1.png"
+import P2 from "./ProjectImages/P2.png"
+
 import { Card, CardHeader, CardBody, CardFooter, Image, Button, Heading, Text, Stack, ButtonGroup, Divider } from '@chakra-ui/react'
 
 export default function Project() {
@@ -11,7 +14,7 @@ export default function Project() {
             <div className='project-grid'>
                 <div className='project-grid-element'>
                     <div className='project-grid-img'>
-                        <img className='project-img' src={Project_img1} />
+                        <img className='project-img' src={P1} />
                     </div>
                     <div className='project-grid-title'>
                         Company Name
@@ -31,7 +34,7 @@ export default function Project() {
 
                 <div className='project-grid-element'>
                     <div className='project-grid-img'>
-                        <img className='project-img' src={Project_img1} />
+                        <img className='project-img' src={P2} />
                     </div>
                     <div className='project-grid-title'>
                         Company Name
@@ -50,7 +53,7 @@ export default function Project() {
 
                 <div className='project-grid-element'>
                     <div className='project-grid-img'>
-                        <img className='project-img' src={Project_img1} />
+                        <img className='project-img' src={P1} />
                     </div>
                     <div className='project-grid-title'>
                         Company Name

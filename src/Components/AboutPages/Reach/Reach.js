@@ -18,7 +18,15 @@ import { Checkbox, CheckboxGroup } from '@chakra-ui/react'
 
 import { useMediaQuery } from '@chakra-ui/react'
 
-export default function Reach() {
+export default function Reach({ mode }) {
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+
+
     const [isLargerThan900] = useMediaQuery('(min-width: 900px)')
     return (
         <div className='reach-outer'>
@@ -26,73 +34,73 @@ export default function Reach() {
                 <img src={Reach_img1} style={{ width: "100%" }} />
             </div>
             <div className='reach-right'>
-                <div className='reach-box'>
+                <div className='reach-box' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
                     <Stack direction="column" spacing={10}>
-                        <Input borderColor="#211F22" backgroundColor="#2B292C"
+                        <Input borderColor="#211F22" backgroundColor={mode === "dark" ? "#2B292C" : "#E0E0E0"}
                             _hover={{ borderColor: "#211F22" }}
                             focusBorderColor="#211F22"
                             _focus={{ borderColor: "#211F22" }}
-                            _placeholder={{ marginLeft: "0%", color: "white", fontSize: isLargerThan900 ? "1rem" : "0.8rem" }}
+                            _placeholder={{ marginLeft: "0%", color: mode === "dark" ? "white" : "black", fontSize: isLargerThan900 ? "1rem" : "0.8rem" }}
                             placeholder='Name' />
 
-                        <Input borderColor="#211F22" backgroundColor="#2B292C"
+                        <Input borderColor="#211F22" backgroundColor={mode === "dark" ? "#2B292C" : "#E0E0E0"}
                             _hover={{ borderColor: "#211F22" }}
                             focusBorderColor="#211F22"
                             _focus={{ borderColor: "#211F22" }}
-                            _placeholder={{ marginLeft: "0%", color: "white", fontSize: isLargerThan900 ? "1rem" : "0.8rem" }}
+                            _placeholder={{ marginLeft: "0%", color: mode === "dark" ? "white" : "black", fontSize: isLargerThan900 ? "1rem" : "0.8rem" }}
                             placeholder='Email' />
 
                         <Stack direction="row" spacing={2}>
                             <Menu>
-                                <MenuButton as={Button} borderColor="#211F22" backgroundColor="#2B292C"
-                                    _hover={{ borderColor: "#211F22", backgroundColor: "#2B292C" }}
-                                    rightIcon={<ChevronDownIcon />} >
-                                    <div className="reach-button-text">India</div>
+                                <MenuButton as={Button} borderColor="#211F22" backgroundColor={mode === "dark" ? "#2B292C" : "#E0E0E0"}
+                                    _hover={{ borderColor: "#211F22", backgroundColor: "#2B292C", color: "white" }}
+                                    rightIcon={<ChevronDownIcon color={mode === "dark" ? "white" : "black"} />} >
+                                    <div className="reach-button-text" style={{ color: mode === "dark" ? "white" : "black" }}>India</div>
                                 </MenuButton>
-                                <MenuList borderColor="#211F22" backgroundColor="#2B292C">
-                                    <MenuItem borderColor="#211F22" backgroundColor="#2B292C">India</MenuItem>
+                                <MenuList borderColor="#211F22" backgroundColor={mode === "dark" ? "#2B292C" : "#E0E0E0"}>
+                                    <MenuItem borderColor="#211F22" backgroundColor={mode === "dark" ? "#2B292C" : "#E0E0E0"} style={{ color: mode === "dark" ? "white" : "black" }}>India</MenuItem>
                                 </MenuList>
                             </Menu>
                             <InputGroup>
-                                <InputLeftAddon borderColor="#211F22" backgroundColor="#2B292C" children='+91' />
-                                <Input borderColor="#211F22" backgroundColor="#2B292C"
+                                <InputLeftAddon borderColor="#211F22" backgroundColor={mode === "dark" ? "#2B292C" : "#E0E0E0"} children='+91' color={mode === "dark" ? "white" : "black"} />
+                                <Input borderColor="#211F22" backgroundColor={mode === "dark" ? "#2B292C" : "#E0E0E0"}
                                     _hover={{ borderColor: "#211F22" }}
                                     focusBorderColor="#211F22"
                                     _focus={{ borderColor: "#211F22" }}
-                                    _placeholder={{ marginLeft: "0%", color: "white", fontSize: isLargerThan900 ? "1rem" : "0.8rem" }}
+                                    _placeholder={{ marginLeft: "0%", color: mode === "dark" ? "white" : "black", fontSize: isLargerThan900 ? "1rem" : "0.8rem" }}
                                     type='tel' />
                             </InputGroup>
                         </Stack>
 
-                        <Input borderColor="#211F22" backgroundColor="#2B292C"
+                        <Input borderColor="#211F22" backgroundColor={mode === "dark" ? "#2B292C" : "#E0E0E0"}
                             _hover={{ borderColor: "#211F22" }}
                             focusBorderColor="#211F22"
                             _focus={{ borderColor: "#211F22" }}
-                            _placeholder={{ marginLeft: "0%", color: "white", fontSize: isLargerThan900 ? "1rem" : "0.8rem" }}
+                            _placeholder={{ marginLeft: "0%", color: mode === "dark" ? "white" : "black", fontSize: isLargerThan900 ? "1rem" : "0.8rem" }}
                             placeholder='Company Name' />
 
 
                         <Menu>
-                            <MenuButton as={Button} borderColor="#211F22" backgroundColor="#2B292C"
+                            <MenuButton as={Button} borderColor="#211F22" backgroundColor={mode === "dark" ? "#2B292C" : "#E0E0E0"}
                                 _hover={{ borderColor: "#211F22", backgroundColor: "#2B292C" }}
                                 padding="1%"
                                 rightIcon={<ChevronDownIcon />}>
-                                <div className="reach-button-text">Reason for contacting BDM</div>
+                                <div className="reach-button-text" style={{ color: mode === "dark" ? "white" : "black" }}>Reason for contacting BDM</div>
 
                             </MenuButton>
-                            <MenuList borderColor="#211F22" backgroundColor="#2B292C" width="fit-content">
-                                <MenuItem borderColor="#211F22" backgroundColor="#2B292C" width="fit-content">India</MenuItem>
+                            <MenuList borderColor="#211F22" backgroundColor={mode === "dark" ? "#2B292C" : "#E0E0E0"} width="fit-content">
+                                <MenuItem borderColor="#211F22" backgroundColor={mode === "dark" ? "#2B292C" : "#E0E0E0"} width="fit-content">India</MenuItem>
                             </MenuList>
                         </Menu>
 
                         <Textarea placeholder="Message"
-                            borderColor="#211F22" backgroundColor="#2B292C"
+                            borderColor="#211F22" backgroundColor={mode === "dark" ? "#2B292C" : "#E0E0E0"}
                             _hover={{ borderColor: "#211F22" }}
                             focusBorderColor="#211F22"
                             _focus={{ borderColor: "#211F22" }}
-                            _placeholder={{ marginLeft: "0%", color: "white", fontSize: isLargerThan900 ? "1rem" : "0.8rem" }} />
+                            _placeholder={{ marginLeft: "0%", color: mode === "dark" ? "white" : "black", fontSize: isLargerThan900 ? "1rem" : "0.8rem" }} />
 
-                        <Checkbox size='sm' colorScheme='red'>
+                        <Checkbox size='md' colorScheme='red' color={mode === "dark" ? "white" : "black"}>
                             I have read the <label style={{ color: "#BC312E" }}>Privacy Policy</label> and agree to its terms
                         </Checkbox>
                         <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>

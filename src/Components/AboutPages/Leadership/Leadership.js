@@ -8,7 +8,14 @@ import L2 from "./LeadershipImages/L2.png"
 
 import { Button } from '@chakra-ui/react'
 
-export default function Leadership() {
+export default function Leadership({ mode }) {
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+
 
     const leaderData = [
         {
@@ -68,16 +75,16 @@ export default function Leadership() {
     ]
 
     return (
-        <div className='l-outer'>
+        <div className='l-outer' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
             <div style={{ width: "100%" }}>
                 <img src={L1} style={{ width: "100%" }} />
             </div>
 
-            <div className='l-text'>
+            <div className='l-text' style={{ color: mode === "dark" ? "white" : "black" }}>
                 Our partners prioritise our customers while relentlessly supporting audacious ideas that enable them to accomplish the remarkable. You'll find enthusiastic, cooperative individuals who care about you and your success in every office and on every team.
             </div>
 
-            <div className='l-title'>
+            <div className='l-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Our Leadership and People</u>
             </div>
 
@@ -91,14 +98,14 @@ export default function Leadership() {
                                 <img src={L2} style={{ width: "100%" }} />
                             </div>
                             <div className='l-element-bottom'>
-                                <div className='l-element-title'>
+                                <div className='l-element-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                                     {element.title}
                                 </div>
-                                <div className='l-element-text' >
-                                {element.role}
+                                <div className='l-element-text' style={{ color: mode === "dark" ? "#C6C6C6" : "#7E7E7E" }}>
+                                    {element.role}
                                 </div>
-                                <div className='l-element-text' >
-                                {element.location}
+                                <div className='l-element-text' style={{ color: mode === "dark" ? "#C6C6C6" : "#7E7E7E" }}>
+                                    {element.location}
                                 </div>
                             </div>
                         </div>

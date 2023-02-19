@@ -162,7 +162,7 @@ export default function Navbar({ mode, handleMode }) {
                             About
                         </div> */}
                         {
-                            mode === "dark" ? <MoonIcon fontSize="2rem" height="100%" onClick={handleMode} /> : <SunIcon fontSize="2rem" height="100%" onClick={handleMode} />
+                            mode === "light" ? <MoonIcon fontSize="2rem" height="100%" onClick={handleMode} /> : <SunIcon fontSize="2rem" height="100%" onClick={handleMode} />
                         }
                     </Stack>
                 </div>
@@ -313,7 +313,7 @@ export default function Navbar({ mode, handleMode }) {
                             About
                         </div> */}
                         {
-                            mode === "dark" ? <MoonIcon fontSize="2rem" height="100%" onClick={handleMode} /> : <SunIcon fontSize="2rem" height="100%" onClick={handleMode} />
+                            mode === "light" ? <MoonIcon fontSize="2rem" height="100%" onClick={handleMode} /> : <SunIcon fontSize="2rem" height="100%" onClick={handleMode} />
                         }
 
                     </Stack>

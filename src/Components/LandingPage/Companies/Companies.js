@@ -2,7 +2,8 @@ import { Button } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import "./Companies.css"
 
-import c1 from "./CompaniesImages/1.png"
+import C1 from "./CompaniesImages/1.png"
+import C2 from "./CompaniesImages/2.png"
 
 import { useMediaQuery } from '@chakra-ui/react'
 
@@ -29,35 +30,35 @@ export default function Companies() {
             <div className='companies-content'>
                 <div className='companies-left'>
                     <div className='companies-title'>
-                        Lorem Ipsum dolor sit
+                        Celebration Schemes
                     </div>
                 </div>
                 <div className='companies-right'>
-                    <img src={c1} />
+                    <img src={C2} />
                 </div>
             </div>
 
             <div className='companies-bottom'>
                 <div className='companies-text'>
                     <div className='companies-text-title'>
-                        Lorem Ipsum
+                        Creative Studio
                     </div>
                     <div className='companies-text-content'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor integer volutpat
+                        Get the best solutions out from our studio experts
                     </div>
                 </div>
 
                 <div className='companies-text'>
                     <div className='companies-text-title'>
-                        Lorem Ipsum
+                        Corporate Corner
                     </div>
                     <div className='companies-text-content'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor integer volutpat
+                        Connect with our expertise for a faster growth result
                     </div>
                 </div>
                 <div style={{ width: isLargerThan1000 ? "30%" : "100%", display: "flex", justifyContent: "center" }}>
                     <Button color="white" marginTop={isLargerThan1000 ? "2%" : "5%"}
-                        backgroundColor="#BC312E">Try Now ></Button>
+                        backgroundColor="#BC312E">Try Now {">"}</Button>
                 </div>
 
             </div>
