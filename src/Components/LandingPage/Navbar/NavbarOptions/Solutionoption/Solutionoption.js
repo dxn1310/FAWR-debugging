@@ -27,7 +27,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 
 import { NavLink as Link } from 'react-router-dom'
 
-export default function Solutionoption({ onToggle }) {
+export default function Solutionoption({ onToggle, mode }) {
     const [option, setOption] = useState(0)
 
     const [isLargerThan850] = useMediaQuery('(min-width: 850px)')
@@ -53,310 +53,310 @@ export default function Solutionoption({ onToggle }) {
             <div className='so-right'>
                 {
                     option === 0 ? <div className='so-right1'>
-                        <div className="so-right-box">
+                        <div className="so-right-box" style={{ backgroundColor: mode === "dark" ? "#2A2A2A" : "white", border: mode === "dark" ? "none" : "1px solid black" }}>
                             <div>
                                 <img src={so1} />
                             </div>
-                            <div className='so-right-box-title'>
+                            <div className='so-right-box-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                                 Development Services
                             </div>
                             <Link to="/Web Development Services">
-                                <div className='so-right-box-text' onClick={onToggle}>
+                                <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                     Web development
                                 </div>
                             </Link>
                             <Link to="/Blockchain Development Services">
-                                <div className='so-right-box-text' onClick={onToggle}>
+                                <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                     Blockchain development
                                 </div>
                             </Link>
                             <Link to="/DevOps">
-                                <div className='so-right-box-text' onClick={onToggle}>
+                                <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                     DevOps services
                                 </div>
                             </Link>
                             <Link to="/App Development Services">
-                                <div className='so-right-box-text' onClick={onToggle}>
+                                <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                     App development
                                 </div>
                             </Link>
                             <Link to='/Cloud Storage & Management Services'>
-                                <div className='so-right-box-text' onClick={onToggle}>
+                                <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                     Cloud storage & management
                                 </div>
                             </Link>
                         </div>
 
 
-                        <div className="so-right-box">
+                        <div className="so-right-box" style={{ backgroundColor: mode === "dark" ? "#2A2A2A" : "white", border: mode === "dark" ? "none" : "1px solid black" }}>
                             <div>
                                 <img src={so2} />
                             </div>
-                            <div className='so-right-box-title'>
+                            <div className='so-right-box-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                                 Design Services
                             </div>
                             <Link to="/UX / UI Design Services">
-                                <div className='so-right-box-text' onClick={onToggle}>
+                                <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                     UX/UI Design
                                 </div>
                             </Link>
                             <Link to="/Graphic Design Services">
-                                <div className='so-right-box-text' onClick={onToggle}>
+                                <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                     Graphic Design
                                 </div>
                             </Link>
                             <Link to='/Video Services'>
-                                <div className='so-right-box-text' onClick={onToggle}>
+                                <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                     Video editing
                                 </div>
                             </Link>
                             <Link to="/Animations Services">
-                                <div className='so-right-box-text' onClick={onToggle}>
+                                <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                     Animations
                                 </div>
                             </Link>
                             <Link to="/Social Media Marketing Services">
-                                <div className='so-right-box-text' onClick={onToggle}>
+                                <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                     Social media design
                                 </div>
                             </Link>
                         </div>
 
-                        <div className="so-right-box">
+                        <div className="so-right-box" style={{ backgroundColor: mode === "dark" ? "#2A2A2A" : "white", border: mode === "dark" ? "none" : "1px solid black" }}>
                             <div>
                                 <img src={so3} />
                             </div>
-                            <div className='so-right-box-title'>
+                            <div className='so-right-box-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                                 Consultancy  Services
                             </div>
                             <Link to="/Management Consultant Services">
-                                <div className='so-right-box-text' onClick={onToggle}>
+                                <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                     Management consultant
                                 </div>
                             </Link>
                             <Link to="/Operations Consultant Services">
-                                <div className='so-right-box-text' onClick={onToggle}>
+                                <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                     Operations consultant
                                 </div>
                             </Link>
                             <Link to="/Financial Advisory Services">
-                                <div className='so-right-box-text' onClick={onToggle}>
+                                <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                     Financial advisory
                                 </div>
                             </Link>
                             <Link to="/Legal Consultant Services">
-                                <div className='so-right-box-text' onClick={onToggle}>
+                                <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                     Legal Consultant
                                 </div>
                             </Link>
                             <Link to="/Strategy Consultant Services">
-                                <div className='so-right-box-text' onClick={onToggle}>
+                                <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                     Strategy Consultant
                                 </div>
                             </Link>
                             <Link to="/Distribution Strategy Services">
-                                <div className='so-right-box-text' onClick={onToggle}>
+                                <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                     Distribution Strategy
                                 </div>
                             </Link>
                             <Link to="/Reputation Consultation Services">
-                                <div className='so-right-box-text' onClick={onToggle}>
+                                <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                     Reputation Consultant
                                 </div>
                             </Link>
                         </div>
                     </div> :
                         option === 1 ? <div className='so-right2'>
-                            <div className="so-right-box">
+                            <div className="so-right-box" style={{ backgroundColor: mode === "dark" ? "#2A2A2A" : "white", border: mode === "dark" ? "none" : "1px solid black" }}>
                                 <div>
                                     <img src={so4} />
                                 </div>
-                                <div className='so-right-box-title'>
+                                <div className='so-right-box-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                                     Digital Marketing
                                 </div>
                                 <Link to="/Marketing Automation Services">
-                                    <div className='so-right-box-text' onClick={onToggle}>
+                                    <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Marketing automation
                                     </div>
                                 </Link>
                                 <Link to="/Email Marketing Services">
-                                    <div className='so-right-box-text' onClick={onToggle}>
+                                    <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Email marketing
                                     </div>
                                 </Link>
                                 <Link to="/Search Engine Marketing Services">
-                                    <div className='so-right-box-text' onClick={onToggle}>
+                                    <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Search engine marketing
                                     </div>
                                 </Link>
                                 <Link to="/Social Media Marketing Services">
-                                    <div className='so-right-box-text' onClick={onToggle}>
+                                    <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Social media marketing
                                     </div>
                                 </Link>
                                 <Link to="/Mobile Marketing Services">
-                                    <div className='so-right-box-text' onClick={onToggle}>
+                                    <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Mobile marketing
                                     </div>
                                 </Link>
                             </div>
 
 
-                            <div className="so-right-box">
+                            <div className="so-right-box" style={{ backgroundColor: mode === "dark" ? "#2A2A2A" : "white", border: mode === "dark" ? "none" : "1px solid black" }}>
                                 <div>
                                     <img src={so5} />
                                 </div>
-                                <div className='so-right-box-title'>
+                                <div className='so-right-box-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                                     Analytics and Insights
                                 </div>
 
                                 <Link to="/Research Intelligence Services">
-                                    <div className='so-right-box-text' onClick={onToggle}>
+                                    <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Research Intelligence
                                     </div>
                                 </Link>
                                 <Link to="/Predictive Analysis Services">
-                                    <div className='so-right-box-text' onClick={onToggle}>
+                                    <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Predictive Analytics
                                     </div>
                                 </Link>
                                 <Link to="/Business Intelligence Services">
-                                    <div className='so-right-box-text' onClick={onToggle}>
+                                    <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Business Intelligence
                                     </div>
                                 </Link>
                                 <Link to="/Speech & Text Analytics Services">
-                                    <div className='so-right-box-text' onClick={onToggle}>
+                                    <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Speech & text Analytics
                                     </div>
                                 </Link>
                                 <Link to="/Customer Segmentation Services">
-                                    <div className='so-right-box-text' onClick={onToggle}>
+                                    <div className='so-right-box-text' onClick={onToggle} style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Customer Segmentation
                                     </div>
                                 </Link>
                             </div>
                         </div> : <div className='so-right3'>
                             <Link to="/Technology">
-                                <div className="so-right-box1" onClick={onToggle}>
+                                <div className="so-right-box1" onClick={onToggle} style={{ backgroundColor: mode === "dark" ? "#2A2A2A" : "white", border: mode === "dark" ? "none" : "1px solid black" }}>
                                     <div>
                                         <img src={so6} />
                                     </div>
-                                    <div className='so-right1-box-title'>
+                                    <div className='so-right1-box-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Technology
                                     </div>
                                 </div>
                             </Link>
                             <Link to="/Automotive">
-                                <div className="so-right-box1" onClick={onToggle}>
+                                <div className="so-right-box1" onClick={onToggle} style={{ backgroundColor: mode === "dark" ? "#2A2A2A" : "white", border: mode === "dark" ? "none" : "1px solid black" }}>
                                     <div>
                                         <img src={so7} />
                                     </div>
-                                    <div className='so-right1-box-title'>
+                                    <div className='so-right1-box-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Automotive
                                     </div>
                                 </div>
                             </Link>
                             <Link to="/Education">
-                                <div className="so-right-box1" onClick={onToggle}>
+                                <div className="so-right-box1" onClick={onToggle} style={{ backgroundColor: mode === "dark" ? "#2A2A2A" : "white", border: mode === "dark" ? "none" : "1px solid black" }}>
                                     <div>
                                         <img src={so8} />
                                     </div>
-                                    <div className='so-right1-box-title'>
+                                    <div className='so-right1-box-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Education
                                     </div>
                                 </div>
                             </Link>
                             <Link to="/Insurance">
-                                <div className="so-right-box1" onClick={onToggle}>
+                                <div className="so-right-box1" onClick={onToggle} style={{ backgroundColor: mode === "dark" ? "#2A2A2A" : "white", border: mode === "dark" ? "none" : "1px solid black" }}>
                                     <div>
                                         <img src={so9} />
                                     </div>
-                                    <div className='so-right1-box-title'>
+                                    <div className='so-right1-box-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Insurance
                                     </div>
                                 </div>
                             </Link>
                             <Link to="/Banking & Finance">
-                                <div className="so-right-box1" onClick={onToggle}>
+                                <div className="so-right-box1" onClick={onToggle} style={{ backgroundColor: mode === "dark" ? "#2A2A2A" : "white", border: mode === "dark" ? "none" : "1px solid black" }}>
                                     <div>
                                         <img src={so10} />
                                     </div>
-                                    <div className='so-right1-box-title'>
+                                    <div className='so-right1-box-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Banking and
                                         Finance
                                     </div>
                                 </div>
                             </Link>
                             <Link to="/E-Commerce">
-                                <div className="so-right-box1" onClick={onToggle}>
+                                <div className="so-right-box1" onClick={onToggle} style={{ backgroundColor: mode === "dark" ? "#2A2A2A" : "white", border: mode === "dark" ? "none" : "1px solid black" }}>
                                     <div>
                                         <img src={so11} />
                                     </div>
-                                    <div className='so-right1-box-title'>
+                                    <div className='so-right1-box-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                                         E-commerce
                                     </div>
                                 </div>
                             </Link>
                             <Link to="/Travel,Transport & Logistics">
-                                <div className="so-right-box1" onClick={onToggle}>
+                                <div className="so-right-box1" onClick={onToggle} style={{ backgroundColor: mode === "dark" ? "#2A2A2A" : "white", border: mode === "dark" ? "none" : "1px solid black" }}>
                                     <div>
                                         <img src={so12} />
                                     </div>
-                                    <div className='so-right1-box-title'>
+                                    <div className='so-right1-box-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Travel, Transport
                                         & Logistics
                                     </div>
                                 </div>
                             </Link>
                             <Link to="/Telecom">
-                                <div className="so-right-box1" onClick={onToggle}>
+                                <div className="so-right-box1" onClick={onToggle} style={{ backgroundColor: mode === "dark" ? "#2A2A2A" : "white", border: mode === "dark" ? "none" : "1px solid black" }}>
                                     <div>
                                         <img src={so13} />
                                     </div>
-                                    <div className='so-right1-box-title'>
+                                    <div className='so-right1-box-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Telecom
                                     </div>
                                 </div>
                             </Link>
                             <Link to="/Energy & Utilities">
-                                <div className="so-right-box1" onClick={onToggle}>
+                                <div className="so-right-box1" onClick={onToggle} style={{ backgroundColor: mode === "dark" ? "#2A2A2A" : "white", border: mode === "dark" ? "none" : "1px solid black" }}>
                                     <div>
                                         <img src={so14} />
                                     </div>
-                                    <div className='so-right1-box-title'>
+                                    <div className='so-right1-box-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Energy and
                                         Utilities
                                     </div>
                                 </div>
                             </Link>
                             <Link to="/Healthcare">
-                                <div className="so-right-box1" onClick={onToggle}>
+                                <div className="so-right-box1" onClick={onToggle} style={{ backgroundColor: mode === "dark" ? "#2A2A2A" : "white", border: mode === "dark" ? "none" : "1px solid black" }}>
                                     <div>
                                         <img src={so15} />
                                     </div>
-                                    <div className='so-right1-box-title'>
+                                    <div className='so-right1-box-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Healthcare
                                     </div>
                                 </div>
                             </Link>
                             <Link to="/Media & Entertainment">
-                                <div className="so-right-box1" onClick={onToggle}>
+                                <div className="so-right-box1" onClick={onToggle} style={{ backgroundColor: mode === "dark" ? "#2A2A2A" : "white", border: mode === "dark" ? "none" : "1px solid black" }}>
                                     <div>
                                         <img src={so16} />
                                     </div>
-                                    <div className='so-right1-box-title'>
+                                    <div className='so-right1-box-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Media and
                                         Entertainment
                                     </div>
                                 </div>
                             </Link>
                             <Link to="/Airline">
-                                <div className="so-right-box1" onClick={onToggle}>
+                                <div className="so-right-box1" onClick={onToggle} style={{ backgroundColor: mode === "dark" ? "#2A2A2A" : "white", border: mode === "dark" ? "none" : "1px solid black" }}>
                                     <div>
                                         <img src={so17} />
                                     </div>
-                                    <div className='so-right1-box-title'>
+                                    <div className='so-right1-box-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                                         Airline
                                     </div>
                                 </div>

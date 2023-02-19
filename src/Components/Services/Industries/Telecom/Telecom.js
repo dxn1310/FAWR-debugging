@@ -23,7 +23,13 @@ import Iservices from '../../../Templates/IndustriesTemplates/IndustryServices/I
 import Meeting from '../../../Templates/IndustriesTemplates/Meeting/Meeting'
 
 
-export default function Telecom() {
+export default function Telecom({ mode }) {
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
 
     const challengeData = [
         "Complex Operational Processes",
@@ -84,22 +90,22 @@ export default function Telecom() {
         <div className='industries-outer'>
             <Industrytop bgimg={Telecom_img1}
                 content="The telecom sector is essential to the overall expansion of other industries. The needs of customers and the changing nature of technology provide special difficulties for the telecom industry. Telecom providers are always making investments in network improvements and capacity expansion to stay up with the ever changing industry. Through the monetization of data, providing and creating content, and investigating verticals, they are investigating new business sources. These businesses must thrive in the areas of IoT, connected devices, and security in order to compete. The Telecom firms will have to make large investments in backend technology, though, to compete in these sectors. The BPO/ITeS and IT service providers would benefit greatly from this. Using our huge databases, account profiling, and research-driven lead generation services in the telecom business, BDM works with top IT/ITeS service providers to link them with the appropriate decision-makers." />
-            <div className='industries-title'>
-                Challenges
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Challenges</u>
             </div>
             <div className='industries-component'>
                 <Challenges challengeData={challengeData} />
             </div>
 
-            <div className='industries-title'>
-                Our Offerings
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u> Our Offerings</u>
             </div>
             <div className='industries-component'>
                 <Igrid gridData={gridData} />
             </div>
 
-            <div className='industries-title'>
-                Our Services
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u> Our Services</u>
             </div>
 
             <div className='industries-component'>
@@ -110,22 +116,22 @@ export default function Telecom() {
                 <Meeting />
             </div>
 
-            <div className='industries-title'>
-                Awards & Recognition
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Awards & Recognition</u>
             </div>
             <div className='industries-component'>
                 <Award />
             </div>
 
-            <div className='industries-title'>
-                Our Recent Projects
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u> Our Recent Projects</u>
             </div>
             <div className='industries-component'>
                 <Project />
             </div>
 
-            <div className='industries-title'>
-                Featured Blog posts
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Featured Blog posts</u>
             </div>
             <div className='industries-component'>
                 <Blogs />

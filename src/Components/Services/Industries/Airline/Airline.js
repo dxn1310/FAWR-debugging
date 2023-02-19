@@ -23,7 +23,13 @@ import Iservices from '../../../Templates/IndustriesTemplates/IndustryServices/I
 import Meeting from '../../../Templates/IndustriesTemplates/Meeting/Meeting'
 
 
-export default function Airline() {
+export default function Airline({ mode }) {
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
 
     const challengeData = [
         "Digital Transformation",
@@ -94,22 +100,22 @@ export default function Airline() {
         <div className='industries-outer'>
             <Industrytop bgimg={Airline_img1}
                 content="Customer experience is crucial to the airline industry. Although airlines strive to offer a seamless travel experience while maximising business efficiency, estimates indicate that airline spending on security has increased by 25% over the past year, primarily as a result of data collection and transmission, capital expenditure, security delays, and security diversions. It's a good opportunity for airlines to increase operational efficiency, carry out large-scale change, and provide a very distinctive consumer travel experience because of the unstable economy, rising operating costs, and rising passenger numbers. These may be accomplished by depending on useful data, enhanced e-commerce tactics, reliable back-end operational systems, and social media interactions. For the airline industry, BDM Technologies has created a distinctive combination of services and solutions. Our services are built around the fundamental technological pillars of cloud computing, social computing, mobility, and analytics, which are ideal for the travel sector." />
-            <div className='industries-title'>
-                Challenges
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Challenges</u>
             </div>
             <div className='industries-component'>
                 <Challenges challengeData={challengeData} />
             </div>
 
-            <div className='industries-title'>
-                Our Offerings
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Offerings</u>
             </div>
             <div className='industries-component'>
                 <Igrid gridData={gridData} />
             </div>
 
-            <div className='industries-title'>
-                Our Services
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Services</u>
             </div>
 
             <div className='industries-component'>
@@ -120,22 +126,22 @@ export default function Airline() {
                 <Meeting />
             </div>
 
-            <div className='industries-title'>
-                Awards & Recognition
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Awards & Recognition</u>
             </div>
             <div className='industries-component'>
                 <Award />
             </div>
 
-            <div className='industries-title'>
-                Our Recent Projects
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Recent Projects</u>
             </div>
             <div className='industries-component'>
                 <Project />
             </div>
 
-            <div className='industries-title'>
-                Featured Blog posts
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Featured Blog posts</u>
             </div>
             <div className='industries-component'>
                 <Blogs />

@@ -22,7 +22,13 @@ import Iservices from '../../../Templates/IndustriesTemplates/IndustryServices/I
 import Meeting from '../../../Templates/IndustriesTemplates/Meeting/Meeting'
 
 
-export default function Healthcare() {
+export default function Healthcare({ mode }) {
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
 
     const challengeData = [
         "Healthcare regulatory changes",
@@ -84,22 +90,22 @@ export default function Healthcare() {
         <div className='industries-outer'>
             <Industrytop bgimg={Healthcare_img1}
                 content="The landscape of the life sciences and healthcare industries is changing for a variety of reasons, including rising prices, developing patient engagement strategies, and shifting regulatory environments. Additionally, the Life Sciences and Healthcare industries are under intense financial strain as a result of their requirement to go digital. The Life Sciences and Healthcare industries face highly strict compliance requirements and regulatory frameworks when engaging with IT / ITeS suppliers. But during the past few years, expenditure on these has increased. The use of next-generation technology is highly widespread in the healthcare sector, which offers enormous prospects for service providers. BDM collaborates with IT / ITeS service providers to generate leads for next-generation technology services in the healthcare and pharmaceutical sectors." />
-            <div className='industries-title'>
-                Challenges
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Challenges</u>
             </div>
             <div className='industries-component'>
                 <Challenges challengeData={challengeData} />
             </div>
 
-            <div className='industries-title'>
-                Our Offerings
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Offerings</u>
             </div>
             <div className='industries-component'>
                 <Igrid gridData={gridData} />
             </div>
 
-            <div className='industries-title'>
-                Our Services
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Services</u>
             </div>
 
             <div className='industries-component'>
@@ -110,22 +116,22 @@ export default function Healthcare() {
                 <Meeting />
             </div>
 
-            <div className='industries-title'>
-                Awards & Recognition
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Awards & Recognition</u>
             </div>
             <div className='industries-component'>
                 <Award />
             </div>
 
-            <div className='industries-title'>
-                Our Recent Projects
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Recent Projects</u>
             </div>
             <div className='industries-component'>
                 <Project />
             </div>
 
-            <div className='industries-title'>
-                Featured Blog posts
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Featured Blog posts</u>
             </div>
             <div className='industries-component'>
                 <Blogs />

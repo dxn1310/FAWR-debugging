@@ -22,7 +22,13 @@ import Iservices from '../../../Templates/IndustriesTemplates/IndustryServices/I
 import Meeting from '../../../Templates/IndustriesTemplates/Meeting/Meeting'
 
 
-export default function Banking() {
+export default function Banking({ mode }) {
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
 
     const challengeData = [
         "Traditional banking habits",
@@ -83,22 +89,22 @@ export default function Banking() {
         <div className='industries-outer'>
             <Industrytop bgimg={Banking_img1}
                 content="Major upheavals are occurring in the banking and financial services sector, whether it is conventional banks defying digital service providers or changing banking rules. In addition, the Banking and Financial Services sector's complex organisational structure makes it challenging for any salesman to identify the right decision-makers and schedule meetings with them. In order to provide lead generation services for the BFS sector, BDM collaborates with top IT / ITeS service providers as an extension of their sales staff. We assist our customers in establishing connections with the pertinent decision-makers across the C-level suite by utilising our comprehensive databases, account profiling, and research-driven approach." />
-            <div className='industries-title'>
-                Challenges
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Challenges</u>
             </div>
             <div className='industries-component'>
                 <Challenges challengeData={challengeData} />
             </div>
 
-            <div className='industries-title'>
-                Our Offerings
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Offerings</u>
             </div>
             <div className='industries-component'>
                 <Igrid gridData={gridData} />
             </div>
 
-            <div className='industries-title'>
-                Our Services
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Services</u>
             </div>
 
             <div className='industries-component'>
@@ -109,22 +115,22 @@ export default function Banking() {
                 <Meeting />
             </div>
 
-            <div className='industries-title'>
-                Awards & Recognition
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Awards & Recognition</u>
             </div>
             <div className='industries-component'>
                 <Award />
             </div>
 
-            <div className='industries-title'>
-                Our Recent Projects
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Recent Projects</u>
             </div>
             <div className='industries-component'>
                 <Project />
             </div>
 
-            <div className='industries-title'>
-                Featured Blog posts
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Featured Blog posts</u>
             </div>
             <div className='industries-component'>
                 <Blogs />

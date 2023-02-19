@@ -25,7 +25,13 @@ import Project from "../../LandingPage/Projects/Project"
 import Blogs from "../../LandingPage/Blogs/Blog"
 import Value from '../../Templates/Value/Value'
 
-export default function Animation() {
+export default function Animation({ mode }) {
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
 
     const detailData = [
         {
@@ -42,7 +48,7 @@ export default function Animation() {
             name: "2D / 3D Animation",
             firstLetter: "2",
             img: R1,
-            tool:T1,
+            tool: T1,
             content: "Our skilled animators are always prepared to offer top-notch results that may astonish the target audience, whether it be through the creation of animated logos, the development of distinctive 2D and 3D characters for films, or the production of business advertisements that focus on results."
         },
 
@@ -50,7 +56,7 @@ export default function Animation() {
             name: "Logo Animation",
             firstLetter: "L",
             img: R2,
-            tool:T2,
+            tool: T2,
             content: "For your company's branding or marketing requirements, our skilled animators can provide personalised and unique 3D, 2D, Flash, and animated logos. The animated logos we create are ideal for social media awareness campaigns, web advertising, video presentations, and inbound marketing."
         },
 
@@ -58,7 +64,7 @@ export default function Animation() {
             name: "Whiteboard Animation",
             firstLetter: "W",
             img: R3,
-            tool:T3,
+            tool: T3,
             content: "Scribe animations, often referred as as whiteboard animations, are perfect for explainer films, online video marketing, and training and development courses. Our whiteboard panel artists have collaborated with customers from all around the world to produce effective, excellent, hand-drawn films."
         },
 
@@ -66,7 +72,7 @@ export default function Animation() {
             name: "Character Animation",
             firstLetter: "C",
             img: R4,
-            tool:T4,
+            tool: T4,
             content: "Character animation requires specialised knowledge that can only be provided by those that not only comprehend your needs but also have the ability to put their creativity front and centre. They ensure that your brand is seen fast and effectively thanks to their extensive understanding of design techniques and aesthetics."
         },
 
@@ -74,14 +80,14 @@ export default function Animation() {
             name: "Stop Motion Animation",
             firstLetter: "S",
             img: R5,
-            tool:T5,
+            tool: T5,
             content: "We produce breathtaking stop motion cartoons for a range of uses, including commercials, movies, music videos, and advertising, among others. Design and development, character design and storyboarding, animation, voice recording, visual effects, and compositing are all part of our stop motion services."
         },
         {
             name: "Motion Graphics",
             firstLetter: "M",
             img: R6,
-            tool:T6,
+            tool: T6,
             content: "BDM is a well-known supplier of motion graphics design services. From idea creation to complex 3D animation, we offer a comprehensive range of motion graphics design services for movies and commercials. You won't find a better or more affordable service provider than BDM for your motion graphics needs."
         },
 
@@ -90,8 +96,8 @@ export default function Animation() {
     return (
         <div className='research-outer'>
             <Top bgimg={Animation_img1} />
-            <div className='reserach-title'>
-                Animations Services
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Animations Services</u>
             </div>
             <div className='research-component'>
                 <Details detailData={detailData} />
@@ -101,22 +107,22 @@ export default function Animation() {
                 <Grid gridData={gridData} />
             </div>
 
-            <div className='reserach-title'>
-                Awards & Recognition
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Awards & Recognition</u>
             </div>
             <div className='research-component'>
-                <Award i={"0"}/>
+                <Award i={"0"} />
             </div>
 
-            <div className='reserach-title'>
-                Our Recent Projects
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Recent Projects</u>
             </div>
             <div className='research-component'>
                 <Project />
             </div>
 
-            <div className='reserach-title'>
-                Featured Blog posts
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Featured Blog posts</u>
             </div>
             <div className='research-component'>
                 <Blogs />

@@ -20,6 +20,7 @@ import T6 from "./BlockchainImages/T6.png"
 import A1 from "./BlockchainImages/A1.png"
 
 import Blockchain_img2 from "./BlockchainImages/Blockchain_img2.png"
+import Blockchain_img3 from "./BlockchainImages/Blockchain_img3.png"
 
 import Top from '../../Templates/Topimage/Top'
 import Details from '../../Templates/Details/Details'
@@ -30,7 +31,7 @@ import Project from "../../LandingPage/Projects/Project"
 import Blogs from "../../LandingPage/Blogs/Blog"
 import Value from '../../Templates/Value/Value'
 
-export default function Research() {
+export default function Research({ mode }) {
 
     const detailData = [
         {
@@ -98,11 +99,17 @@ export default function Research() {
                 "Improved innovation", "Resiliency", "Reduced outages", "Increased agility", "Scalability"]
         }
     ]
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
     return (
         <div className='research-outer'>
             <Top bgimg={Blockchain_img1} />
-            <div className='reserach-title'>
-                Blockchain Development Services
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Blockchain Development Services</u>
             </div>
             <div className='research-component'>
                 <Details detailData={detailData} />
@@ -112,30 +119,30 @@ export default function Research() {
                 <Grid gridData={gridData} />
             </div>
 
-            <div className='reserach-title'>
-                Benefits of Blockchain
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Benefits of Blockchain</u>
             </div>
             <div style={{ width: "90%", display: "flex", justifyContent: "center", marginTop: "5%", marginBottom: "5%" }}>
-                <img src={Blockchain_img2} />
+                <img src={mode === "dark" ? Blockchain_img2 : Blockchain_img3} />
             </div>
 
 
-            <div className='reserach-title'>
-                Awards & Recognition
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Awards & Recognition</u>
             </div>
             <div className='research-component'>
-                <Award img={A1} i={"1"}/>
+                <Award img={A1} i={"1"} />
             </div>
 
-            <div className='reserach-title'>
-                Our Recent Projects
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Recent Projects</u>
             </div>
             <div className='research-component'>
                 <Project />
             </div>
 
-            <div className='reserach-title'>
-                Featured Blog posts
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Featured Blog posts</u>
             </div>
             <div className='research-component'>
                 <Blogs />

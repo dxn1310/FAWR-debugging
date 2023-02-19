@@ -21,14 +21,20 @@ import Project from "../../LandingPage/Projects/Project"
 import Blogs from "../../LandingPage/Blogs/Blog"
 import Value from '../../Templates/Value/Value'
 
-export default function Customer() {
+export default function Customer({ mode }) {
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+
 
     const detailData = [
         {
             title: "Real-time & Dynamic Segments",
             content1: "Customer segmentation is a powerful tool that firms can use to more closely match their strategy and tactics with their consumers and more effectively target them. Since every client is unique and every customer journey is unique, a single strategy frequently won't be effective for everyone. Customer segmentation is the practise of grouping your consumers according to shared traits, such behaviours or demographics, to better target them with marketing messages. ",
-            content2:"All organisations, regardless of size, industry, and whether they sell online or in person, may use customer segmentation. It starts with obtaining and evaluating data and concludes with taking suitable and efficient action on the information acquired. Businesses that customise their messaging and cater to certain client segments develop 10% faster than those that don't. As your organisation expands, segments may always be made more comprehensive since they pinpoint the best clients and the locations where they are easiest to reach. Differentiation based on data from customer segmentation may help teams in marketing, sales, product development, and customer support improve their workflows.",
-            points: ["Demographic segmentation","Geographic segmentation", "Psychographic segmentation", "Technographic segmentation", "Behavioral segmentation", "Needs-based segmentation", "Values-based segmentation"]
+            content2: "All organisations, regardless of size, industry, and whether they sell online or in person, may use customer segmentation. It starts with obtaining and evaluating data and concludes with taking suitable and efficient action on the information acquired. Businesses that customise their messaging and cater to certain client segments develop 10% faster than those that don't. As your organisation expands, segments may always be made more comprehensive since they pinpoint the best clients and the locations where they are easiest to reach. Differentiation based on data from customer segmentation may help teams in marketing, sales, product development, and customer support improve their workflows.",
+            points: ["Demographic segmentation", "Geographic segmentation", "Psychographic segmentation", "Technographic segmentation", "Behavioral segmentation", "Needs-based segmentation", "Values-based segmentation"]
         }
     ]
 
@@ -79,7 +85,7 @@ export default function Customer() {
             img: R7,
             content: "Value-based segmentation rates various client groups according to the amount of money they bring in and how much it costs to build and maintain connections with them. Additionally, it aids businesses in identifying the most and least profitable categories so they may modify their marketing expenditures accordingly."
         },
-        
+
 
 
     ]
@@ -87,8 +93,8 @@ export default function Customer() {
     return (
         <div className='research-outer'>
             <Top bgimg={Customer_img1} />
-            <div className='reserach-title'>
-                Customer Segmentation Services
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Customer Segmentation Services</u>
             </div>
             <div className='research-component'>
                 <Details detailData={detailData} />
@@ -98,22 +104,22 @@ export default function Customer() {
                 <Grid gridData={gridData} />
             </div>
 
-            <div className='reserach-title'>
-                Awards & Recognition
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Awards & Recognition</u>
             </div>
             <div className='research-component'>
-                <Award i={"0"}/>
+                <Award i={"0"} />
             </div>
 
-            <div className='reserach-title'>
-                Our Recent Projects
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Recent Projects</u>
             </div>
             <div className='research-component'>
                 <Project />
             </div>
 
-            <div className='reserach-title'>
-                Featured Blog posts
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Featured Blog posts</u>
             </div>
             <div className='research-component'>
                 <Blogs />

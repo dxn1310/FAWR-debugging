@@ -14,6 +14,7 @@ import T1 from "./UxuiImages/T1.png"
 import A1 from "./UxuiImages/A1.png"
 
 import Uxui_img2 from "./UxuiImages/Uxui_img2.png"
+import Uxui_img3 from "./UxuiImages/Uxui_img3.png"
 
 import Top from '../../Templates/Topimage/Top'
 import Details from '../../Templates/Details/Details'
@@ -24,7 +25,13 @@ import Project from "../../LandingPage/Projects/Project"
 import Blogs from "../../LandingPage/Blogs/Blog"
 import Value from '../../Templates/Value/Value'
 
-export default function Uxui() {
+export default function Uxui({ mode }) {
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
 
     const detailData = [
         {
@@ -40,7 +47,7 @@ export default function Uxui() {
             name: "App/Web Design",
             firstLetter: "A",
             img: R1,
-            tool:T1,
+            tool: T1,
             content: "We build appealing user flows and aesthetically pleasing interfaces because we are aware of how users engage with websites and mobile applications. The fastest route to a customer's loyalty is through a modern, yet plain, clean, and straightforward UI and UX design."
         },
 
@@ -83,8 +90,8 @@ export default function Uxui() {
     return (
         <div className='research-outer'>
             <Top bgimg={Uxui_img1} />
-            <div className='reserach-title'>
-                UX / UI Design Services
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>UX / UI Design Services</u>
             </div>
             <div className='research-component'>
                 <Details detailData={detailData} />
@@ -94,29 +101,29 @@ export default function Uxui() {
                 <Grid gridData={gridData} />
             </div>
 
-            <div className='reserach-title'>
-                Our Design Process
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Design Process</u>
             </div>
             <div style={{ width: "90%", display: "flex", justifyContent: "center", marginTop: "5%", marginBottom: "5%" }}>
-                <img src={Uxui_img2} />
+                <img src={mode === "dark" ? Uxui_img2 : Uxui_img3} />
             </div>
 
-            <div className='reserach-title'>
-                Awards & Recognition
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Awards & Recognition</u>
             </div>
             <div className='research-component'>
-                <Award img={A1} i={"0"}/>
+                <Award img={A1} i={"0"} />
             </div>
 
-            <div className='reserach-title'>
-                Our Recent Projects
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Recent Projects</u>
             </div>
             <div className='research-component'>
                 <Project />
             </div>
 
-            <div className='reserach-title'>
-                Featured Blog posts
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Featured Blog posts</u>
             </div>
             <div className='research-component'>
                 <Blogs />

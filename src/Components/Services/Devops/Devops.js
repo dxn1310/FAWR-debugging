@@ -19,6 +19,7 @@ import A1 from "./DevopsImages/A1.png"
 
 
 import Devops_img2 from "./DevopsImages/Devops_img2.png"
+import Devops_img3 from "./DevopsImages/Devops_img3.png"
 
 import Top from '../../Templates/Topimage/Top'
 import Details from '../../Templates/Details/Details'
@@ -29,7 +30,7 @@ import Project from "../../LandingPage/Projects/Project"
 import Blogs from "../../LandingPage/Blogs/Blog"
 import Value from '../../Templates/Value/Value'
 
-export default function Research() {
+export default function Research({ mode }) {
 
     const detailData = [
         {
@@ -44,7 +45,7 @@ export default function Research() {
             name: "Infrastructure Management",
             firstLetter: "I",
             img: R1,
-            tool:T1,
+            tool: T1,
             content: "It is a crucial component in establishing a DevOps process. We support IT operations with monitoring and management of infrastructure across cloud vendors with our DevOps solutions. We take these steps for your business to avoid any obstacles before they arise. We therefore ensure that you can close the gap between software development, quality assurance, and IT operations with our DevOps solutions."
         },
 
@@ -52,7 +53,7 @@ export default function Research() {
             name: "Configuration Management",
             firstLetter: "C",
             img: R2,
-            tool:T2,
+            tool: T2,
             content: "Automating tedious maintenance procedures using configuration management frees up developer time for creative development. This improves agility for the organisation as a whole as well as for individual developers. It would be accurate to say at this point that Configuration Management is fundamentally required for establishing a DevOps-driven architecture."
         },
 
@@ -60,7 +61,7 @@ export default function Research() {
             name: "Automation",
             firstLetter: "A",
             img: R3,
-            tool:T3,
+            tool: T3,
             content: "Automation is the application of technology to jobs that require less human involvement. Automation can be used in any industry with repetitive operations, although it is more common in the manufacturing, robotics, and automotive sectors as well as in IT systems and business decision tools in the technology world."
         },
 
@@ -68,7 +69,7 @@ export default function Research() {
             name: "Environment Management",
             firstLetter: "E",
             img: R4,
-            tool:T4,
+            tool: T4,
             content: "By managing infrastructure, apps, tools, procedures, and day-to-day operations, development and environment management may increase agility, automate processes, and shorten time-to-market. We help you maintain your code, automate your platforms, and prepare your server and services for your customers with our environment management services."
         },
 
@@ -76,7 +77,7 @@ export default function Research() {
             name: "Code Integration & Inspection",
             firstLetter: "C",
             img: R5,
-            tool:T5,
+            tool: T5,
             content: "Code integration, also referred to as CI, enables you to automate tool communication, cutting out human procedures and waste from the value stream. Code inspections assist you in identifying faults in functionality, maintainability, and dependability. Simple errors of omission and commission can be discovered using a code inspection checklist."
         },
         {
@@ -95,53 +96,59 @@ export default function Research() {
                 "Improved innovation", "Resiliency", "Reduced outages", "Increased agility", "Scalability"]
         }
     ]
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
     return (
         <div className='research-outer'>
-            <Top bgimg={Devops_img1} />
-            <div className='reserach-title'>
-                DevOps Services
+            <Top bgimg={Devops_img1} mode={mode} />
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>DevOps Services</u>
             </div>
             <div className='research-component'>
-                <Details detailData={detailData} />
+                <Details detailData={detailData} mode={mode} />
             </div>
 
             <div className='research-component'>
-                <Grid gridData={gridData} />
+                <Grid gridData={gridData} mode={mode} />
             </div>
 
-            <div className='reserach-title'>
-                Benefits of DevOps
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Benefits of DevOps</u>
             </div>
             <div style={{ width: "90%", display: "flex", justifyContent: "center", marginTop: "5%", marginBottom: "5%" }}>
-                <img src={Devops_img2} />
+                <img src={mode === "dark" ? Devops_img2 : Devops_img3} />
             </div>
 
-            <div className='reserach-title'>
-                The value we Add
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>The value we Add</u>
             </div>
             <div className='research-component'>
-                <Value valueData={valueData} />
+                <Value valueData={valueData} mode={mode} />
             </div>
 
-            <div className='reserach-title'>
-                Awards & Recognition
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u> Awards & Recognition</u>
             </div>
             <div className='research-component'>
-                <Award img={A1} i={"0"}/>
+                <Award img={A1} i={"0"} mode={mode} />
             </div>
 
-            <div className='reserach-title'>
-                Our Recent Projects
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Recent Projects</u>
             </div>
             <div className='research-component'>
-                <Project />
+                <Project mode={mode} />
             </div>
 
-            <div className='reserach-title'>
-                Featured Blog posts
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Featured Blog posts</u>
             </div>
             <div className='research-component'>
-                <Blogs />
+                <Blogs mode={mode} />
             </div>
 
         </div>

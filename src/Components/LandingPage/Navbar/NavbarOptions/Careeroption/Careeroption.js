@@ -8,7 +8,7 @@ import co4 from "./CareeroptionImages/4.png"
 
 import { NavLink as Link } from 'react-router-dom'
 
-export default function Careeroption({ onClick }) {
+export default function Careeroption({ onClick, mode }) {
     return (
         <div className='co-outer'>
             <div className='co-left'>
@@ -43,9 +43,9 @@ export default function Careeroption({ onClick }) {
                 </div>
                 <div style={{ display: "flex", justifyContent: "center", width: "80%", marginTop: "5%", marginLeft: "10%" }}>
                     <ul className='co-right-ul'>
-                        <Link to="/Opportunities for Freshers"><li className='co-right-li' onClick={onClick}>Fresher</li></Link>
-                        <Link to="/Experienced Professional"><li className='co-right-li' onClick={onClick}>Experienced Professionals</li></Link>
-                        <li className='co-right-li'>Important Notice</li>
+                        <Link to="/Opportunities for Freshers"><li className='co-right-li' onClick={onClick} style={{ color: mode === "dark" ? "white" : "black" }}>Fresher</li></Link>
+                        <Link to="/Experienced Professional"><li className='co-right-li' onClick={onClick} style={{ color: mode === "dark" ? "white" : "black" }}>Experienced Professionals</li></Link>
+                        <li className='co-right-li' style={{ color: mode === "dark" ? "white" : "black" }}>Important Notice</li>
                     </ul>
                 </div>
             </div>

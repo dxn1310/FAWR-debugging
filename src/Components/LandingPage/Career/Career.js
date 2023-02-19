@@ -5,15 +5,15 @@ import "./Career.css"
 import Career_img1 from "./CareerImages/Career_img1.png"
 import Career_img2 from "./CareerImages/Career_img2.png"
 
-export default function Career() {
+export default function Career({ mode }) {
     return (
         <div className='career-outer'>
             <div className='career-left'>
-                <div className='career-right-title'>
+                <div className='career-right-title' style={{ color: mode === "dark" ? "#C6C6C6" : "black" }}>
                     Job Openings
                 </div>
                 <div className='career-job-grid'>
-                    <div className='career-job-title'>
+                    <div className='career-job-title' style={{ color: mode === "dark" ? "#C6C6C6" : "black" }}>
                         Full Stack Developer
                     </div>
                     <div className='career-job-text'>
@@ -26,7 +26,7 @@ export default function Career() {
                 </div>
 
                 <div className='career-job-grid'>
-                    <div className='career-job-title'>
+                    <div className='career-job-title' style={{ color: mode === "dark" ? "#C6C6C6" : "black" }}>
                         Senior Executive
                     </div>
                     <div className='career-job-text'>
@@ -39,7 +39,7 @@ export default function Career() {
                 </div>
 
                 <div className='career-job-grid'>
-                    <div className='career-job-title'>
+                    <div className='career-job-title' style={{ color: mode === "dark" ? "#C6C6C6" : "black" }}>
                         UI/UX Designer
                     </div>
                     <div className='career-job-text'>
@@ -56,7 +56,7 @@ export default function Career() {
 
             </div>
             <div className='career-right'>
-                <div className='career-right-title'>
+                <div className='career-right-title' style={{ color: mode === "dark" ? "#C6C6C6" : "black" }}>
                     Benefits of Working with us
                 </div>
 

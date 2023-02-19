@@ -140,7 +140,7 @@ export default function Contact() {
                                 recruiting@bdm.com
                             </div>
 
-                            <Link to="/Careers Main">
+                            <Link to="/Alumni Relations">
                                 <div className='contact-link'>
                                     <Stack direction="row" spacing={1} width="100%" display="flex" alignItems="center">
                                         <div style={{ color: "#BC312E", width: "fit-content" }}> Visit our alumni site</div>

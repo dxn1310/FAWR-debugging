@@ -23,7 +23,13 @@ import Project from "../../LandingPage/Projects/Project"
 import Blogs from "../../LandingPage/Blogs/Blog"
 import Value from '../../Templates/Value/Value'
 
-export default function Cloud() {
+export default function Cloud({ mode }) {
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
 
     const detailData = [
         {
@@ -71,8 +77,8 @@ export default function Cloud() {
     return (
         <div className='research-outer'>
             <Top bgimg={Cloud_img1} />
-            <div className='reserach-title'>
-                Cloud Storage & Management Services
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Cloud Storage & Management Services</u>
             </div>
             <div className='research-component'>
                 <Details detailData={detailData} />
@@ -83,22 +89,22 @@ export default function Cloud() {
             </div>
 
 
-            <div className='reserach-title'>
-                Awards & Recognition
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u> Awards & Recognition</u>
             </div>
             <div className='research-component'>
-                <Award img={A1} i={"0"}/>
+                <Award img={A1} i={"0"} />
             </div>
 
-            <div className='reserach-title'>
-                Our Recent Projects
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u> Our Recent Projects</u>
             </div>
             <div className='research-component'>
                 <Project />
             </div>
 
-            <div className='reserach-title'>
-                Featured Blog posts
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u> Featured Blog posts</u>
             </div>
             <div className='research-component'>
                 <Blogs />

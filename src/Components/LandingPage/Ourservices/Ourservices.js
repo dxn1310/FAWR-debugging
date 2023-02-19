@@ -22,7 +22,7 @@ import {
 
 import { useMediaQuery } from '@chakra-ui/react'
 
-export default function Ourservices() {
+export default function Ourservices({ mode }) {
     const title = ["Analytics & Insights", "Consultancy", "Design & Creative", "Development", "Digital Marketing"]
     const img = [Ourservices_img1, Ourservices_img2, Ourservices_img3, Ourservices_img4, Ourservices_img5]
     const subTitle = ["Are you having a hard time understanding your data?",
@@ -64,7 +64,7 @@ export default function Ourservices() {
 
     const [isLargerThan700] = useMediaQuery('(min-width: 400px)')
     return (
-        <div className='ourservices-outer'>
+        <div className='ourservices-outer' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
             <div className='ourservices-title' style={{ display: isLargerThan1100 ? "flex" : "none" }}>
                 {title[optionValue]}
             </div>
@@ -118,18 +118,18 @@ export default function Ourservices() {
                     <div className='ourservices-inner-left-bottom'>
                         {
                             optionValue === 0 ? <div className='ourservices-inner-left-bottom-btns'>
-                                <div className='ourservices-inner-left-bottom-button' onClick={handleDownClick} >
+                                <div className='ourservices-inner-left-bottom-button' onClick={handleDownClick} style={{ backgroundColor: mode === "dark" ? "rgba(255, 255, 255, 0.05)" : "#BC312E" }}>
                                     <ChevronDownIcon color="white" w={10} h={10} />
                                 </div>
                             </div> : optionValue === 4 ? <div className='ourservices-inner-left-bottom-btns'>
-                                <div className='ourservices-inner-left-bottom-button' onClick={handleUpClick} >
+                                <div className='ourservices-inner-left-bottom-button' onClick={handleUpClick} style={{ backgroundColor: mode === "dark" ? "rgba(255, 255, 255, 0.05)" : "#BC312E" }}>
                                     <ChevronUpIcon color="white" w={10} h={10} />
                                 </div>
-                            </div> : <div className='ourservices-inner-left-bottom-btns'>
-                                <div className='ourservices-inner-left-bottom-button' onClick={handleUpClick} >
+                            </div> : <div className='ourservices-inner-left-bottom-btns' >
+                                <div className='ourservices-inner-left-bottom-button' onClick={handleUpClick} style={{ backgroundColor: mode === "dark" ? "rgba(255, 255, 255, 0.05)" : "#BC312E" }}>
                                     <ChevronUpIcon color="white" w={10} h={10} />
                                 </div>
-                                <div className='ourservices-inner-left-bottom-button' onClick={handleDownClick} >
+                                <div className='ourservices-inner-left-bottom-button' onClick={handleDownClick} style={{ backgroundColor: mode === "dark" ? "rgba(255, 255, 255, 0.05)" : "#BC312E" }}>
                                     <ChevronDownIcon color="white" w={10} h={10} />
                                 </div>
                             </div>
@@ -147,10 +147,10 @@ export default function Ourservices() {
                                 <div className='ourservices-inner-left-top-right'>
                                     <img className='ourservices-inner-left-top-img' src={img[index]} />
                                 </div>
-                                <div className='ourservices-inner-right-text1'>
+                                <div className='ourservices-inner-right-text1' style={{ color: mode === "dark" ? "white" : "black" }}>
                                     {item}
                                 </div>
-                                <div className='ourservices-inner-right-text2'>
+                                <div className='ourservices-inner-right-text2' style={{ color: mode === "dark" ? "white" : "black" }}>
                                     {data[index]}
                                 </div>
                                 <Stack direction="column" spacing={3} marginTop={isLargerThan700 ? "5%" : "10%"} width="100%">
@@ -158,50 +158,50 @@ export default function Ourservices() {
                                     <div className='ourservices-inner-right-line' />
                                     <Link to={linkURLS[index][0]}>
                                         <div className='ourservices-inner-right-link'>
-                                            <div className='ourservices-inner-right-link-text'>
+                                            <div className='ourservices-inner-right-link-text' style={{ color: mode === "dark" ? "white" : "black" }}>
                                                 {linkData[index][0]}
                                             </div>
-                                            <ChevronRightIcon color="white" w={8} h={8} />
+                                            <ChevronRightIcon w={8} h={8} color={mode === "dark" ? "white" : "black"} />
                                         </div>
                                     </Link>
 
                                     <div className='ourservices-inner-right-line' />
                                     <Link to={linkURLS[index][1]}>
                                         <div className='ourservices-inner-right-link'>
-                                            <div className='ourservices-inner-right-link-text'>
+                                            <div className='ourservices-inner-right-link-text' style={{ color: mode === "dark" ? "white" : "black" }}>
                                                 {linkData[index][1]}
                                             </div>
-                                            <ChevronRightIcon color="white" w={8} h={8} />
+                                            <ChevronRightIcon w={8} h={8} color={mode === "dark" ? "white" : "black"} />
                                         </div>
                                     </Link>
 
                                     <div className='ourservices-inner-right-line' />
                                     <Link to={linkURLS[index][2]}>
                                         <div className='ourservices-inner-right-link'>
-                                            <div className='ourservices-inner-right-link-text'>
+                                            <div className='ourservices-inner-right-link-text' style={{ color: mode === "dark" ? "white" : "black" }}>
                                                 {linkData[index][2]}
                                             </div>
-                                            <ChevronRightIcon color="white" w={8} h={8} />
+                                            <ChevronRightIcon w={8} h={8} color={mode === "dark" ? "white" : "black"} />
                                         </div>
                                     </Link>
 
                                     <div className='ourservices-inner-right-line' />
                                     <Link to={linkURLS[index][3]}>
                                         <div className='ourservices-inner-right-link'>
-                                            <div className='ourservices-inner-right-link-text'>
+                                            <div className='ourservices-inner-right-link-text' style={{ color: mode === "dark" ? "white" : "black" }}>
                                                 {linkData[index][3]}
                                             </div>
-                                            <ChevronRightIcon color="white" w={8} h={8} />
+                                            <ChevronRightIcon w={8} h={8} color={mode === "dark" ? "white" : "black"} />
                                         </div>
                                     </Link>
 
                                     <div className='ourservices-inner-right-line' />
                                     <Link to={linkURLS[index][4]}>
                                         <div className='ourservices-inner-right-link'>
-                                            <div className='ourservices-inner-right-link-text'>
+                                            <div className='ourservices-inner-right-link-text' style={{ color: mode === "dark" ? "white" : "black" }}>
                                                 {linkData[index][4]}
                                             </div>
-                                            <ChevronRightIcon color="white" w={8} h={8} />
+                                            <ChevronRightIcon w={8} h={8} color={mode === "dark" ? "white" : "black"} />
                                         </div>
                                     </Link>
 
@@ -215,7 +215,7 @@ export default function Ourservices() {
                     <div className='ourservices-inner-right-text1'>
                         {subTitle[optionValue]}
                     </div>
-                    <div className='ourservices-inner-right-text2'>
+                    <div className='ourservices-inner-right-text2' style={{ color: mode === "dark" ? "white" : "black" }}>
                         {data[optionValue]}
                     </div>
                     <Stack direction="column" spacing={3} marginTop="5%" width="100%">
@@ -223,50 +223,50 @@ export default function Ourservices() {
                         <div className='ourservices-inner-right-line' />
                         <Link to={linkURLS[optionValue][0]}>
                             <div className='ourservices-inner-right-link'>
-                                <div className='ourservices-inner-right-link-text'>
+                                <div className='ourservices-inner-right-link-text' style={{ color: mode === "dark" ? "white" : "black" }}>
                                     {linkData[optionValue][0]}
                                 </div>
-                                <ChevronRightIcon color="white" w={8} h={8} />
+                                <ChevronRightIcon w={8} h={8} color={mode === "dark" ? "white" : "black"} />
                             </div>
                         </Link>
 
                         <div className='ourservices-inner-right-line' />
                         <Link to={linkURLS[optionValue][1]}>
                             <div className='ourservices-inner-right-link'>
-                                <div className='ourservices-inner-right-link-text'>
+                                <div className='ourservices-inner-right-link-text' style={{ color: mode === "dark" ? "white" : "black" }}>
                                     {linkData[optionValue][1]}
                                 </div>
-                                <ChevronRightIcon color="white" w={8} h={8} />
+                                <ChevronRightIcon w={8} h={8} color={mode === "dark" ? "white" : "black"} />
                             </div>
                         </Link>
 
                         <div className='ourservices-inner-right-line' />
                         <Link to={linkURLS[optionValue][2]}>
                             <div className='ourservices-inner-right-link'>
-                                <div className='ourservices-inner-right-link-text'>
+                                <div className='ourservices-inner-right-link-text' style={{ color: mode === "dark" ? "white" : "black" }}>
                                     {linkData[optionValue][2]}
                                 </div>
-                                <ChevronRightIcon color="white" w={8} h={8} />
+                                <ChevronRightIcon w={8} h={8} color={mode === "dark" ? "white" : "black"} />
                             </div>
                         </Link>
 
                         <div className='ourservices-inner-right-line' />
                         <Link to={linkURLS[optionValue][3]}>
                             <div className='ourservices-inner-right-link'>
-                                <div className='ourservices-inner-right-link-text'>
+                                <div className='ourservices-inner-right-link-text' style={{ color: mode === "dark" ? "white" : "black" }}>
                                     {linkData[optionValue][3]}
                                 </div>
-                                <ChevronRightIcon color="white" w={8} h={8} />
+                                <ChevronRightIcon w={8} h={8} color={mode === "dark" ? "white" : "black"} />
                             </div>
                         </Link>
 
                         <div className='ourservices-inner-right-line' />
                         <Link to={linkURLS[optionValue][4]}>
                             <div className='ourservices-inner-right-link'>
-                                <div className='ourservices-inner-right-link-text'>
+                                <div className='ourservices-inner-right-link-text' style={{ color: mode === "dark" ? "white" : "black" }}>
                                     {linkData[optionValue][4]}
                                 </div>
-                                <ChevronRightIcon color="white" w={8} h={8} />
+                                <ChevronRightIcon w={8} h={8} color={mode === "dark" ? "white" : "black"} />
                             </div>
                         </Link>
 

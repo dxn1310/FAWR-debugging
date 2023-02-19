@@ -42,7 +42,7 @@ export default function Aboutus() {
                     </div>
                 </Link>
 
-                <Link to="/What we believe">
+                <Link to="/Media Center">
                     <div className='au-element'>
                         <div className='au-element-title'>Media Centre</div>
                         <div className='au-element-text'>

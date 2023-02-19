@@ -23,7 +23,13 @@ import Iservices from '../../../Templates/IndustriesTemplates/IndustryServices/I
 import Meeting from '../../../Templates/IndustriesTemplates/Meeting/Meeting'
 
 
-export default function Travel() {
+export default function Travel({ mode }) {
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
 
     const challengeData = [
         "Supply chain integration",
@@ -88,22 +94,22 @@ export default function Travel() {
         <div className='industries-outer'>
             <Industrytop bgimg={Travel_img1}
                 content="Due to technology improvements, the TTL sector has undergone a digital transformation over time. The transportation sector's reach and perspective are being gradually expanded by modern technology and digitization. The TTL value chain today offers services in the areas of e-ticketing, payment wallets, shared mobility, and last-mile connection, to name a few improvements and breakthroughs. The capacity to give information, services, and transportation assistance everywhere, anytime is one trend in the sector, along with the ability to purchase tickets, share rides or cabs, and manage travel statistics.  The need for effective and user-friendly end-user networks is therefore urgent. This opens up huge prospects for IT/ITeS businesses to capitalise on the demand for these services. With the aid of lead generation services in the travel, transportation, and logistics sectors, BDM works with the IT/ITeS businesses to schedule meetings with the appropriate stakeholders and decision-makers." />
-            <div className='industries-title'>
-                Challenges
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Challenges</u>
             </div>
             <div className='industries-component'>
                 <Challenges challengeData={challengeData} />
             </div>
 
-            <div className='industries-title'>
-                Our Offerings
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u> Our Offerings</u>
             </div>
             <div className='industries-component'>
                 <Igrid gridData={gridData} />
             </div>
 
-            <div className='industries-title'>
-                Our Services
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Services</u>
             </div>
 
             <div className='industries-component'>
@@ -114,22 +120,22 @@ export default function Travel() {
                 <Meeting />
             </div>
 
-            <div className='industries-title'>
-                Awards & Recognition
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Awards & Recognition</u>
             </div>
             <div className='industries-component'>
                 <Award />
             </div>
 
-            <div className='industries-title'>
-                Our Recent Projects
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Recent Projects</u>
             </div>
             <div className='industries-component'>
                 <Project />
             </div>
 
-            <div className='industries-title'>
-                Featured Blog posts
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Featured Blog posts</u>
             </div>
             <div className='industries-component'>
                 <Blogs />

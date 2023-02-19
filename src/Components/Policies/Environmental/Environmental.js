@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Environmental.css"
 
-export default function Environmental() {
+export default function Environmental({ mode }) {
     return (
         <div className='ep-outer'>
             <div className='ep-inner'>

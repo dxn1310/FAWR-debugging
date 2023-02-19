@@ -23,7 +23,13 @@ import Iservices from '../../../Templates/IndustriesTemplates/IndustryServices/I
 import Meeting from '../../../Templates/IndustriesTemplates/Meeting/Meeting'
 
 
-export default function Insurance() {
+export default function Insurance({ mode }) {
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
 
     const challengeData = [
         "Channel management",
@@ -83,22 +89,22 @@ export default function Insurance() {
         <div className='industries-outer'>
             <Industrytop bgimg={Insurance_img1}
                 content="The insurance sector is dealing with quickening technology development and more stringent governmental regulatory compliance. Insurance firms are utilising Internet of Things, Advanced Analytics, and Machine Learning to generate precise individual risk profiles in order to meet the rising demand for individualised rates and usage-based coverage. This offers a special chance for IT & ITeS service providers to support the insurance sector's transformation and adaptation. The difficulty for IT / ITeS providers is to get their message through as the insurance sector increases its spending with IT and ITeS businesses to accomplish their transformational and digital aspirations. Our comprehensive databases, account mapping, and research-driven strategy, which aids our clients in the IT & ITeS business in connecting with the appropriate decision-makers and influencers, are the results of our competence in lead generation for insurance." />
-            <div className='industries-title'>
-                Challenges
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Challenges</u>
             </div>
             <div className='industries-component'>
                 <Challenges challengeData={challengeData} />
             </div>
 
-            <div className='industries-title'>
-                Our Offerings
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Offerings</u>
             </div>
             <div className='industries-component'>
                 <Igrid gridData={gridData} />
             </div>
 
-            <div className='industries-title'>
-                Our Services
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Services</u>
             </div>
 
             <div className='industries-component'>
@@ -109,22 +115,22 @@ export default function Insurance() {
                 <Meeting />
             </div>
 
-            <div className='industries-title'>
-                Awards & Recognition
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Awards & Recognition</u>
             </div>
             <div className='industries-component'>
                 <Award />
             </div>
 
-            <div className='industries-title'>
-                Our Recent Projects
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Recent Projects</u>
             </div>
             <div className='industries-component'>
                 <Project />
             </div>
 
-            <div className='industries-title'>
-                Featured Blog posts
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Featured Blog posts</u>
             </div>
             <div className='industries-component'>
                 <Blogs />

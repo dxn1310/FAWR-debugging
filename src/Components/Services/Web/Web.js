@@ -16,6 +16,7 @@ import T3 from "./WebImages/T3.png"
 import A1 from "./WebImages/A1.png"
 
 import Web_img2 from "./WebImages/Web_img2.png"
+import Web_img3 from "./WebImages/Web_img3.png"
 
 import Top from '../../Templates/Topimage/Top'
 import Details from '../../Templates/Details/Details'
@@ -26,7 +27,14 @@ import Project from "../../LandingPage/Projects/Project"
 import Blogs from "../../LandingPage/Blogs/Blog"
 import Value from '../../Templates/Value/Value'
 
-export default function Web() {
+export default function Web({ mode }) {
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+
 
     const detailData = [
         {
@@ -87,8 +95,8 @@ export default function Web() {
     return (
         <div className='research-outer'>
             <Top bgimg={Web_img1} />
-            <div className='reserach-title'>
-                Web Development Services
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Web Development Services</u>
             </div>
             <div className='research-component'>
                 <Details detailData={detailData} />
@@ -98,29 +106,29 @@ export default function Web() {
                 <Grid gridData={gridData} />
             </div>
 
-            <div className='reserach-title'>
-                Our Web Development Process
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Web Development Process</u>
             </div>
             <div style={{ width: "90%", display: "flex", justifyContent: "center", marginTop: "5%", marginBottom: "5%" }}>
-                <img src={Web_img2} />
+                <img src={mode === "dark" ? Web_img2 : Web_img3} />
             </div>
 
-            <div className='reserach-title'>
-                Awards & Recognition
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Awards & Recognition</u>
             </div>
             <div className='research-component'>
-                <Award img={A1} i={"1"}/>
+                <Award img={A1} i={"1"} />
             </div>
 
-            <div className='reserach-title'>
-                Our Recent Projects
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Recent Projects</u>
             </div>
             <div className='research-component'>
                 <Project />
             </div>
 
-            <div className='reserach-title'>
-                Featured Blog posts
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Featured Blog posts</u>
             </div>
             <div className='research-component'>
                 <Blogs />

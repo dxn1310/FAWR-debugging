@@ -22,7 +22,7 @@ import Iservices from '../../../Templates/IndustriesTemplates/IndustryServices/I
 import Meeting from '../../../Templates/IndustriesTemplates/Meeting/Meeting'
 
 
-export default function Technology() {
+export default function Technology({ mode }) {
 
     const challengeData = [
         "Management of big data",
@@ -87,57 +87,64 @@ export default function Technology() {
             p: "1"
         },
     ]
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+
     return (
         <div className='industries-outer'>
-            <Industrytop bgimg={Technology_img1}
+            <Industrytop bgimg={Technology_img1} mode={mode}
                 content="Technology companies need to be able to expand quickly and pivot even more quickly in a sector where innovation is both an opportunity and a danger. Whatever the focus or stage of your company's life cycle, our industry knowledge and cross-sector expertise can help you make the correct decisions and achieve quick, long-lasting results. We collaborate with clients in the storage, components and peripherals, IT services, as well as every other area of the IT industry. Additionally, our firm's extensive expertise in private equity and telecommunications supports our technology practise. We aid market leaders in the planning of acquisitions, the streamlining of R&D procedures, the improvement of cybersecurity, and cost-cutting measures. We teach struggling businesses how to revamp their financial structures, and we train up-and-coming competitors how to scale up their operations to handle the rising complexity that comes along with expansion. We offer a comprehensive grasp of the entire potential of cloud computing and the Internet of Things as trusted consultants to CTOs, CIOs, and financial backers." />
-            <div className='industries-title'>
-                Challenges
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Challenges</u>
             </div>
             <div className='industries-component'>
-                <Challenges challengeData={challengeData} />
+                <Challenges challengeData={challengeData} mode={mode} />
             </div>
 
-            <div className='industries-title'>
-                Our Offerings
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Offerings</u>
             </div>
             <div className='industries-component'>
-                <Igrid gridData={gridData} />
+                <Igrid gridData={gridData} mode={mode} />
             </div>
 
-            <div className='industries-title'>
-                Our Services
-            </div>
-
-            <div className='industries-component'>
-                <Iservices />
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Services</u>
             </div>
 
             <div className='industries-component'>
-                <Meeting />
+                <Iservices mode={mode} />
             </div>
 
-            <div className='industries-title'>
-                Awards & Recognition
+            <div className='industries-component'>
+                <Meeting mode={mode} />
+            </div>
+
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Awards & Recognition</u>
             </div>
             <div className='industries-component'>
-                <Award />
+                <Award mode={mode} />
             </div>
 
-            <div className='industries-title'>
-                Our Recent Projects
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Recent Projects</u>
             </div>
             <div className='industries-component'>
-                <Project />
+                <Project mode={mode} />
             </div>
 
-            <div className='industries-title'>
-                Featured Blog posts
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Featured Blog posts</u>
             </div>
             <div className='industries-component'>
-                <Blogs />
+                <Blogs mode={mode} />
             </div>
 
-        </div>
+        </div >
     )
 }

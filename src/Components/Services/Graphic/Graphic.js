@@ -28,7 +28,13 @@ import Project from "../../LandingPage/Projects/Project"
 import Blogs from "../../LandingPage/Blogs/Blog"
 import Value from '../../Templates/Value/Value'
 
-export default function Graphic() {
+export default function Graphic({ mode }) {
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
 
     const detailData = [
         {
@@ -52,7 +58,7 @@ export default function Graphic() {
             name: "Logo Design",
             firstLetter: "L",
             img: R2,
-            tool:T1,
+            tool: T1,
             content: "By providing top-notch logo design services, we help companies establish strong brand identities. Get logos made at prices and quality that are appealing. With years of expertise, our logo design professionals can utilise their imagination in a flexible approach to create a logo that accurately conveys your business concept."
         },
 
@@ -60,7 +66,7 @@ export default function Graphic() {
             name: "Brochures Design",
             firstLetter: "B",
             img: R3,
-            tool:T2,
+            tool: T2,
             content: "A sales brochure with a professional design exudes dependability and credibility. As the best flyer and brochure design firm in India, we offer eye-catching sales flyers and business brochure designs to make an impression on your target market. Our distinctive and cutting-edge bespoke brochure designs may offer you an advantage over your rivals and help you keep up with the times."
         },
 
@@ -68,7 +74,7 @@ export default function Graphic() {
             name: "Character Design",
             firstLetter: "C",
             img: R4,
-            tool:T3,
+            tool: T3,
             content: "Character design is a crucial component of digital art, but creating a flawless visual character calls for a certain set of abilities and expertise. We must rely more on visual aspects now that online activity has skyrocketed since there is no other method to convey ideas, feelings, or anything else we wish to accomplish online."
         },
 
@@ -76,14 +82,14 @@ export default function Graphic() {
             name: "Illustration",
             firstLetter: "I",
             img: R5,
-            tool:T4,
+            tool: T4,
             content: "Words cannot create the world that illustrations do. We provide such distinctive illustration designs and artworks for your company that speak to your audience's hearts and brains in a global language and make a lasting impact. We have a reputation for bringing your ideas to life by producing pictures you never imagined being possible."
         },
         {
             name: "Web Banners",
             firstLetter: "W",
             img: R6,
-            tool:T5,
+            tool: T5,
             content: "Since web banners are designed to drive traffic and raise brand recognition, you cannot disregard them in today's cutthroat marketplace. Web banners are frequently used to advertise any good or service, and our staff is aware of how to utilise them to demonstrate your online presence and create web banners that have an effect."
         },
 
@@ -92,8 +98,8 @@ export default function Graphic() {
     return (
         <div className='research-outer'>
             <Top bgimg={Graphic_img1} />
-            <div className='reserach-title'>
-                Graphic Design Services
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Graphic Design Services</u>
             </div>
             <div className='research-component'>
                 <Details detailData={detailData} />
@@ -103,22 +109,22 @@ export default function Graphic() {
                 <Grid gridData={gridData} />
             </div>
 
-            <div className='reserach-title'>
-                Awards & Recognition
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Awards & Recognition</u>
             </div>
             <div className='research-component'>
-                <Award img={A1} i={"0"}/>
+                <Award img={A1} i={"0"} />
             </div>
 
-            <div className='reserach-title'>
-                Our Recent Projects
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Recent Projects</u>
             </div>
             <div className='research-component'>
                 <Project />
             </div>
 
-            <div className='reserach-title'>
-                Featured Blog posts
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Featured Blog posts</u>
             </div>
             <div className='research-component'>
                 <Blogs />

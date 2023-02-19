@@ -23,96 +23,96 @@ import Cookie from '../../Policies/Cookie/Cookie'
 
 // import Contact from "../../Contact/Contact"
 
-export default function Landing() {
+export default function Landing({ mode }) {
     return (
-        <div style={{ backgroundColor: "#211F22" }} className="landing-outer">
+        <div style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }} className="landing-outer">
             {/* <Navbar /> */}
             {/* <Contact /> */}
             <div className='landing-element'>
-                <Firstpage />
+                <Firstpage mode={mode} />
             </div>
-            <div className='landing-title'>
-                Our Services
+            <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Services</u>
             </div>
             <div className='landing-element'>
-                <Ourservices />
+                <Ourservices mode={mode} />
             </div>
 
-            <div className='landing-title'>
-                Industries we serve
-            </div>
-
-            <div className='landing-element'>
-                <Industries />
-            </div>
-
-            <div className='landing-title'>
-                About Us
+            <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+            <u>Industries we serve</u>
             </div>
 
             <div className='landing-element'>
-                <About />
+                <Industries mode={mode} />
             </div>
 
-            <div className='landing-title'>
-                Awards &
-                Recognitions
-            </div>
-
-            <div className='landing-element'>
-                <Award />
-            </div>
-
-            <div className='landing-title'>
-                Career
+            <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+            <u>About Us</u>
             </div>
 
             <div className='landing-element'>
-                <Career />
-            </div>
-            <div className='landing-title'>
-                Our Other Products
+                <About mode={mode} />
             </div>
 
-            <div className='landing-element'>
-                <Other />
-            </div>
-
-            <div className='landing-title'>
-                Our Partners
+            <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+            <u> Awards &
+                Recognitions</u>
             </div>
 
             <div className='landing-element'>
-                <Partner />
+                <Award mode={mode} />
             </div>
 
-            <div className='landing-title'>
-                Our Other Companies
-            </div>
-
-            <div className='landing-element'>
-                <Companies />
-            </div>
-
-
-            <div className='landing-title'>
-                Testimonials
-            </div>
-
-            <div className='landing-title'>
-                Our Recent Projects
+            <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+            <u>Career</u>
             </div>
 
             <div className='landing-element'>
-                <Project />
+                <Career mode={mode} />
             </div>
-
-            <div className='landing-title'>
-                Our Featured Blogs
+            <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+            <u> Our Other Products</u>
             </div>
 
             <div className='landing-element'>
-                <Blog />
+                <Other mode={mode} />
+            </div>
+
+            <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+            <u> Our Partners</u>
+            </div>
+
+            <div className='landing-element'>
+                <Partner mode={mode} />
+            </div>
+
+            <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+            <u>Our Other Companies</u>
+            </div>
+
+            <div className='landing-element'>
+                <Companies mode={mode} />
+            </div>
+
+
+            <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+            <u>Testimonials</u>
+            </div>
+
+            <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+            <u>Our Recent Projects</u>
+            </div>
+
+            <div className='landing-element'>
+                <Project mode={mode} />
+            </div>
+
+            <div className='landing-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+            <u> Our Featured Blogs</u>
+            </div>
+
+            <div className='landing-element'>
+                <Blog mode={mode} />
             </div>
 
             {/* <Footer /> */}

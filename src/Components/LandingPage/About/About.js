@@ -8,14 +8,14 @@ import About_img4 from "./AboutImages/About_img4.png"
 
 import { Button, Stack } from '@chakra-ui/react'
 
-export default function About() {
+export default function About({ mode }) {
     return (
         <div className='about-outer'>
             <div className='about-left'>
-                <div className='about-title'>
+                <div className='about-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                     Delivering Digital Innovation From Startups to Enterprises
                 </div>
-                <div className='about-text'>
+                <div className='about-text' style={{ color: mode === "dark" ? "white" : "black" }}>
                     We are a business solution provider that has aided non-IT businesses and software product firms in enhancing operational efficiency and rapidly gaining new clients.
                 </div>
 

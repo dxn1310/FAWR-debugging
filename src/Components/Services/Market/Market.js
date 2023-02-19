@@ -16,6 +16,7 @@ import T3 from "./MarketImages/T3.png"
 import A1 from "./MarketImages/A1.png"
 
 import Market_img2 from "./MarketImages/Market_img2.png"
+import Market_img3 from "./MarketImages/Market_img3.png"
 
 import Top from '../../Templates/Topimage/Top'
 import Details from '../../Templates/Details/Details'
@@ -26,7 +27,7 @@ import Project from "../../LandingPage/Projects/Project"
 import Blogs from "../../LandingPage/Blogs/Blog"
 import Value from '../../Templates/Value/Value'
 
-export default function Market() {
+export default function Market({ mode }) {
 
     const detailData = [
         {
@@ -83,11 +84,17 @@ export default function Market() {
         },
 
     ]
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
     return (
         <div className='research-outer'>
             <Top bgimg={Market_img1} />
-            <div className='reserach-title'>
-                Marketing Automation Services
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Marketing Automation Services</u>
             </div>
             <div className='research-component'>
                 <Details detailData={detailData} />
@@ -97,30 +104,30 @@ export default function Market() {
                 <Grid gridData={gridData} />
             </div>
 
-            <div className='reserach-title'>
-                Benefits of Marketing Automation
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Benefits of Marketing Automation</u>
             </div>
             <div style={{ width: "90%", display: "flex", justifyContent: "center", marginTop: "5%", marginBottom: "5%" }}>
-                <img src={Market_img2} />
+                <img src={mode === "dark" ? Market_img2 : Market_img3} />
             </div>
 
 
-            <div className='reserach-title'>
-                Awards & Recognition
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Awards & Recognition</u>
             </div>
             <div className='research-component'>
-                <Award img={A1} i={"1"}/>
+                <Award img={A1} i={"1"} />
             </div>
 
-            <div className='reserach-title'>
-                Our Recent Projects
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Recent Projects</u>
             </div>
             <div className='research-component'>
                 <Project />
             </div>
 
-            <div className='reserach-title'>
-                Featured Blog posts
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Featured Blog posts</u>
             </div>
             <div className='research-component'>
                 <Blogs />

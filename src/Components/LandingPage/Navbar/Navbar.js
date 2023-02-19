@@ -2,7 +2,7 @@ import { CloseButton, Stack } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import "./Navbar.css"
 
-import { ChevronDownIcon, SunIcon, HamburgerIcon, ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronDownIcon, MoonIcon, SunIcon, HamburgerIcon, ChevronRightIcon } from '@chakra-ui/icons'
 
 import { Avatar, AvatarBadge, AvatarGroup } from '@chakra-ui/react'
 
@@ -40,7 +40,7 @@ import {
     PopoverAnchor,
 } from '@chakra-ui/react'
 
-export default function Navbar() {
+export default function Navbar({ mode, handleMode }) {
     const [isLargerThan850] = useMediaQuery('(min-width: 850px)')
     const { isOpen, onToggle } = useDisclosure()
     const [zindex, setZindex] = useState(10)
@@ -57,7 +57,7 @@ export default function Navbar() {
     const [isLargerThan800] = useMediaQuery('(min-width: 800px)')
 
     return (
-        <div className='navbar-outer'>
+        <div className='navbar-outer' style={{ color: mode === "dark" ? "white" : "black" }}>
             <Slide direction='top' in={isOpen} style={{ zIndex: 10 }} transition="5s">
                 <Box
                     // p='20px'
@@ -65,16 +65,16 @@ export default function Navbar() {
                     mt='20'
                     ml="10%"
                     mr="10%"
-                    bg='#211F22'
+                    bg={mode === "dark" ? '#211F22' : "white"}
                     rounded='md'
                     shadow='lg'
                     p="1%"
                 >
-                    <CloseButton onClick={onToggle} fontSize="20" />
+                    <CloseButton onClick={onToggle} fontSize="20" color={mode === "dark" ? "white" : "black"} />
                     {
-                        selectedOption === 0 ? <Aboutoption onClick={onToggle} /> :
-                            selectedOption === 1 ? <Solutionoption onToggle={onToggle} /> : selectedOption === 2 ?
-                                <Exploreoption onClick={onToggle} /> : <Careeroption onClick={onToggle} />
+                        selectedOption === 0 ? <Aboutoption onClick={onToggle} mode={mode} /> :
+                            selectedOption === 1 ? <Solutionoption onToggle={onToggle} mode={mode} /> : selectedOption === 2 ?
+                                <Exploreoption onClick={onToggle} mode={mode} /> : <Careeroption onClick={onToggle} mode={mode} />
                     }
                 </Box>
             </Slide>
@@ -161,7 +161,9 @@ export default function Navbar() {
                         {/* <div className='navbar-option-text'>
                             About
                         </div> */}
-                        <SunIcon fontSize="2rem" height="100%" />
+                        {
+                            mode === "dark" ? <MoonIcon fontSize="2rem" height="100%" onClick={handleMode} /> : <SunIcon fontSize="2rem" height="100%" onClick={handleMode} />
+                        }
                     </Stack>
                 </div>
 
@@ -310,7 +312,10 @@ export default function Navbar() {
                         {/* <div className='navbar-option-text'>
                             About
                         </div> */}
-                        <SunIcon fontSize="2rem" height="100%" />
+                        {
+                            mode === "dark" ? <MoonIcon fontSize="2rem" height="100%" onClick={handleMode} /> : <SunIcon fontSize="2rem" height="100%" onClick={handleMode} />
+                        }
+
                     </Stack>
                     {/* </div> */}
 

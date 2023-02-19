@@ -19,14 +19,20 @@ import Project from "../../LandingPage/Projects/Project"
 import Blogs from "../../LandingPage/Blogs/Blog"
 import Value from '../../Templates/Value/Value'
 
-export default function Financial() {
+export default function Financial({ mode }) {
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
 
     const detailData = [
         {
             title: "Helps in Attaining Goals",
             content1: "It may be quite nerve-wracking for anyone to plan properly and allocate finances. An professional who provides assistance at each stage, from planning to building an asset portfolio, is a financial adviser. A group of skilled specialists who offer guidance on effective asset and money management make up the financial advising services. Certified financial planners, wealth managers, investment advisers, and certified public accountants are just a few examples of the many professionals that offer financial advice services. A skilled financial counsellor will ask you about your objectives, gain an understanding of your debts, income, and spending, and then develop the best strategy for achieving your goals.",
             content2: "Our team of experts is well-versed in domestic law and has first-hand understanding of issues pertaining to the financial services industry. We have agreements with top consultants who have already dealt with regulators and can offer an insightful viewpoint.",
-            points: ["Transaction Services", "Corporate Finance", "Crises & Recovery", "Risk Management", "Accounting & Tax Advisory","Forensics & Litigation"]
+            points: ["Transaction Services", "Corporate Finance", "Crises & Recovery", "Risk Management", "Accounting & Tax Advisory", "Forensics & Litigation"]
         }
     ]
 
@@ -77,8 +83,8 @@ export default function Financial() {
     return (
         <div className='research-outer'>
             <Top bgimg={Financial_img1} />
-            <div className='reserach-title'>
-                Financial Advisory Services
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Financial Advisory Services</u>
             </div>
             <div className='research-component'>
                 <Details detailData={detailData} />
@@ -88,22 +94,22 @@ export default function Financial() {
                 <Grid gridData={gridData} />
             </div>
 
-            <div className='reserach-title'>
-                Awards & Recognition
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Awards & Recognition</u>
             </div>
             <div className='research-component'>
-                <Award i={"0"}/>
+                <Award i={"0"} />
             </div>
 
-            <div className='reserach-title'>
-                Our Recent Projects
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Recent Projects</u>
             </div>
             <div className='research-component'>
                 <Project />
             </div>
 
-            <div className='reserach-title'>
-                Featured Blog posts
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Featured Blog posts</u>
             </div>
             <div className='research-component'>
                 <Blogs />

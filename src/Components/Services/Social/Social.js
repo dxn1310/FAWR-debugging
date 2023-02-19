@@ -15,6 +15,7 @@ import T3 from "./SocialImages/T3.png"
 import T4 from "./SocialImages/T4.png"
 import T5 from "./SocialImages/T5.png"
 
+import Social_img2 from "./SocialImages/Social_img2.png"
 
 import Top from '../../Templates/Topimage/Top'
 import Details from '../../Templates/Details/Details'
@@ -25,7 +26,14 @@ import Project from "../../LandingPage/Projects/Project"
 import Blogs from "../../LandingPage/Blogs/Blog"
 import Value from '../../Templates/Value/Value'
 
-export default function Social() {
+export default function Social({ mode }) {
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+
 
     const detailData = [
         {
@@ -41,7 +49,7 @@ export default function Social() {
             name: "Social Networking",
             firstLetter: "S",
             img: R1,
-            tool:T1,
+            tool: T1,
             content: "Companies may identify & store interesting information to include in their schedule by using social bookmarking. This is a great method to make content selection simpler & hasten social media growth. The majority of social bookmarking websites enable businesses to identify which subjects are trending, most current, or connected to a certain issue."
         },
         {
@@ -54,7 +62,7 @@ export default function Social() {
             name: "Social News",
             firstLetter: "S",
             img: R3,
-            tool:T2,
+            tool: T2,
             content: "The key advantage of Social News is that it maintains your company in the public eye. By ensuring that they keep up to date and in contact with their target audience, various social platforms assist journalists and public relations professionals in enhancing the public's knowledge of their brand and overall corporate image."
         },
 
@@ -62,7 +70,7 @@ export default function Social() {
             name: "Media Sharing",
             firstLetter: "M",
             img: R4,
-            tool:T3,
+            tool: T3,
             content: "Platforms for sharing media provide companies the opportunity to produce photos and movies that reflect their brand's image and values as well as to increase their visibility and get the support of a specific user base. The utilization of graphics to convey a message that customers can identify to or aspire to is what gives these platforms their enormous appeal."
         },
 
@@ -70,7 +78,7 @@ export default function Social() {
             name: "Microblogging",
             firstLetter: "M",
             img: R5,
-            tool:T4,
+            tool: T4,
             content: "Microblogging is the practise of creating brief blog posts with a direct, time-sensitive audience. These short blogs can comprise several material types, such as audio, text, photographs, or video, and are shared utilising social networking sites like Twitter or Instagram."
         },
 
@@ -78,7 +86,7 @@ export default function Social() {
             name: "Online Forum",
             firstLetter: "O",
             img: R6,
-            tool:T5,
+            tool: T5,
             content: "The Social Media Forums may be helpful to businesses, startups, and marketers alike. You may obtain advice on social media for your enterprises or ask questions. This social media forum will cover a wide range of topics, including forums for Facebook, Twitter, LinkedIn, Instagram, etc."
         },
 
@@ -87,8 +95,8 @@ export default function Social() {
     return (
         <div className='research-outer'>
             <Top bgimg={Social_img1} />
-            <div className='reserach-title'>
-                Social Media Marketing Services
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Social Media Marketing Services</u>
             </div>
             <div className='research-component'>
                 <Details detailData={detailData} />
@@ -98,22 +106,29 @@ export default function Social() {
                 <Grid gridData={gridData} />
             </div>
 
-            <div className='reserach-title'>
-                Awards & Recognition
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Platforms we use</u>
             </div>
-            <div className='research-component'>
-                <Award i={"0"}/>
+            <div style={{ width: "90%", display: "flex", justifyContent: "center", marginTop: "5%", marginBottom: "5%" }}>
+                <img src={Social_img2} />
             </div>
 
-            <div className='reserach-title'>
-                Our Recent Projects
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Awards & Recognition</u>
+            </div>
+            <div className='research-component'>
+                <Award i={"0"} />
+            </div>
+
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Recent Projects</u>
             </div>
             <div className='research-component'>
                 <Project />
             </div>
 
-            <div className='reserach-title'>
-                Featured Blog posts
+            <div className='reserach-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Featured Blog posts</u>
             </div>
             <div className='research-component'>
                 <Blogs />

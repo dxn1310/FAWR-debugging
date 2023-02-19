@@ -23,7 +23,13 @@ import Iservices from '../../../Templates/IndustriesTemplates/IndustryServices/I
 import Meeting from '../../../Templates/IndustriesTemplates/Meeting/Meeting'
 
 
-export default function Ecommerce() {
+export default function Ecommerce({ mode }) {
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
 
     const challengeData = [
         "Customer Retention",
@@ -94,22 +100,22 @@ export default function Ecommerce() {
         <div className='industries-outer'>
             <Industrytop bgimg={Ecommerce_img1}
                 content="For retailers, brands, and cataloguers today, the development of e-commerce has created a number of opportunities across a variety of platforms. We are at a turning point when changes in consumer behaviour and points of engagement are altering how businesses must deal with customers and run their operations. There are several possibilities and hazards for stakeholders as a result of the disruption in the economics and value chains of the established industries. Businesses must better understand their customers in order to offer seamless, customised experiences. To do this, they must leverage emerging technology. A perfect e-commerce platform enables a service that continuously adjusts its operations to the always changing, tech-savvy, and cross-channel consumers, making items accessible at the appropriate location, at the right time, and at the right price." />
-            <div className='industries-title'>
-                Challenges
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Challenges</u>
             </div>
             <div className='industries-component'>
                 <Challenges challengeData={challengeData} />
             </div>
 
-            <div className='industries-title'>
-                Our Offerings
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Offerings</u>
             </div>
             <div className='industries-component'>
                 <Igrid gridData={gridData} />
             </div>
 
-            <div className='industries-title'>
-                Our Services
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Services</u>
             </div>
 
             <div className='industries-component'>
@@ -120,22 +126,22 @@ export default function Ecommerce() {
                 <Meeting />
             </div>
 
-            <div className='industries-title'>
-                Awards & Recognition
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Awards & Recognition</u>
             </div>
             <div className='industries-component'>
                 <Award />
             </div>
 
-            <div className='industries-title'>
-                Our Recent Projects
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Our Recent Projects</u>
             </div>
             <div className='industries-component'>
                 <Project />
             </div>
 
-            <div className='industries-title'>
-                Featured Blog posts
+            <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
+                <u>Featured Blog posts</u>
             </div>
             <div className='industries-component'>
                 <Blogs />
