@@ -88,20 +88,20 @@ export default function Healthcare({ mode }) {
     ]
     return (
         <div className='industries-outer'>
-            <Industrytop bgimg={Healthcare_img1}
+            <Industrytop bgimg={Healthcare_img1} mode={mode}
                 content="The landscape of the life sciences and healthcare industries is changing for a variety of reasons, including rising prices, developing patient engagement strategies, and shifting regulatory environments. Additionally, the Life Sciences and Healthcare industries are under intense financial strain as a result of their requirement to go digital. The Life Sciences and Healthcare industries face highly strict compliance requirements and regulatory frameworks when engaging with IT / ITeS suppliers. But during the past few years, expenditure on these has increased. The use of next-generation technology is highly widespread in the healthcare sector, which offers enormous prospects for service providers. BDM collaborates with IT / ITeS service providers to generate leads for next-generation technology services in the healthcare and pharmaceutical sectors." />
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Challenges</u>
             </div>
             <div className='industries-component'>
-                <Challenges challengeData={challengeData} />
+                <Challenges challengeData={challengeData} mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Our Offerings</u>
             </div>
             <div className='industries-component'>
-                <Igrid gridData={gridData} />
+                <Igrid gridData={gridData} mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
@@ -109,32 +109,32 @@ export default function Healthcare({ mode }) {
             </div>
 
             <div className='industries-component'>
-                <Iservices />
+                <Iservices mode={mode} />
             </div>
 
             <div className='industries-component'>
-                <Meeting />
+                <Meeting mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Awards & Recognition</u>
             </div>
             <div className='industries-component'>
-                <Award />
+                <Award mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Our Recent Projects</u>
             </div>
             <div className='industries-component'>
-                <Project />
+                <Project mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Featured Blog posts</u>
             </div>
             <div className='industries-component'>
-                <Blogs />
+                <Blogs mode={mode} />
             </div>
 
         </div>

@@ -83,20 +83,20 @@ export default function Automotive({ mode }) {
     ]
     return (
         <div className='industries-outer'>
-            <Industrytop bgimg={Automotive_img1}
+            <Industrytop bgimg={Automotive_img1} mode={mode}
                 content="One may reasonably argue that the automotive industry has undergone a paradigm change in recent years. This is especially true when other contemporary needs are taken into account, such as autonomous driving, shared mobility, diminishing fuel reserves, and restrictive laws. In our opinion at BDM, the upheaval in the car sector is only a chance to embrace digitalization and change how our customers view their supply chains, manufacturing capabilities, and data analytics. With our distinctive knowledge of cutting-edge technology, we offered a wide range of services. Veterans of the car industry have moved into new areas and enhanced their operational performance with our assistance; now, you can too! The automotive sector, which comprises businesses engaged in the designing, marketing, producing, and reselling of automobiles among other things, is one of the most significant revenue-generating industries in the whole globe. The car business is profitable, but it also confronts a number of challenges, including shifting customer tastes, the rise of new developing economies, technology improvements, more digitalization, automation, and new environmentally friendly options." />
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Challenges</u>
             </div>
             <div className='industries-component'>
-                <Challenges challengeData={challengeData} />
+                <Challenges challengeData={challengeData} mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Our Offerings</u>
             </div>
             <div className='industries-component'>
-                <Igrid gridData={gridData} />
+                <Igrid gridData={gridData} mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
@@ -104,32 +104,32 @@ export default function Automotive({ mode }) {
             </div>
 
             <div className='industries-component'>
-                <Iservices />
+                <Iservices mode={mode} />
             </div>
 
             <div className='industries-component'>
-                <Meeting />
+                <Meeting mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Awards & Recognition</u>
             </div>
             <div className='industries-component'>
-                <Award />
+                <Award mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Our Recent Projects</u>
             </div>
             <div className='industries-component'>
-                <Project />
+                <Project mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Featured Blog posts</u>
             </div>
             <div className='industries-component'>
-                <Blogs />
+                <Blogs mode={mode} />
             </div>
 
         </div>

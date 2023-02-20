@@ -162,7 +162,7 @@ export default function Navbar({ mode, handleMode }) {
                             About
                         </div> */}
                         {
-                            mode === "light" ? <MoonIcon fontSize="2rem" height="100%" onClick={handleMode} /> : <SunIcon fontSize="2rem" height="100%" onClick={handleMode} />
+                            mode === "dark" ? <SunIcon fontSize="2rem" height="100%" onClick={handleMode} /> : <MoonIcon fontSize="2rem" height="100%" onClick={handleMode} />
                         }
                     </Stack>
                 </div>
@@ -210,8 +210,8 @@ export default function Navbar({ mode, handleMode }) {
                                 <HamburgerIcon fontSize="2rem" height="100%" />
                             </Stack>
                         </MenuButton>
-                        <MenuList backgroundColor="#211F22" border="none" width="100%">
-                            <MenuItem backgroundColor="#211F22">
+                        <MenuList backgroundColor={mode === "dark" ? "#211F22" : "white"} border={mode === "dark" ? "none" : "1px solid black"} width="100%">
+                            <MenuItem backgroundColor={mode === "dark" ? "#211F22" : "white"}>
                                 <Stack direction="row" spacing={5} alignItems="center" display="flex">
                                     <Avatar src='https://bit.ly/broken-link' />
                                     <Link to="/">
@@ -221,7 +221,7 @@ export default function Navbar({ mode, handleMode }) {
                                     </Link>
                                 </Stack></MenuItem>
 
-                            <MenuItem backgroundColor="#211F22" >
+                            <MenuItem backgroundColor={mode === "dark" ? "#211F22" : "white"} >
                                 <Stack direction="row" alignItems="center" display="flex" >
                                     <Link to="/About Options">
                                         <div className='navbar-option-text'>
@@ -232,7 +232,7 @@ export default function Navbar({ mode, handleMode }) {
                                 </Stack>
                             </MenuItem>
 
-                            <MenuItem backgroundColor="#211F22" >
+                            <MenuItem backgroundColor={mode === "dark" ? "#211F22" : "white"} >
                                 <Stack direction="row" alignItems="center" display="flex" >
                                     <Link to="/Solution Options">
                                         <div className='navbar-option-text'>
@@ -243,7 +243,7 @@ export default function Navbar({ mode, handleMode }) {
                                 </Stack>
                             </MenuItem>
 
-                            <MenuItem backgroundColor="#211F22" >
+                            <MenuItem backgroundColor={mode === "dark" ? "#211F22" : "white"}>
                                 <Stack direction="row" alignItems="center" display="flex" >
                                     <Link to="">
                                         <div className='navbar-option-text'>
@@ -254,7 +254,7 @@ export default function Navbar({ mode, handleMode }) {
                                 </Stack>
                             </MenuItem>
 
-                            <MenuItem backgroundColor="#211F22" >
+                            <MenuItem backgroundColor={mode === "dark" ? "#211F22" : "white"} >
                                 <Stack direction="row" alignItems="center" display="flex" >
                                     <Link to="/Explore Options">
                                         <div className='navbar-option-text'>
@@ -265,7 +265,7 @@ export default function Navbar({ mode, handleMode }) {
                                 </Stack>
                             </MenuItem>
 
-                            <MenuItem backgroundColor="#211F22" >
+                            <MenuItem backgroundColor={mode === "dark" ? "#211F22" : "white"} >
                                 <Stack direction="row" alignItems="center" display="flex" >
                                     <Link to="/Career Options">
                                         <div className='navbar-option-text'>
@@ -275,7 +275,7 @@ export default function Navbar({ mode, handleMode }) {
                                     <ChevronRightIcon fontSize="1.5rem" height="100%" />
                                 </Stack>
                             </MenuItem>
-                            <MenuItem backgroundColor="#211F22" >
+                            <MenuItem backgroundColor={mode === "dark" ? "#211F22" : "white"}>
                                 <Stack direction="row" alignItems="center" display="flex" >
                                     <Link to="/Contact Us">
                                         <div className='navbar-option-text'>
@@ -286,7 +286,7 @@ export default function Navbar({ mode, handleMode }) {
                                 </Stack>
                             </MenuItem>
 
-                            <MenuItem backgroundColor="#211F22" width="100%">
+                            <MenuItem backgroundColor={mode === "dark" ? "#211F22" : "white"} width="100%">
                                 {/* <div className='navbar-option'> */}
                                 <Link to="/Login">
                                     <Button backgroundColor="#BC312E" color="white" borderRadius="1rem">Sign In</Button>
@@ -313,7 +313,7 @@ export default function Navbar({ mode, handleMode }) {
                             About
                         </div> */}
                         {
-                            mode === "light" ? <MoonIcon fontSize="2rem" height="100%" onClick={handleMode} /> : <SunIcon fontSize="2rem" height="100%" onClick={handleMode} />
+                            mode === "dark" ? <SunIcon fontSize="2rem" height="100%" onClick={handleMode} /> : <MoonIcon fontSize="2rem" height="100%" onClick={handleMode} />
                         }
 
                     </Stack>

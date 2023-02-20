@@ -28,90 +28,90 @@ import x20 from "./PartnerImages/20.png"
 export default function Partner({ mode }) {
     return (
         <div className='partner-outer'>
-            <div className='partner-grid' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
-                <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+            <div className='partner-grid' >
+                <div className='partner-grid-element' >
                     <img src={x1} />
                 </div>
 
-                 <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+                <div className='partner-grid-element' >
                     <img src={x2} />
                 </div>
 
-                 <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+                <div className='partner-grid-element' >
                     <img src={x3} />
                 </div>
 
-                 <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+                <div className='partner-grid-element' >
                     <img src={x4} />
                 </div>
 
-                 <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+                <div className='partner-grid-element' >
                     <img src={x5} />
                 </div>
             </div>
 
             <div className='partner-grid'>
-                 <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+                <div className='partner-grid-element' >
                     <img src={x6} />
                 </div>
 
-                 <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+                <div className='partner-grid-element' >
                     <img src={x7} />
                 </div>
 
-                 <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+                <div className='partner-grid-element' >
                     <img src={x8} />
                 </div>
 
-                 <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+                <div className='partner-grid-element' >
                     <img src={x9} />
                 </div>
 
-                 <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+                <div className='partner-grid-element' >
                     <img src={x10} />
                 </div>
             </div>
 
             <div className='partner-grid'>
-                 <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+                <div className='partner-grid-element' >
                     <img src={x11} />
                 </div>
 
-                 <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+                <div className='partner-grid-element' >
                     <img src={x12} />
                 </div>
 
-                 <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+                <div className='partner-grid-element' >
                     <img src={x13} />
                 </div>
 
-                 <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+                <div className='partner-grid-element' >
                     <img src={x14} />
                 </div>
 
-                 <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+                <div className='partner-grid-element' >
                     <img src={x15} />
                 </div>
             </div>
 
             <div className='partner-grid'>
-                 <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+                <div className='partner-grid-element' >
                     <img src={x16} />
                 </div>
 
-                 <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+                <div className='partner-grid-element' >
                     <img src={x17} />
                 </div>
 
-                 <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+                <div className='partner-grid-element' >
                     <img src={x18} />
                 </div>
 
-                 <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+                <div className='partner-grid-element' >
                     <img src={x19} />
                 </div>
 
-                 <div className='partner-grid-element' style={{ backgroundColor: mode === "dark" ? "#211F22" : "white" }}>
+                <div className='partner-grid-element' >
                     <img src={x20} />
                 </div>
             </div>

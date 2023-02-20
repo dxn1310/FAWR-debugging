@@ -100,20 +100,20 @@ export default function Media({ mode }) {
     ]
     return (
         <div className='industries-outer'>
-            <Industrytop bgimg={Media_img1}
+            <Industrytop bgimg={Media_img1} mode={mode}
                 content="The media and entertainment sector is going through a revolution. Over the past several years, the media and entertainment sector has seen significant change due to factors including interactivity, digitalization, many platforms and devices, and globalisation of the services-based environment. The new technologies that will propel the next wave of change in the sector include social media, mobility, analytics, and cloud computing. Numerous external influences and technological advancements, including wireless, mobile, digitalization, internet access rates, cloud storage, consumer analytics, and social media, are dependent on the Media & Entertainment industries. Therefore, in order to provide customers with appropriate material, these businesses must alter their pricing strategies, modernise their infrastructure, and heavily rely on analytics. Large prospects exist for IT & ITeS businesses in this sector as it continues to expand. In the Media & Entertainment sector, BDM collaborates with top IT / ITeS service providers as an extension of their sales team to assist them in connecting with the appropriate decision-makers utilising our huge databases, account profiling, and research-driven lead generating services." />
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Challenges</u>
             </div>
             <div className='industries-component'>
-                <Challenges challengeData={challengeData} />
+                <Challenges challengeData={challengeData} mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Our Offerings</u>
             </div>
             <div className='industries-component'>
-                <Igrid gridData={gridData} />
+                <Igrid gridData={gridData} mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
@@ -121,32 +121,32 @@ export default function Media({ mode }) {
             </div>
 
             <div className='industries-component'>
-                <Iservices />
+                <Iservices mode={mode} />
             </div>
 
             <div className='industries-component'>
-                <Meeting />
+                <Meeting mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Awards & Recognition</u>
             </div>
             <div className='industries-component'>
-                <Award />
+                <Award mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Our Recent Projects</u>
             </div>
             <div className='industries-component'>
-                <Project />
+                <Project mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Featured Blog posts</u>
             </div>
             <div className='industries-component'>
-                <Blogs />
+                <Blogs mode={mode} />
             </div>
 
         </div>

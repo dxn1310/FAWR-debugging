@@ -88,20 +88,20 @@ export default function Telecom({ mode }) {
     ]
     return (
         <div className='industries-outer'>
-            <Industrytop bgimg={Telecom_img1}
+            <Industrytop bgimg={Telecom_img1} mode={mode}
                 content="The telecom sector is essential to the overall expansion of other industries. The needs of customers and the changing nature of technology provide special difficulties for the telecom industry. Telecom providers are always making investments in network improvements and capacity expansion to stay up with the ever changing industry. Through the monetization of data, providing and creating content, and investigating verticals, they are investigating new business sources. These businesses must thrive in the areas of IoT, connected devices, and security in order to compete. The Telecom firms will have to make large investments in backend technology, though, to compete in these sectors. The BPO/ITeS and IT service providers would benefit greatly from this. Using our huge databases, account profiling, and research-driven lead generation services in the telecom business, BDM works with top IT/ITeS service providers to link them with the appropriate decision-makers." />
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Challenges</u>
             </div>
             <div className='industries-component'>
-                <Challenges challengeData={challengeData} />
+                <Challenges challengeData={challengeData} mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u> Our Offerings</u>
             </div>
             <div className='industries-component'>
-                <Igrid gridData={gridData} />
+                <Igrid gridData={gridData} mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
@@ -109,32 +109,32 @@ export default function Telecom({ mode }) {
             </div>
 
             <div className='industries-component'>
-                <Iservices />
+                <Iservices mode={mode} />
             </div>
 
             <div className='industries-component'>
-                <Meeting />
+                <Meeting mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Awards & Recognition</u>
             </div>
             <div className='industries-component'>
-                <Award />
+                <Award mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u> Our Recent Projects</u>
             </div>
             <div className='industries-component'>
-                <Project />
+                <Project mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Featured Blog posts</u>
             </div>
             <div className='industries-component'>
-                <Blogs />
+                <Blogs mode={mode} />
             </div>
 
         </div>

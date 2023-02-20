@@ -87,20 +87,20 @@ export default function Energy({ mode }) {
     ]
     return (
         <div className='industries-outer'>
-            <Industrytop bgimg={Energy_img1}
+            <Industrytop bgimg={Energy_img1} mode={mode}
                 content="The industrial world today is experiencing an exponential rise of data, particularly in the energy and utilities sector. Unfortunately, despite the fact that there is a wealth of useful data available, a large portion of it is still traditionally siloed across business units, making it difficult for businesses involved in the production of conventional power, renewable energy, power transmission and distribution, retail energy services, and water to optimise their operations. They struggle to efficiently maintain and run plants, transmission lines, sub-stations, power metres, water pipes, or effluents with little local presence and requirements-based dispatching. Businesses in the energy and utilities sector require digital intervention to unlock value from siloed data from several distributed assets and put it to use to provide a connected experience across functions. Are you prepared to satisfy changing market demands and provide services to clients with higher levels of sophistication? We have utility technology solutions that can support your efficient and economical resource delivery." />
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Challenges</u>
             </div>
             <div className='industries-component'>
-                <Challenges challengeData={challengeData} />
+                <Challenges challengeData={challengeData} mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Our Offerings</u>
             </div>
             <div className='industries-component'>
-                <Igrid gridData={gridData} />
+                <Igrid gridData={gridData} mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
@@ -108,32 +108,32 @@ export default function Energy({ mode }) {
             </div>
 
             <div className='industries-component'>
-                <Iservices />
+                <Iservices mode={mode} />
             </div>
 
             <div className='industries-component'>
-                <Meeting />
+                <Meeting mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Awards & Recognition</u>
             </div>
             <div className='industries-component'>
-                <Award />
+                <Award mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Our Recent Projects</u>
             </div>
             <div className='industries-component'>
-                <Project />
+                <Project mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Featured Blog posts</u>
             </div>
             <div className='industries-component'>
-                <Blogs />
+                <Blogs mode={mode} />
             </div>
 
         </div>

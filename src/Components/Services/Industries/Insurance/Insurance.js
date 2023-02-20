@@ -87,20 +87,20 @@ export default function Insurance({ mode }) {
     ]
     return (
         <div className='industries-outer'>
-            <Industrytop bgimg={Insurance_img1}
+            <Industrytop bgimg={Insurance_img1} mode={mode}
                 content="The insurance sector is dealing with quickening technology development and more stringent governmental regulatory compliance. Insurance firms are utilising Internet of Things, Advanced Analytics, and Machine Learning to generate precise individual risk profiles in order to meet the rising demand for individualised rates and usage-based coverage. This offers a special chance for IT & ITeS service providers to support the insurance sector's transformation and adaptation. The difficulty for IT / ITeS providers is to get their message through as the insurance sector increases its spending with IT and ITeS businesses to accomplish their transformational and digital aspirations. Our comprehensive databases, account mapping, and research-driven strategy, which aids our clients in the IT & ITeS business in connecting with the appropriate decision-makers and influencers, are the results of our competence in lead generation for insurance." />
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Challenges</u>
             </div>
             <div className='industries-component'>
-                <Challenges challengeData={challengeData} />
+                <Challenges challengeData={challengeData} mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Our Offerings</u>
             </div>
             <div className='industries-component'>
-                <Igrid gridData={gridData} />
+                <Igrid gridData={gridData} mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
@@ -108,32 +108,32 @@ export default function Insurance({ mode }) {
             </div>
 
             <div className='industries-component'>
-                <Iservices />
+                <Iservices mode={mode} />
             </div>
 
             <div className='industries-component'>
-                <Meeting />
+                <Meeting mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Awards & Recognition</u>
             </div>
             <div className='industries-component'>
-                <Award />
+                <Award mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Our Recent Projects</u>
             </div>
             <div className='industries-component'>
-                <Project />
+                <Project mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Featured Blog posts</u>
             </div>
             <div className='industries-component'>
-                <Blogs />
+                <Blogs mode={mode} />
             </div>
 
         </div>

@@ -100,20 +100,20 @@ export default function Education({ mode }) {
     ]
     return (
         <div className='industries-outer'>
-            <Industrytop bgimg={Education_img1}
+            <Industrytop bgimg={Education_img1} mode={mode}
                 content="As the learning ecosystem has evolved more in the previous ten years than in the many decades before, education has grown more digital. The development of digital technology, the proliferation of mobile devices, and the construction of a solid, always-connected infrastructure are the main forces behind this transition. Additionally, today's new generation of learners has grown to anticipate personalised, interactive, and engaging learning models that enable anytime, anywhere learning. Due to the growing use of flipped classrooms as a teaching strategy throughout K–12, higher education, and professional education, many conventional publishing corporations have rebuilt themselves as digital first organisations. This change has been even more pronounced among learning solutions companies that offer professional and vocational learning programmes. Although technology has completely changed the way we teach and learn, its effects were first mostly limited to asynchronous learning models. This is altering, though, as synchronous learning models include disruptive technology to promote better learning. EdTech is prepared to improve the quality of education while implementing new learning models and delivery strategies with the use of advanced analytics, live streaming, and AR-VR." />
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Challenges</u>
             </div>
             <div className='industries-component'>
-                <Challenges challengeData={challengeData} />
+                <Challenges challengeData={challengeData} mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Our Offerings</u>
             </div>
             <div className='industries-component'>
-                <Igrid gridData={gridData} />
+                <Igrid gridData={gridData} mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
@@ -121,32 +121,32 @@ export default function Education({ mode }) {
             </div>
 
             <div className='industries-component'>
-                <Iservices />
+                <Iservices mode={mode} />
             </div>
 
             <div className='industries-component'>
-                <Meeting />
+                <Meeting mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Awards & Recognition</u>
             </div>
             <div className='industries-component'>
-                <Award />
+                <Award mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Our Recent Projects</u>
             </div>
             <div className='industries-component'>
-                <Project />
+                <Project mode={mode} />
             </div>
 
             <div className='industries-title' style={{ color: mode === "dark" ? "white" : "black" }}>
                 <u>Featured Blog posts</u>
             </div>
             <div className='industries-component'>
-                <Blogs />
+                <Blogs mode={mode} />
             </div>
 
         </div>
